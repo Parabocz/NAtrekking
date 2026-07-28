@@ -441,7 +441,7 @@ body {
 }
 
 .catalog-card.expanded .inline-expanded-bg {
-    opacity: 0.3;
+    opacity: 1;
 }
 
 .inline-expanded-content {

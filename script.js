@@ -50,7 +50,7 @@ const createExpandedHTML = (title, date, location, duration, bgUrl, bannerUrl) =
     <div class="inline-expanded-bg" style="background-image: url('${bgUrl}')"></div>
     <div class="inline-expanded-content">
         <div class="inline-expanded-left">
-            <div class="inline-expanded-banner" style="background-image: ${bannerUrl}"></div>
+            <div class="inline-expanded-banner" style='background-image: ${bannerUrl}'></div>
         </div>
         <div class="inline-expanded-right">
             <div class="inline-expanded-info">
