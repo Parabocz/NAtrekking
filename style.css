@@ -436,12 +436,13 @@ body {
     opacity: 0;
     z-index: 1;
     filter: grayscale(30%) sepia(20%) hue-rotate(340deg);
-    transition: opacity 0.6s ease;
+    transition: opacity 0.2s ease 0s;
     pointer-events: none;
 }
 
 .catalog-card.expanded .inline-expanded-bg {
     opacity: 1;
+    transition: opacity 0.6s ease 0.1s;
 }
 
 .inline-expanded-content {
@@ -456,12 +457,36 @@ body {
     background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(10,10,10,0.8) 260px, rgba(10,10,10,0.4) 100%);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.4s ease 0.2s; /* Delay fade in */
+    transition: opacity 0.2s ease 0s;
 }
 
 .catalog-card.expanded .inline-expanded-content {
     opacity: 1;
     pointer-events: auto;
+    transition: opacity 0.4s ease 0.2s;
+}
+
+/* Stagger animations for texts */
+.inline-expanded-info > *, .expanded-cta-wrapper {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+}
+.catalog-card.expanded .inline-expanded-info .exp-title {
+    opacity: 1; transform: translateY(0);
+    transition: opacity 0.5s ease 0.3s, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s;
+}
+.catalog-card.expanded .inline-expanded-info .exp-meta {
+    opacity: 1; transform: translateY(0);
+    transition: opacity 0.5s ease 0.4s, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s;
+}
+.catalog-card.expanded .inline-expanded-info .exp-location {
+    opacity: 1; transform: translateY(0);
+    transition: opacity 0.5s ease 0.5s, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0.5s;
+}
+.catalog-card.expanded .expanded-cta-wrapper {
+    opacity: 1; transform: translateY(0);
+    transition: opacity 0.5s ease 0.6s, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0.6s;
 }
 
 .inline-expanded-left { height: 100%; width: 260px; }
