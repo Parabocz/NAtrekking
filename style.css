@@ -449,6 +449,9 @@ body {
     gap: 3rem;
     padding: 0 15vw; /* Offset para que o primeiro slide fique no centro do painel */
     scrollbar-width: none; /* Firefox */
+    -webkit-overflow-scrolling: touch; /* Habilita inércia no iOS */
+    overscroll-behavior-x: contain;
+    touch-action: pan-x pan-y; /* Permite arrastar com o dedo horizontalmente */
 }
 .carousel-container::-webkit-scrollbar {
     display: none; /* Chrome/Safari */
@@ -657,11 +660,20 @@ body {
     /* Agenda / Trilha - Mantém a estrutura original do desktop, apenas escalada */
     .group-title-vertical, .left-node {
         font-size: 3.5rem;
+        font-family: var(--font-main);
+        color: rgba(255, 255, 255, 0.9);
+        -webkit-text-stroke: 0; /* Tira o stroke que fica feio no mobile */
+        letter-spacing: 0.15em;
     }
     .carousel-panel {
         width: 65%; /* Aproxima o carrossel do centro/trilha */
         -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); 
         mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+    .carousel-container {
+        height: 400px;
+        gap: 1rem;
+        padding: 0 5vw;
     }
     .carousel-slide {
         flex: 0 0 220px; /* Aumentado */
@@ -686,8 +698,9 @@ body {
     
     /* Escala drástica para caber em telas estreitas (ex: iPhone) */
     .group-title-vertical { 
-        font-size: 2.2rem; 
+        font-size: 2rem; 
         left: 95% !important; /* Move mais para a borda */
+        color: rgba(255, 255, 255, 0.85); /* Fica legível sem stroke */
     }
     .left-node {
         left: 5% !important;
@@ -697,6 +710,12 @@ body {
         width: 72%; /* No celular, aproxima ainda mais da trilha */
         -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    }
+    
+    .carousel-container {
+        height: 300px;
+        gap: 1rem;
+        padding: 0 5vw;
     }
 
     .carousel-slide { 
