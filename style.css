@@ -444,7 +444,7 @@ body {
     height: 600px; /* Fixed height for reliable centering */
     display: flex;
     align-items: center;
-    overflow-x: auto;
+    overflow-x: scroll; /* FORÇAR SCROLL */
     scroll-snap-type: x mandatory;
     gap: 3rem;
     padding: 0 15vw; /* Offset para que o primeiro slide fique no centro do painel */
@@ -452,6 +452,7 @@ body {
     -webkit-overflow-scrolling: touch; /* Habilita inércia no iOS */
     overscroll-behavior-x: contain;
     touch-action: pan-x pan-y; /* Permite arrastar com o dedo horizontalmente */
+    pointer-events: auto !important; /* GARANTE QUE RECEBA TOUCH */
 }
 .carousel-container::-webkit-scrollbar {
     display: none; /* Chrome/Safari */
@@ -699,11 +700,8 @@ body {
     /* Escala drástica para caber em telas estreitas (ex: iPhone) */
     .group-title-vertical { 
         font-size: 2rem; 
-        left: 95% !important; /* Move mais para a borda */
         color: rgba(255, 255, 255, 0.85); /* Fica legível sem stroke */
-    }
-    .left-node {
-        left: 5% !important;
+        /* Removido o left: 95% para voltar a obedecer o HTML (88%) alinhando com o nó da trilha (80%) */
     }
     
     .carousel-panel {
