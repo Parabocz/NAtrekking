@@ -187,8 +187,6 @@ function closeExpandedView(el) {
             }
         }, 100);
     }
-});
-
 // Custom Cursor Logic for Carousels
 const cursor = document.querySelector('.custom-cursor');
 const carousels = document.querySelectorAll('.carousel-container');
