@@ -42,86 +42,81 @@ tlHero.fromTo('.hero-pre-headline', { y: 30, opacity: 0 }, { y: 0, opacity: 1, d
       .fromTo('.scroll-indicator', { opacity: 0 }, { opacity: 1, duration: 1, ease: 'power2.inOut' }, '-=0.2');
 
 
-// --- Lógica do Catálogo Netflix (Gaveta Expansível) ---
+// --- Lógica de Expansão In-line (Acordeão Horizontal) ---
 const cards = document.querySelectorAll('.catalog-card');
-let currentExpanded = null;
+let currentlyExpandedCard = null;
+
+const createExpandedHTML = (title, date, location, duration, bgUrl, bannerUrl) => `
+    <div class="inline-expanded-bg" style="background-image: url('${bgUrl}')"></div>
+    <div class="inline-expanded-content">
+        <div class="inline-expanded-left">
+            <div class="inline-expanded-banner" style="background-image: ${bannerUrl}"></div>
+        </div>
+        <div class="inline-expanded-right">
+            <div class="inline-expanded-info">
+                <h2 class="exp-title">${title}</h2>
+                <p class="exp-meta"><span class="exp-date">${date}</span> &bull; <span class="exp-duration">${duration}</span></p>
+                <p class="exp-location">${location}</p>
+            </div>
+            <div class="expanded-cta-wrapper">
+                <button class="btn-primary exp-cta">Embarcar Nessa Rota</button>
+            </div>
+        </div>
+    </div>
+    <button class="inline-expanded-close">&times;</button>
+`;
 
 cards.forEach(card => {
     card.addEventListener('click', (e) => {
-        const row = card.closest('.catalog-row');
-        
-        // Se já existe um painel aberto
-        if (currentExpanded) {
-            // Se clicou no mesmo card ou mesma linha e já está aberto
-            if (currentExpanded.row === row) {
-                // Atualizar dados no painel existente
-                updateExpandedView(currentExpanded.element, card);
-                return;
-            } else {
-                // Fechar o anterior
-                closeExpandedView(currentExpanded.element);
-            }
+        // Se clicar no botão de fechar
+        if (e.target.classList.contains('inline-expanded-close')) {
+            e.stopPropagation();
+            closeCard(card);
+            return;
         }
 
-        // Criar novo painel a partir do template
-        const template = document.getElementById('expanded-view-template');
-        const expandedNode = template.content.cloneNode(true);
-        const expandedEl = expandedNode.querySelector('.expanded-view');
-        
-        updateExpandedView(expandedEl, card);
+        // Se já estiver expandido, não faz nada ao clicar de novo
+        if (card.classList.contains('expanded')) return;
 
-        // Inserir após a linha (row) atual
-        row.insertAdjacentElement('afterend', expandedEl);
-        
-        // Listener de fechar
-        expandedEl.querySelector('.expanded-close').addEventListener('click', () => {
-            closeExpandedView(expandedEl);
-        });
+        // Se tiver outro aberto, fecha ele
+        if (currentlyExpandedCard && currentlyExpandedCard !== card) {
+            closeCard(currentlyExpandedCard);
+        }
 
-        // Trigger animação de abertura
-        requestAnimationFrame(() => {
-            expandedEl.classList.add('open');
-            // Scroll suave para mostrar o painel se estiver fora da tela
-            setTimeout(() => {
-                const rect = expandedEl.getBoundingClientRect();
-                if (rect.bottom > window.innerHeight) {
-                    window.scrollBy({ top: rect.bottom - window.innerHeight + 50, behavior: 'smooth' });
-                }
-            }, 300);
-        });
+        // Extrai os dados
+        const title = card.getAttribute('data-title');
+        const date = card.getAttribute('data-date');
+        const location = card.getAttribute('data-location');
+        const duration = card.getAttribute('data-duration');
+        const bgUrl = card.getAttribute('data-bg');
+        const bannerUrl = card.style.backgroundImage;
 
-        currentExpanded = { element: expandedEl, row: row };
+        // Injeta o HTML interno do expansor
+        card.innerHTML = createExpandedHTML(title, date, location, duration, bgUrl, bannerUrl);
+
+        // Adiciona a classe que dispara o CSS (flex-basis 85vw)
+        card.classList.add('expanded');
+        currentlyExpandedCard = card;
+
+        // Centraliza o scroll suavemente na tela para o card esticado
+        setTimeout(() => {
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }, 100);
     });
 });
 
-function updateExpandedView(el, card) {
-    const title = card.getAttribute('data-title');
-    const date = card.getAttribute('data-date');
-    const location = card.getAttribute('data-location');
-    const duration = card.getAttribute('data-duration');
-    const bgUrl = card.getAttribute('data-bg');
-    
-    // Pega a URL do inline style backgroundImage do card
-    const bannerUrl = card.style.backgroundImage;
-
-    el.querySelector('.exp-title').textContent = title;
-    el.querySelector('.exp-date').textContent = date;
-    el.querySelector('.exp-location').textContent = location;
-    el.querySelector('.exp-duration').textContent = duration;
-    
-    el.querySelector('.expanded-bg').style.backgroundImage = `url('${bgUrl}')`;
-    el.querySelector('.expanded-banner').style.backgroundImage = bannerUrl;
-}
-
-function closeExpandedView(el) {
-    el.classList.remove('open');
-    if(currentExpanded && currentExpanded.element === el) {
-        currentExpanded = null;
-    }
-    // Aguardar transição CSS para remover do DOM
+function closeCard(card) {
+    card.classList.remove('expanded');
+    // Remove o conteúdo do DOM após a transição de largura acabar (0.6s)
     setTimeout(() => {
-        if(el.parentElement) el.remove();
+        if(!card.classList.contains('expanded')) {
+            card.innerHTML = '';
+        }
     }, 600);
+    
+    if (currentlyExpandedCard === card) {
+        currentlyExpandedCard = null;
+    }
 }
 
     // --- Animação de Entrada da Seção Sobre ---
