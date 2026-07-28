@@ -654,36 +654,22 @@ body {
     .hero-headline { font-size: 5rem; }
     .hero-subheadline { font-size: 1.1rem; }
 
-    /* Agenda / Trilha */
-    .node-group {
-        flex-direction: column !important;
-        margin-top: -50px;
-        align-items: center;
-        justify-content: center !important;
-    }
+    /* Agenda / Trilha - Mantém a estrutura original do desktop, apenas escalada */
     .group-title-vertical, .left-node {
-        position: static !important;
-        transform: none !important;
-        font-size: 4rem;
-        margin-bottom: 2rem;
-        text-align: center;
-        width: 100%;
-        line-height: 1;
+        font-size: 3.5rem;
     }
     .carousel-panel {
-        width: 100vw;
-        left: -1rem; /* compense o padding da agenda */
-        position: relative;
-        -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-        mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+        width: 48%; /* Aproveita um pouco mais de espaço no mobile sem tocar no centro */
+        -webkit-mask-image: none; 
+        mask-image: none;
     }
     .carousel-slide {
-        flex: 0 0 75vw;
-        height: 400px;
+        flex: 0 0 180px;
+        height: 280px;
     }
 
     /* SVG Ajuste */
-    .topo-line { opacity: 0.3; } 
+    .topo-line { opacity: 0.5; } 
 }
 
 @media (max-width: 600px) {
@@ -696,10 +682,22 @@ body {
     .manifesto { font-size: 1.2rem; }
     .escopo { font-size: 0.75rem; letter-spacing: 0.05em; }
     
-    .section-title { font-size: 2.8rem; }
-    .group-title-vertical, .left-node { font-size: 2.8rem; }
+    .section-title { font-size: 2.5rem; }
     
-    .carousel-slide { height: 320px; flex: 0 0 85vw; }
+    /* Escala drástica para caber em telas estreitas (ex: iPhone) */
+    .group-title-vertical { 
+        font-size: 2rem; 
+        left: 92% !important; /* Move mais para a borda para não invadir o centro */
+    }
+    .left-node {
+        left: 8% !important;
+    }
+    
+    .carousel-slide { 
+        flex: 0 0 120px; 
+        height: 200px; 
+        border-radius: 8px;
+    }
     
     .btn-group { flex-direction: column; width: 100%; }
     .btn-outline { width: 100%; font-size: 0.9rem; }
