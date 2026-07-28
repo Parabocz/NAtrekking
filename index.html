@@ -71,58 +71,60 @@
 
             <div class="agenda-content">
                 <h2 class="section-title">PRÓXIMAS ROTAS.</h2>
-                
-                <div class="map-container">
-                    <!-- SVG Topographic Path -->
-                    <svg class="topo-line" viewBox="0 0 1000 3500" preserveAspectRatio="none">
-                        <!-- Main Path -->
-                        <path id="route-path" d="M 500 0 C 500 500, 800 500, 800 1000 C 800 1500, 200 1500, 200 2000 C 200 2500, 800 2500, 800 3000 L 800 3500" fill="none" stroke="#222" stroke-width="6" />
-                        <path id="route-path-active" d="M 500 0 C 500 500, 800 500, 800 1000 C 800 1500, 200 1500, 200 2000 C 200 2500, 800 2500, 800 3000 L 800 3500" fill="none" stroke="#FF5722" stroke-width="12" />
-                        
-                        <!-- Nodes -->
-                        <circle class="node" cx="800" cy="1000" r="15" fill="#FF5722"/>
-                        <circle class="node" cx="200" cy="2000" r="15" fill="#FF5722"/>
-                        <circle class="node" cx="800" cy="3000" r="15" fill="#FF5722"/>
-                    </svg>
-
-                    <div class="nodes-container">
-                        <!-- GRUPO 1: NACIONAL (Nó na Direita) -->
-                        <div class="node-group" style="top: calc((1000 / 3500) * 100%); justify-content: flex-start;">
-                            <h3 class="group-title-vertical" style="left: 88%;">AGENDA NACIONAL</h3>
-                            <div class="carousel-panel">
-                                <div class="carousel-container" data-lenis-prevent="true">
-                                    <div class="carousel-slide active" style="background-image: url('/agenda_nacional_1.jpg');"></div>
-                                    <div class="carousel-slide" style="background-image: url('/agenda_nacional_2.jpg');"></div>
-                                    <div class="carousel-slide" style="background-image: url('/agenda_nacional_3.jpg');"></div>
-                                </div>
-                            </div>
+                <div class="catalog-container">
+                    <!-- CATEGORY 1 -->
+                    <div class="catalog-row" data-category="nacional">
+                        <h3 class="row-title">Em Alta: Clássicos Nacionais</h3>
+                        <div class="row-carousel" data-lenis-prevent="true">
+                            <div class="catalog-card" data-title="Travessia Lapinha-Tabuleiro" data-date="12 a 15 de Maio, 2027" data-location="Serra do Cipó, MG" data-duration="4 Dias" data-bg="/map_bg_nacional.jpg" style="background-image: url('/agenda_nacional_1.jpg');"></div>
+                            <div class="catalog-card" data-title="Pico da Bandeira" data-date="20 a 22 de Julho, 2027" data-location="Parque Nacional do Caparaó" data-duration="3 Dias" data-bg="/map_bg_nacional.jpg" style="background-image: url('/agenda_nacional_2.jpg');"></div>
+                            <div class="catalog-card" data-title="Chapada Diamantina" data-date="05 a 12 de Agosto, 2027" data-location="Bahia, Brasil" data-duration="8 Dias" data-bg="/map_bg_nacional.jpg" style="background-image: url('/agenda_nacional_3.jpg');"></div>
                         </div>
+                    </div>
 
-                        <!-- GRUPO 2: INTERNACIONAL (Nó na Esquerda) -->
-                        <div class="node-group" style="top: calc((2000 / 3500) * 100%); justify-content: flex-end;">
-                            <h3 class="group-title-vertical left-node" style="left: 12%;">AGENDA INTERNACIONAL</h3>
-                            <div class="carousel-panel">
-                                <div class="carousel-container" data-lenis-prevent="true">
-                                    <div class="carousel-slide active" style="background-image: url('/agenda_internacional_1.jpg');"></div>
-                                    <div class="carousel-slide" style="background-image: url('/agenda_internacional_2.jpg');"></div>
-                                    <div class="carousel-slide" style="background-image: url('/agenda_internacional_3.jpg');"></div>
-                                </div>
-                            </div>
+                    <!-- CATEGORY 2 -->
+                    <div class="catalog-row" data-category="internacional">
+                        <h3 class="row-title">Fronteiras: Expedições Internacionais</h3>
+                        <div class="row-carousel" data-lenis-prevent="true">
+                            <div class="catalog-card" data-title="Circuito W - Torres del Paine" data-date="10 a 18 de Novembro, 2027" data-location="Patagônia, Chile" data-duration="9 Dias" data-bg="/map_bg_internacional.jpg" style="background-image: url('/agenda_internacional_1.jpg');"></div>
+                            <div class="catalog-card" data-title="Trilha Inca Clássica" data-date="02 a 06 de Abril, 2027" data-location="Cusco, Peru" data-duration="5 Dias" data-bg="/map_bg_internacional.jpg" style="background-image: url('/agenda_internacional_2.jpg');"></div>
+                            <div class="catalog-card" data-title="Salkantay Trek" data-date="15 a 21 de Maio, 2027" data-location="Machu Picchu, Peru" data-duration="7 Dias" data-bg="/map_bg_internacional.jpg" style="background-image: url('/agenda_internacional_3.jpg');"></div>
                         </div>
+                    </div>
 
-                        <!-- GRUPO 3: ALTA MONTANHA (Nó na Direita) -->
-                        <div class="node-group" style="top: calc((3000 / 3500) * 100%); justify-content: flex-start;">
-                            <h3 class="group-title-vertical" style="left: 88%;">ALTA MONTANHA</h3>
-                            <div class="carousel-panel">
-                                <div class="carousel-container" data-lenis-prevent="true">
-                                    <div class="carousel-slide active" style="background-image: url('/alta_montanha_1.jpg');"></div>
-                                    <div class="carousel-slide" style="background-image: url('/alta_montanha_2.jpg');"></div>
-                                    <div class="carousel-slide" style="background-image: url('/alta_montanha_3.jpg');"></div>
-                                </div>
-                            </div>
+                    <!-- CATEGORY 3 -->
+                    <div class="catalog-row" data-category="montanha">
+                        <h3 class="row-title">Lançamentos: Alta Montanha</h3>
+                        <div class="row-carousel" data-lenis-prevent="true">
+                            <div class="catalog-card" data-title="Acampamento Base do Everest" data-date="01 a 20 de Outubro, 2027" data-location="Himalaia, Nepal" data-duration="20 Dias" data-bg="/map_bg_alta_montanha.jpg" style="background-image: url('/alta_montanha_1.jpg');"></div>
+                            <div class="catalog-card" data-title="Aconcágua - Face Noroeste" data-date="10 a 28 de Janeiro, 2027" data-location="Mendoza, Argentina" data-duration="19 Dias" data-bg="/map_bg_alta_montanha.jpg" style="background-image: url('/alta_montanha_2.jpg');"></div>
+                            <div class="catalog-card" data-title="Kilimanjaro - Rota Machame" data-date="05 a 14 de Fevereiro, 2027" data-location="Tanzânia, África" data-duration="10 Dias" data-bg="/map_bg_alta_montanha.jpg" style="background-image: url('/alta_montanha_3.jpg');"></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Template da Gaveta Expansível -->
+                <template id="expanded-view-template">
+                    <div class="expanded-view">
+                        <div class="expanded-bg"></div>
+                        <div class="expanded-content">
+                            <div class="expanded-left">
+                                <div class="expanded-banner"></div>
+                            </div>
+                            <div class="expanded-right">
+                                <div class="expanded-info">
+                                    <h2 class="exp-title">TITLE</h2>
+                                    <p class="exp-meta"><span class="exp-date">DATA</span> &bull; <span class="exp-duration">DURATION</span></p>
+                                    <p class="exp-location">LOCATION</p>
+                                </div>
+                                <div class="expanded-cta-wrapper">
+                                    <button class="btn-primary exp-cta">Embarcar Nessa Rota</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="expanded-close">&times;</button>
+                    </div>
+                </template>
             </div>
         </section>
 

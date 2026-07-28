@@ -42,163 +42,87 @@ tlHero.fromTo('.hero-pre-headline', { y: 30, opacity: 0 }, { y: 0, opacity: 1, d
       .fromTo('.scroll-indicator', { opacity: 0 }, { opacity: 1, duration: 1, ease: 'power2.inOut' }, '-=0.2');
 
 
-// --- Animação da Agenda (Mapa Topográfico SVG) ---
-// Configuração do caminho SVG
-const pathActive = document.getElementById('route-path-active');
-if(pathActive) {
-    const pathLength = pathActive.getTotalLength();
-    gsap.set(pathActive, { strokeDasharray: pathLength, strokeDashoffset: pathLength });
+// --- Lógica do Catálogo Netflix (Gaveta Expansível) ---
+const cards = document.querySelectorAll('.catalog-card');
+let currentExpanded = null;
 
-    // Scrubbing the path with ScrollTrigger
-    gsap.to(pathActive, {
-        strokeDashoffset: 0,
-        ease: 'none',
-        scrollTrigger: {
-            trigger: '.map-container',
-            start: 'top 50%',
-            end: 'bottom 80%',
-            scrub: 1,
+cards.forEach(card => {
+    card.addEventListener('click', (e) => {
+        const row = card.closest('.catalog-row');
+        
+        // Se já existe um painel aberto
+        if (currentExpanded) {
+            // Se clicou no mesmo card ou mesma linha e já está aberto
+            if (currentExpanded.row === row) {
+                // Atualizar dados no painel existente
+                updateExpandedView(currentExpanded.element, card);
+                return;
+            } else {
+                // Fechar o anterior
+                closeExpandedView(currentExpanded.element);
+            }
         }
+
+        // Criar novo painel a partir do template
+        const template = document.getElementById('expanded-view-template');
+        const expandedNode = template.content.cloneNode(true);
+        const expandedEl = expandedNode.querySelector('.expanded-view');
+        
+        updateExpandedView(expandedEl, card);
+
+        // Inserir após a linha (row) atual
+        row.insertAdjacentElement('afterend', expandedEl);
+        
+        // Listener de fechar
+        expandedEl.querySelector('.expanded-close').addEventListener('click', () => {
+            closeExpandedView(expandedEl);
+        });
+
+        // Trigger animação de abertura
+        requestAnimationFrame(() => {
+            expandedEl.classList.add('open');
+            // Scroll suave para mostrar o painel se estiver fora da tela
+            setTimeout(() => {
+                const rect = expandedEl.getBoundingClientRect();
+                if (rect.bottom > window.innerHeight) {
+                    window.scrollBy({ top: rect.bottom - window.innerHeight + 50, behavior: 'smooth' });
+                }
+            }, 300);
+        });
+
+        currentExpanded = { element: expandedEl, row: row };
     });
+});
+
+function updateExpandedView(el, card) {
+    const title = card.getAttribute('data-title');
+    const date = card.getAttribute('data-date');
+    const location = card.getAttribute('data-location');
+    const duration = card.getAttribute('data-duration');
+    const bgUrl = card.getAttribute('data-bg');
+    
+    // Pega a URL do inline style backgroundImage do card
+    const bannerUrl = card.style.backgroundImage;
+
+    el.querySelector('.exp-title').textContent = title;
+    el.querySelector('.exp-date').textContent = date;
+    el.querySelector('.exp-location').textContent = location;
+    el.querySelector('.exp-duration').textContent = duration;
+    
+    el.querySelector('.expanded-bg').style.backgroundImage = `url('${bgUrl}')`;
+    el.querySelector('.expanded-banner').style.backgroundImage = bannerUrl;
 }
 
-// Nós do SVG e textos de destino (Acendendo um por um)
-const nodes = document.querySelectorAll('.node');
-const nodeGroups = document.querySelectorAll('.node-group');
-
-gsap.set('.node', { scale: 0, opacity: 0, transformOrigin: "center center" });
-
-nodeGroups.forEach((group, index) => {
-    // Pop circle
-    if(nodes[index]) {
-        gsap.to(nodes[index], {
-            scale: 1,
-            opacity: 1,
-            duration: 0.6,
-            ease: 'back.out(1.7)',
-            scrollTrigger: {
-                trigger: group,
-                start: 'top 70%',
-                toggleActions: 'play none none reverse'
-            }
-        });
+function closeExpandedView(el) {
+    el.classList.remove('open');
+    if(currentExpanded && currentExpanded.element === el) {
+        currentExpanded = null;
     }
-
-    // Fade Group In (Title & Carousel)
-    gsap.to(group, {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: 'power3.out',
-        scrollTrigger: {
-            trigger: group,
-            start: 'top 70%',
-            toggleActions: 'play none none reverse'
-        }
-    });
-
-    // Make first slide active initially
-    const carousel = group.querySelector('.carousel-container');
-    if(carousel) {
-        const originalSlides = Array.from(carousel.querySelectorAll('.carousel-slide'));
-        
-        // Multiplica os slides (Fake Infinite Loop)
-        for(let i=0; i < 8; i++) {
-            originalSlides.forEach(slide => {
-                carousel.appendChild(slide.cloneNode(true));
-            });
-        }
-        
-        const slides = carousel.querySelectorAll('.carousel-slide');
-        
-        // Scroll listener for carousel coverflow logic
-        const updateCoverflow = () => {
-            const containerRect = carousel.getBoundingClientRect();
-            const containerCenter = containerRect.left + (containerRect.width / 2);
-            let closestSlide = null;
-            let closestDistance = Infinity;
-
-            slides.forEach(slide => {
-                const slideRect = slide.getBoundingClientRect();
-                const slideCenter = slideRect.left + (slideRect.width / 2);
-                const distance = Math.abs(containerCenter - slideCenter);
-                
-                if (distance < closestDistance) {
-                    closestDistance = distance;
-                    closestSlide = slide;
-                }
-            });
-
-            slides.forEach(s => s.classList.remove('active'));
-            if(closestSlide) closestSlide.classList.add('active');
-        };
-        carousel.addEventListener('scroll', updateCoverflow);
-
-        // Permite "seleção manual" tocando nos cards (scroll automático para o centro)
-        slides.forEach(slide => {
-            slide.addEventListener('click', () => {
-                slide.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-            });
-        });
-
-        // Auto-Pan Magnético
-        let isDown = false;
-        let isHovering = false;
-        let startX;
-        let scrollLeft;
-        let autoPanSpeed = 0.7; // Velocidade reduzida e suave
-        let exactScrollLeft = carousel.scrollLeft;
-
-        const autoPan = () => {
-            if(!isDown && !isHovering) {
-                carousel.style.scrollSnapType = 'none'; // Desliga o snap para pan liso
-                exactScrollLeft += autoPanSpeed;
-                carousel.scrollLeft = exactScrollLeft;
-            }
-            requestAnimationFrame(autoPan);
-        };
-        requestAnimationFrame(autoPan);
-
-        // Pausa do Auto-Pan e Drag-to-Scroll
-        carousel.addEventListener('mouseenter', () => {
-            isHovering = true;
-            carousel.style.scrollSnapType = 'x mandatory'; // Liga snap magnético ao focar
-            exactScrollLeft = carousel.scrollLeft; // Sync
-        });
-        
-        carousel.addEventListener('mouseleave', () => {
-            isHovering = false;
-            isDown = false;
-            carousel.style.scrollSnapType = 'none'; // Retoma auto pan
-            exactScrollLeft = carousel.scrollLeft; // Sync
-        });
-
-        carousel.addEventListener('mousedown', (e) => {
-            isDown = true;
-            startX = e.clientX;
-            scrollLeft = carousel.scrollLeft;
-            carousel.style.scrollBehavior = 'auto'; 
-            carousel.style.scrollSnapType = 'none'; 
-        });
-
-        window.addEventListener('mouseup', () => {
-            if(isDown) {
-                isDown = false;
-                carousel.style.scrollSnapType = 'x mandatory';
-                carousel.style.scrollBehavior = 'smooth';
-                exactScrollLeft = carousel.scrollLeft;
-            }
-        });
-
-        carousel.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.clientX;
-            const walk = (x - startX) * 2;
-            carousel.scrollLeft = scrollLeft - walk;
-            exactScrollLeft = carousel.scrollLeft;
-        });
-    }
+    // Aguardar transição CSS para remover do DOM
+    setTimeout(() => {
+        if(el.parentElement) el.remove();
+    }, 600);
+}
 
     // --- Animação de Entrada da Seção Sobre ---
     const tlSobre = gsap.timeline({
