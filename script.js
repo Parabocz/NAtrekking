@@ -96,17 +96,19 @@ cards.forEach(card => {
 
         // Adiciona a classe que dispara o CSS (flex-basis 85vw)
         card.classList.add('expanded');
+        card.closest('.row-carousel').classList.add('has-expanded');
         currentlyExpandedCard = card;
 
         // Centraliza o scroll suavemente na tela para o card esticado
         setTimeout(() => {
             card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-        }, 100);
+        }, 50);
     });
 });
 
 function closeCard(card) {
     card.classList.remove('expanded');
+    card.closest('.row-carousel').classList.remove('has-expanded');
     // Remove o conteúdo do DOM após a transição de largura acabar (0.6s)
     setTimeout(() => {
         if(!card.classList.contains('expanded')) {

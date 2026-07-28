@@ -392,6 +392,10 @@ body {
 }
 .row-carousel::-webkit-scrollbar { display: none; }
 
+.row-carousel.has-expanded {
+    scroll-snap-type: none;
+}
+
 .catalog-card {
     flex: 0 0 260px;
     height: 380px;
@@ -399,9 +403,9 @@ body {
     background-position: center;
     border-radius: 8px;
     cursor: pointer;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     filter: brightness(0.6) grayscale(20%);
-    transition: flex 0.6s cubic-bezier(0.8, 0, 0.2, 1), transform 0.4s ease, filter 0.4s ease;
+    transition: flex 0.6s cubic-bezier(0.8, 0, 0.2, 1), height 0.6s cubic-bezier(0.8, 0, 0.2, 1), transform 0.4s ease, filter 0.4s ease;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     position: relative;
     overflow: hidden;
