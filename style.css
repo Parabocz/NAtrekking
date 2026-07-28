@@ -659,13 +659,13 @@ body {
         font-size: 3.5rem;
     }
     .carousel-panel {
-        width: 48%; /* Aproveita um pouco mais de espaço no mobile sem tocar no centro */
-        -webkit-mask-image: none; 
-        mask-image: none;
+        width: 65%; /* Aproxima o carrossel do centro/trilha */
+        -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); 
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     }
     .carousel-slide {
-        flex: 0 0 180px;
-        height: 280px;
+        flex: 0 0 220px; /* Aumentado */
+        height: 320px;
     }
 
     /* SVG Ajuste */
@@ -686,16 +686,22 @@ body {
     
     /* Escala drástica para caber em telas estreitas (ex: iPhone) */
     .group-title-vertical { 
-        font-size: 2rem; 
-        left: 92% !important; /* Move mais para a borda para não invadir o centro */
+        font-size: 2.2rem; 
+        left: 95% !important; /* Move mais para a borda */
     }
     .left-node {
-        left: 8% !important;
+        left: 5% !important;
     }
     
+    .carousel-panel {
+        width: 72%; /* No celular, aproxima ainda mais da trilha */
+        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    }
+
     .carousel-slide { 
-        flex: 0 0 120px; 
-        height: 200px; 
+        flex: 0 0 160px; /* Aumentado para melhor visibilidade */
+        height: 250px; 
         border-radius: 8px;
     }
     
