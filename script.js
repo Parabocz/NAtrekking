@@ -158,35 +158,7 @@ function closeExpandedView(el) {
         "-=0.7"
     );
 
-    // Sincronização do Vídeo com Scroll (Scrubbing)
-    const trailVideo = document.querySelector('.trail-video-bg');
-    if (trailVideo) {
-        trailVideo.pause();
 
-        let scrubInit = false;
-        // Tenta iniciar a cada 100ms até que o vídeo tenha carregado seus metadados (duration)
-        const checkVideo = setInterval(() => {
-            if (trailVideo.duration && !scrubInit) {
-                scrubInit = true;
-                clearInterval(checkVideo);
-                
-                // Criação da animação nativa do GSAP para suavização (scrub: 1)
-                gsap.fromTo(trailVideo, 
-                    { currentTime: 0 },
-                    {
-                        scrollTrigger: {
-                            trigger: ".agenda",
-                            start: "top top",
-                            end: "bottom bottom",
-                            scrub: 1
-                        },
-                        currentTime: trailVideo.duration,
-                        ease: "none"
-                    }
-                );
-            }
-        }, 100);
-    }
 // Custom Cursor Logic for Carousels
 const cursor = document.querySelector('.custom-cursor');
 const carousels = document.querySelectorAll('.carousel-container');
