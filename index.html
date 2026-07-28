@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natrekking - A Montanha Chama</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">NATREKKING</div>
+        <button class="menu-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <!-- Background: Video from public folder with generated AI image as fallback/poster -->
+            <video class="hero-video" autoplay loop muted playsinline poster="file:///C:/Users/Gustavo/.gemini/antigravity/brain/f263f127-f6ed-46ad-9738-741cf821b81b/hero_mountain_bg_1785256610841.jpg">
+                <source src="/file.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="noise-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-pre-headline"><span class="accent-line"></span> EXPEDIÇÕES & TREKKING <span class="accent-line"></span></p>
+                <h1 class="hero-headline">ONDE O ASFALTO TERMINA.</h1>
+                <p class="hero-subheadline">Desconecte-se. Desafie seus limites. Experiências imersivas em alta montanha para quem busca o extraordinário.</p>
+                <button class="btn-primary"><span>Ver a Rota</span></button>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>INICIAR EXPEDIÇÃO</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <!-- Using AI generated image as the parallax background for Sobre Nós -->
+            <div class="sobre-bg" style="background-image: url('file:///C:/Users/Gustavo/.gemini/antigravity/brain/f263f127-f6ed-46ad-9738-741cf821b81b/hero_mountain_bg_1785256610841.jpg');"></div>
+            <div class="sobre-overlay"></div>
+            
+            <div class="sobre-grid">
+                <div class="sobre-header">
+                    <span class="sobre-label">[ O MANIFESTO ]</span>
+                    <h2 class="sobre-headline-large">DEIXANDO A<br><span class="text-accent">MÁQUINA</span><br>PARA TRÁS.</h2>
+                </div>
+                
+                <div class="sobre-body">
+                    <p class="manifesto">
+                        A Natrekking nasceu em 2019 de uma recusa em aceitar a vida no modo automático. O que começou em 2008 como um refúgio nas montanhas para nosso fundador, Adriano Knopik, transformou-se em uma missão: <strong>guiar pessoas de volta à sua verdadeira natureza.</strong>
+                    </p>
+                    <div class="divider"></div>
+                    <p class="escopo">
+                        COM BASE NO SUL DO BRASIL, BOMBEIROS CIVIS NA EQUIPE E OPERAÇÃO EM MAIS DE 6 PAÍSES.<br>NOSSA PRIORIDADE É A SUA SEGURANÇA ABSOLUTA E A PUREZA DA EXPERIÊNCIA.<br><span class="text-white">NÓS NÃO FAZEMOS PASSEIOS. NÓS FORJAMOS AVENTUREIROS.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="agenda" id="agenda">
+            <!-- Wrapper absoluto para o vídeo sticky cobrir 100% da tela -->
+            <div class="video-wrapper">
+                <video class="trail-video-bg" src="/background-trilha.mp4" playsinline muted preload="auto"></video>
+            </div>
+
+            <div class="agenda-content">
+                <h2 class="section-title">PRÓXIMAS ROTAS.</h2>
+                
+                <div class="map-container">
+                    <!-- SVG Topographic Path -->
+                    <svg class="topo-line" viewBox="0 0 1000 3500" preserveAspectRatio="none">
+                        <!-- Main Path -->
+                        <path id="route-path" d="M 500 0 C 500 500, 800 500, 800 1000 C 800 1500, 200 1500, 200 2000 C 200 2500, 800 2500, 800 3000 L 800 3500" fill="none" stroke="#222" stroke-width="6" />
+                        <path id="route-path-active" d="M 500 0 C 500 500, 800 500, 800 1000 C 800 1500, 200 1500, 200 2000 C 200 2500, 800 2500, 800 3000 L 800 3500" fill="none" stroke="#FF5722" stroke-width="12" />
+                        
+                        <!-- Nodes -->
+                        <circle class="node" cx="800" cy="1000" r="15" fill="#FF5722"/>
+                        <circle class="node" cx="200" cy="2000" r="15" fill="#FF5722"/>
+                        <circle class="node" cx="800" cy="3000" r="15" fill="#FF5722"/>
+                    </svg>
+
+                    <div class="nodes-container">
+                        <!-- GRUPO 1: NACIONAL (Nó na Direita) -->
+                        <div class="node-group" style="top: calc((1000 / 3500) * 100%); justify-content: flex-start;">
+                            <h3 class="group-title-vertical" style="left: 88%;">AGENDA NACIONAL</h3>
+                            <div class="carousel-panel">
+                                <div class="carousel-container">
+                                    <div class="carousel-slide active" style="background-image: url('/agenda_nacional_1.jpg');"></div>
+                                    <div class="carousel-slide" style="background-image: url('/agenda_nacional_2.jpg');"></div>
+                                    <div class="carousel-slide" style="background-image: url('/agenda_nacional_3.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GRUPO 2: INTERNACIONAL (Nó na Esquerda) -->
+                        <div class="node-group" style="top: calc((2000 / 3500) * 100%); justify-content: flex-end;">
+                            <h3 class="group-title-vertical left-node" style="left: 12%;">AGENDA INTERNACIONAL</h3>
+                            <div class="carousel-panel">
+                                <div class="carousel-container">
+                                    <div class="carousel-slide active" style="background-image: url('/agenda_internacional_1.jpg');"></div>
+                                    <div class="carousel-slide" style="background-image: url('/agenda_internacional_2.jpg');"></div>
+                                    <div class="carousel-slide" style="background-image: url('/agenda_internacional_3.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GRUPO 3: ALTA MONTANHA (Nó na Direita) -->
+                        <div class="node-group" style="top: calc((3000 / 3500) * 100%); justify-content: flex-start;">
+                            <h3 class="group-title-vertical" style="left: 88%;">ALTA MONTANHA</h3>
+                            <div class="carousel-panel">
+                                <div class="carousel-container">
+                                    <div class="carousel-slide active" style="background-image: url('/alta_montanha_1.jpg');"></div>
+                                    <div class="carousel-slide" style="background-image: url('/alta_montanha_2.jpg');"></div>
+                                    <div class="carousel-slide" style="background-image: url('/alta_montanha_3.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="comunidade" id="comunidade">
+            <div class="comunidade-content">
+                <h2 class="section-title">O ACAMPAMENTO BASE.</h2>
+                <p class="comunidade-texto">O silêncio da montanha e a força da comunidade. Escolha o seu esquadrão e receba as próximas expedições antes de todo mundo.</p>
+                <div class="btn-group">
+                    <button class="btn-outline"><span>Base 01: Entrar no Grupo 1</span></button>
+                    <button class="btn-outline"><span>Base 02: Entrar no Grupo 2</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-phrase">A montanha chama.</p>
+        <p class="footer-signature">© Natrekking. Feito para os selvagens.</p>
+    </footer>
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
