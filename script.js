@@ -134,6 +134,13 @@ nodeGroups.forEach((group, index) => {
         };
         carousel.addEventListener('scroll', updateCoverflow);
 
+        // Permite "seleção manual" tocando nos cards (scroll automático para o centro)
+        slides.forEach(slide => {
+            slide.addEventListener('click', () => {
+                slide.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            });
+        });
+
         // Auto-Pan Magnético
         let isDown = false;
         let isHovering = false;

@@ -659,6 +659,9 @@ body {
     .hero-subheadline { font-size: 1.1rem; }
 
     /* Agenda / Trilha - Mantém a estrutura original do desktop, apenas escalada */
+    .node-group {
+        margin-top: -200px; /* Metade de 400px (novo height do container) para alinhar verticalmente no nó */
+    }
     .group-title-vertical, .left-node {
         font-size: 3.5rem;
         font-family: var(--font-main);
@@ -698,6 +701,9 @@ body {
     .section-title { font-size: 2.5rem; }
     
     /* Escala drástica para caber em telas estreitas (ex: iPhone) */
+    .node-group {
+        margin-top: -150px; /* Metade de 300px (novo height) para alinhar certinho na bolinha no mobile */
+    }
     .group-title-vertical { 
         font-size: 2rem; 
         color: rgba(255, 255, 255, 0.85); /* Fica legível sem stroke */
