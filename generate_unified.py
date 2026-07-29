@@ -74,11 +74,13 @@ unified_html = "\n".join(cards)
 
 new_catalog = f'''<div class="catalog-container">
                     <div class="catalog-filters">
-                        <button class="filter-btn active" data-filter="all">Todos</button>
-                        <button class="filter-btn" data-filter="nacional">Agenda Nacional</button>
-                        <button class="filter-btn" data-filter="internacional">Agenda Internacional</button>
-                        <button class="filter-btn" data-filter="montanha">Alta Montanha</button>
-                        <button class="filter-btn" data-filter="cursos">Cursos Trekking</button>
+                        <select id="catalog-filter-select" class="catalog-select">
+                            <option value="all">Todos</option>
+                            <option value="nacional">Agenda Nacional</option>
+                            <option value="internacional">Agenda Internacional</option>
+                            <option value="montanha">Alta Montanha</option>
+                            <option value="cursos">Cursos Trekking</option>
+                        </select>
                     </div>
                     <div class="catalog-list unified-list">
 {unified_html}
