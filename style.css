@@ -393,6 +393,8 @@ body {
     justify-content: flex-end;
     padding: 0 4rem;
     margin-bottom: -1rem;
+    position: relative;
+    z-index: 200; /* Ensure dropdown goes above cards */
 }
 
 /* Custom Dropdown Filters */
@@ -526,8 +528,8 @@ body {
 
 .list-card-tags {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Lado a lado */
+    align-items: center;
     gap: 0.4rem;
     overflow: hidden;
     width: 100%;
@@ -548,9 +550,13 @@ body {
     text-transform: uppercase;
     max-width: 100%;
 }
-
 .list-card-tag svg {
     flex-shrink: 0;
+}
+
+.list-card-tag:nth-child(2) {
+    flex: 0 1 auto; /* Permite encolher mas não empurra os outros elementos */
+    min-width: 0;
 }
 
 .tag-text {
@@ -558,6 +564,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     min-width: 0;
+    display: block;
 }
 
 
