@@ -59,7 +59,7 @@ body {
 }
 
 .logo-img {
-    height: 55px; /* Adjust height based on actual logo proportion */
+    height: 85px; /* Aumentado de 55px para 85px a pedido do usuário */
     width: auto;
     opacity: 0.65;
     mix-blend-mode: exclusion; /* Blends dynamically with background during scroll */
@@ -80,19 +80,29 @@ body {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+    opacity: 0.65;
+    mix-blend-mode: exclusion;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: opacity, mix-blend-mode, transform;
+}
+
+.menu-btn:hover {
+    opacity: 1;
+    mix-blend-mode: normal;
+    transform: scale(1.05);
 }
 
 .menu-btn .line {
     display: block;
-    width: 30px;
-    height: 2px;
+    width: 35px;
+    height: 3px;
     background-color: var(--text-white);
     transition: transform 0.3s, width 0.3s;
 }
 
 .menu-btn:hover .line:nth-child(2) {
-    width: 20px;
+    width: 25px;
 }
 
 /* Typography */
