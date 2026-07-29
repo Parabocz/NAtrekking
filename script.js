@@ -154,21 +154,4 @@ gsap.fromTo('.comunidade-content > *',
     }
 );
 
-// --- Lógica das Abas do Catálogo ---
-const tabs = document.querySelectorAll(".catalog-tab");
-const lists = document.querySelectorAll(".catalog-list");
-
-tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-        tabs.forEach(t => t.classList.remove("active"));
-        tab.classList.add("active");
-        
-        lists.forEach(l => l.style.display = "none");
-        
-        const target = document.getElementById(tab.dataset.target);
-        if (target) {
-            target.style.display = "flex";
-        }
-    });
-});
-
+// The tabs logic was removed since the layout now uses a vertical list of categories without tab buttons.
