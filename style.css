@@ -52,11 +52,26 @@ body {
     background: transparent;
 }
 
-.logo {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    letter-spacing: 0.1em;
-    color: var(--text-white);
+.logo-link {
+    display: inline-block;
+    z-index: 101;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 55px; /* Adjust height based on actual logo proportion */
+    width: auto;
+    opacity: 0.65;
+    mix-blend-mode: exclusion; /* Blends dynamically with background during scroll */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: opacity, transform, mix-blend-mode;
+}
+
+.logo-link:hover .logo-img {
+    opacity: 1;
+    mix-blend-mode: normal;
+    transform: scale(1.05);
 }
 
 .menu-btn {
