@@ -403,7 +403,9 @@ body {
 
 .list-card-img {
     flex: 0 0 260px;
-    height: 380px;
+    height: auto;
+    align-self: stretch;
+    min-height: 380px;
     background-size: cover;
     background-position: center;
 }
@@ -651,7 +653,7 @@ body {
     .row-title { padding: 0 2rem; }
     .catalog-list { padding: 1rem 2rem 2rem 2rem; }
     
-    .list-card-img { flex: 0 0 200px; height: 300px; }
+    .list-card-img { flex: 0 0 200px; height: auto; min-height: 300px; }
     .list-card-content { padding: 2rem; gap: 1rem; }
     .list-card-title { font-size: 2.2rem; }
     .list-card-desc { font-size: 1rem; }
@@ -674,11 +676,11 @@ body {
     .catalog-list { padding: 1rem 1rem 2rem 1rem; gap: 1rem; }
     
     .list-card { border-radius: 8px; }
-    .list-card-img { flex: 0 0 120px; height: 200px; }
+    .list-card-img { flex: 0 0 120px; height: auto; min-height: 180px; }
     .list-card-content { padding: 1rem; gap: 0.5rem; }
     .list-card-title { font-size: 1.2rem; line-height: 1.2; }
     .list-card-duration { font-size: 0.75rem; }
-    .list-card-desc { font-size: 0.8rem; line-height: 1.4; margin-bottom: 0; }
+    .list-card-desc { font-size: 0.8rem; line-height: 1.4; margin-bottom: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .list-card-footer { flex-wrap: wrap; gap: 0.5rem; font-size: 0.8rem; }
     
     .btn-group { flex-direction: column; width: 100%; }
