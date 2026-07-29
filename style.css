@@ -528,8 +528,8 @@ body {
 
 .list-card-tags {
     display: flex;
-    flex-direction: row; /* Lado a lado */
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0.4rem;
     overflow: hidden;
     width: 100%;
@@ -554,17 +554,11 @@ body {
     flex-shrink: 0;
 }
 
-.list-card-tag:nth-child(2) {
-    flex: 0 1 auto; /* Permite encolher mas não empurra os outros elementos */
-    min-width: 0;
-}
-
 .tag-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     min-width: 0;
-    display: block;
 }
 
 
