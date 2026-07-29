@@ -48,11 +48,6 @@ for item in data:
     dur = item['dur'].upper()
     cats_str = " ".join(item['cats'])
     
-    if not link:
-        cta_html = f'''<span class="list-card-next">Link em breve</span>'''
-    else:
-        cta_html = f'''<a href="{link}" target="_blank" class="list-card-next" style="text-decoration: none; color: var(--color-accent); font-weight: 600;">Ver detalhes ↗</a>'''
-
     card = f'''                            <div class="list-card filterable-card" data-category="{cats_str}">
                                 <div class="list-card-img" style="background-image: url('{img}');"></div>
                                 <div class="list-card-content">
@@ -63,9 +58,6 @@ for item in data:
                                         <span class="list-card-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <span class="tag-text">{dur}</span></span>
                                     </div>
                                     <p class="list-card-desc">Acesse para mais informações, roteiro completo e para garantir sua vaga.</p>
-                                    <div class="list-card-footer">
-                                        {cta_html}
-                                    </div>
                                 </div>
                             </div>'''
     cards.append(card)

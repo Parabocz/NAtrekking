@@ -448,9 +448,9 @@ body {
 
 .list-card-tags {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 0.8rem;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
     overflow: hidden;
     width: 100%;
 }
@@ -468,8 +468,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    min-width: 0;
-    flex-shrink: 1;
+    max-width: 100%;
 }
 
 .list-card-tag svg {
@@ -495,18 +494,7 @@ body {
     overflow: hidden;
 }
 
-.list-card-footer {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1rem;
-    color: var(--text-gray);
-}
 
-.list-card-next strong {
-    color: var(--text-white);
-    font-weight: 700;
-}
 
 .list-card-badge {
     background-color: rgba(255, 122, 0, 0.15);
@@ -732,7 +720,6 @@ body {
     .list-card-title { font-size: 1.15rem; line-height: 1.2; }
     .list-card-duration { font-size: 0.75rem; margin-bottom: 0.3rem; }
     .list-card-desc { display: none; }
-    .list-card-footer { flex-wrap: wrap; gap: 0.5rem; font-size: 0.8rem; }
     
     .btn-group { flex-direction: column; width: 100%; }
     .btn-outline { width: 100%; font-size: 0.9rem; }
