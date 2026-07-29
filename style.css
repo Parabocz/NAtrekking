@@ -528,8 +528,8 @@ body {
 
 .list-card-tags {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 0.4rem;
     overflow: hidden;
     width: 100%;
@@ -554,11 +554,17 @@ body {
     flex-shrink: 0;
 }
 
+.list-card-tag:nth-child(2) {
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
 .tag-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     min-width: 0;
+    display: block;
 }
 
 
@@ -787,8 +793,9 @@ body {
     .list-card-img { flex: 0 0 130px; height: 100%; aspect-ratio: 217 / 290; }
     .list-card-content { padding: 0.5rem 0.8rem; gap: 0.3rem; justify-content: center; overflow: hidden; }
     .list-card-title { font-size: 1.1rem; line-height: 1.1; margin: 0; }
-    .list-card-tags { gap: 0.3rem; }
-    .list-card-tag { padding: 0.2rem 0.4rem; font-size: 0.65rem; gap: 0.3rem; }
+    .list-card-tags { gap: 0.3rem; flex-direction: column; align-items: flex-start; }
+    .list-card-tag { padding: 0.2rem 0.4rem; font-size: 0.65rem; gap: 0.3rem; max-width: 100%; }
+    .list-card-tag:nth-child(2) { flex: none; width: 100%; }
     .list-card-tag svg { width: 12px; height: 12px; }
     
     .btn-group { flex-direction: column; width: 100%; }
