@@ -363,20 +363,37 @@ body {
     z-index: 1;
 }
 
-.catalog-row {
-    position: relative;
+.catalog-filters {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
+    padding: 0 4rem;
 }
 
-.row-title {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    color: var(--text-white);
-    padding: 0 4rem;
-    letter-spacing: 0.05em;
+.filter-btn {
+    background-color: transparent;
+    color: var(--text-gray);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--text-white);
+    color: var(--text-white);
+}
+
+.filter-btn.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--text-white);
 }
 
 .catalog-list {
@@ -427,13 +444,30 @@ body {
     text-transform: uppercase;
 }
 
-.list-card-duration {
+.list-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.list-card-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: rgba(255, 102, 0, 0.1);
+    border: 1px solid rgba(255, 102, 0, 0.3);
     color: var(--accent);
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.15em;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    margin: 0;
+}
+
+.list-card-tag svg {
+    flex-shrink: 0;
 }
 
 .list-card-desc {

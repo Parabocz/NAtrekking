@@ -154,4 +154,36 @@ gsap.fromTo('.comunidade-content > *',
     }
 );
 
-// The tabs logic was removed since the layout now uses a vertical list of categories without tab buttons.
+// --- Lógica de Filtros do Catálogo ---
+const filterBtns = document.querySelectorAll('.filter-btn');
+const filterCards = document.querySelectorAll('.filterable-card');
+
+if(filterBtns.length > 0 && filterCards.length > 0) {
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            // Show/hide cards based on category
+            filterCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.style.display = 'flex';
+                } else {
+                    const categories = card.getAttribute('data-category').split(' ');
+                    if (categories.includes(filterValue)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+            
+            // Refresh ScrollTrigger since layout changed
+            setTimeout(() => ScrollTrigger.refresh(), 100);
+        });
+    });
+}
