@@ -155,28 +155,49 @@ gsap.fromTo('.comunidade-content > *',
 );
 
 // --- Lógica de Filtros do Catálogo ---
-const filterSelect = document.getElementById('catalog-filter-select');
+const filterDropdown = document.getElementById('catalog-filter-dropdown');
 const filterCards = document.querySelectorAll('.filterable-card');
 
-if(filterSelect && filterCards.length > 0) {
-    filterSelect.addEventListener('change', (e) => {
-        const filterValue = e.target.value;
+if (filterDropdown && filterCards.length > 0) {
+    const header = filterDropdown.querySelector('.dropdown-header');
+    const selectedText = filterDropdown.querySelector('.dropdown-selected');
+    const items = filterDropdown.querySelectorAll('.dropdown-item');
 
-        // Show/hide cards based on category
-        filterCards.forEach(card => {
-            if (filterValue === 'all') {
-                card.style.display = 'flex';
-            } else {
-                const categories = card.getAttribute('data-category').split(' ');
-                if (categories.includes(filterValue)) {
+    header.addEventListener('click', () => {
+        filterDropdown.classList.toggle('open');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!filterDropdown.contains(e.target)) {
+            filterDropdown.classList.remove('open');
+        }
+    });
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            // Update UI
+            items.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            selectedText.textContent = item.textContent;
+            filterDropdown.classList.remove('open');
+
+            // Apply filter
+            const filterValue = item.getAttribute('data-value');
+            
+            filterCards.forEach(card => {
+                if (filterValue === 'all') {
                     card.style.display = 'flex';
                 } else {
-                    card.style.display = 'none';
+                    const categories = card.getAttribute('data-category').split(' ');
+                    if (categories.includes(filterValue)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
                 }
-            }
+            });
+            
+            setTimeout(() => ScrollTrigger.refresh(), 100);
         });
-        
-        // Refresh ScrollTrigger since layout changed
-        setTimeout(() => ScrollTrigger.refresh(), 100);
     });
 }
