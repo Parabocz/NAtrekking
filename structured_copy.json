@@ -1581,8 +1581,14 @@
             "(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)"
         ],
         "faq": [
-            "<b>Quais documentos preciso?</b><br>Para a viagem vc vai precisar de passaporte ou rg. Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco. RG dentro da validade (valido por 10 anos) e em bom estado.",
-            "<b>Quais vacinas são necessárias?</b><br>Você vai precisar da vacina da febre amarela e retirar o certificado internacional."
+            {
+                "pergunta": "Quais documentos preciso?",
+                "resposta": "Para a viagem vc vai precisar de passaporte ou rg. Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco. RG dentro da validade (valido por 10 anos) e em bom estado."
+            },
+            {
+                "pergunta": "Quais vacinas são necessárias?",
+                "resposta": "Você vai precisar da vacina da febre amarela e retirar o certificado internacional."
+            }
         ],
         "loc": "Patagônia",
         "dur": "18 dias",
