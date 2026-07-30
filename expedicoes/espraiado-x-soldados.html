@@ -59,9 +59,9 @@
 
         <section class="expedition-details-section" id="detalhes">
             <div class="container expedition-details-container">
-                <!-- Bento Grid: Intro, Incluso, Não Incluso -->
-                <div class="bento-grid">
-                    <div class="bento-box bento-intro">
+            <div class="bento-grid" style="grid-template-columns: 1fr; margin-bottom: 3rem;">
+                <div class="bento-box bento-intro">
+                    
                         <h2 class="bento-title">O que esperar</h2>
                         <div class="bento-content expedition-intro-text">
                             <p>Desafie seus limites na travessia Espraiado x Soldados!</p><p>Prepare-se para uma aventura incrível por trilhas selvagens, cachoeiras deslumbrantes e paisagens que vão tirar seu fôlego. Natureza pura, emoção e superação te esperam nesse percurso imperdível.</p><p>05 a 07 de setembro de 2026</p><p>Será no formato auto suficiente onde o participante ira carregar todos os seus equipamentos pessoais no período de caminhada.</p><div class='expedition-specs' style='margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px;'><h4 style='color: var(--primary-color); margin-bottom: 1rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;'>Especificações da Expedição</h4><ul style='list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem;'><li style='color: rgba(255,255,255,0.8);'><strong>Data:</strong> 05 a 07 de setembrp de 2026</li><li style='color: rgba(255,255,255,0.8);'><strong>Ponto de encontro:</strong> Curitiba e Joinville</li><li style='color: rgba(255,255,255,0.8);'><strong>Ganho de elevação:</strong> 1488m</li><li style='color: rgba(255,255,255,0.8);'><strong>Perda de elevação:</strong> 1878m</li><li style='color: rgba(255,255,255,0.8);'><strong>Distância:</strong> 46,6km aprox</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Física:</strong> Difícil</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Técnica:</strong> Intermediária</li></ul></div>
@@ -169,6 +169,526 @@
 
                 <!-- Accordion for FAQs and Policies -->
                 <div class="faq-container">
+                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Avisos Importantes</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content"><p>Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p></div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+                <!-- CTA Footer -->
+                <div id="garantir-vaga" class="cta-footer">
+                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
+                    <a href="https://natrekking.com.br/espraiadoxsoldados" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
+                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="../script.js?v=2.0"></script>
+    <script>
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const body = item.querySelector('.accordion-body');
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.accordion-item.active').forEach(a => {
+                    a.classList.remove('active');
+                    a.querySelector('.accordion-body').style.maxHeight = '0';
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Timeline scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
+                </div>
+            </div>
+
+            <div class="timeline-container" style="margin-bottom: 3rem;">
+                
+                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>22:30 (04/09) Saída de Curitiba</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>00:10 Saída de Joinville (Expoville)</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>07:00 Chegada ao inicio da trilha</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>09:00 Chegada ao Balanço do Infinito</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>15:00 Chegada ao ponto de acampamento</h3>
+                            <p>Restante da tarde livre</p>
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>08:00 Saída do acampamento</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>12:00 Chegada ao Morro Boa Vista (ponto mais alto de Santa Catarina)</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>16:00 Chegada ao próximo ponto de acampamento</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>13:00 Chegada ao Soldados de Sebold</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>15:00 Saída em direção ao estacionamento do Soldados</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>17:00 Chegada ao estacionamento do Soldados</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>22:30 Chegada em Joinville aprox</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>23:45 Chegada em Curitiba aprox</h3>
+                            <p>Expedição Monte Roraima</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Accordion for FAQs and Policies -->
+                <div class="faq-container">
+                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Avisos Importantes</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content"><p>Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p></div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+                <!-- CTA Footer -->
+                <div id="garantir-vaga" class="cta-footer">
+                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
+                    <a href="https://natrekking.com.br/espraiadoxsoldados" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
+                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="../script.js?v=2.0"></script>
+    <script>
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const body = item.querySelector('.accordion-body');
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.accordion-item.active').forEach(a => {
+                    a.classList.remove('active');
+                    a.querySelector('.accordion-body').style.maxHeight = '0';
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Timeline scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
+            </div>
+
+            <div class="bento-grid" style="margin-bottom: 3rem;">
+                <div class="bento-box bento-included">
+                    
+                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
+                        <ul class="bento-list list-check">
+                            <li>Transporte de ida e volta</li><li>Seguro acidentes pessoais</li><li>Rastreamento em tempo real</li><li>Transporte das mochilas da Pedra da Águia até o inicio da trilha</li><li>Contato N.A Internacional</li><li>Politicas de privacidade</li><li>N.A Trekking - CNPJ: 41.266.722/0001-70</li><li>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</li><li>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</li>
+                        </ul>
+                    </div>
+                    <div class="bento-box bento-excluded">
+                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
+                        <ul class="bento-list list-cross">
+                            <li>Consulte nossa equipe para detalhes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Vertical Timeline for Itinerary -->
+                <div class="timeline-container">
+                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>22:30 (04/09) Saída de Curitiba</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>00:10 Saída de Joinville (Expoville)</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>07:00 Chegada ao inicio da trilha</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>09:00 Chegada ao Balanço do Infinito</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>15:00 Chegada ao ponto de acampamento</h3>
+                            <p>Restante da tarde livre</p>
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>08:00 Saída do acampamento</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>12:00 Chegada ao Morro Boa Vista (ponto mais alto de Santa Catarina)</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>16:00 Chegada ao próximo ponto de acampamento</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>13:00 Chegada ao Soldados de Sebold</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>15:00 Saída em direção ao estacionamento do Soldados</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>17:00 Chegada ao estacionamento do Soldados</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>22:30 Chegada em Joinville aprox</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>23:45 Chegada em Curitiba aprox</h3>
+                            <p>Expedição Monte Roraima</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Accordion for FAQs and Policies -->
+                <div class="faq-container">
+                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Avisos Importantes</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content"><p>Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p></div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+                <!-- CTA Footer -->
+                <div id="garantir-vaga" class="cta-footer">
+                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
+                    <a href="https://natrekking.com.br/espraiadoxsoldados" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
+                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="../script.js?v=2.0"></script>
+    <script>
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const body = item.querySelector('.accordion-body');
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.accordion-item.active').forEach(a => {
+                    a.classList.remove('active');
+                    a.querySelector('.accordion-body').style.maxHeight = '0';
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Timeline scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
+                </div>
+                <div class="bento-box bento-excluded">
+                    
+                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
+                        <ul class="bento-list list-cross">
+                            <li>Consulte nossa equipe para detalhes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Vertical Timeline for Itinerary -->
+                <div class="timeline-container">
+                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>22:30 (04/09) Saída de Curitiba</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>00:10 Saída de Joinville (Expoville)</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>07:00 Chegada ao inicio da trilha</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>09:00 Chegada ao Balanço do Infinito</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>15:00 Chegada ao ponto de acampamento</h3>
+                            <p>Restante da tarde livre</p>
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>08:00 Saída do acampamento</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>12:00 Chegada ao Morro Boa Vista (ponto mais alto de Santa Catarina)</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>16:00 Chegada ao próximo ponto de acampamento</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>13:00 Chegada ao Soldados de Sebold</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>15:00 Saída em direção ao estacionamento do Soldados</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>17:00 Chegada ao estacionamento do Soldados</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>22:30 Chegada em Joinville aprox</h3>
+                            
+                        </div>
+                    </div><div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>23:45 Chegada em Curitiba aprox</h3>
+                            <p>Expedição Monte Roraima</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Accordion for FAQs and Policies -->
+                <div class="faq-container">
+                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Avisos Importantes</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content"><p>Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p></div>
+                    </div>
+                </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="price-container" style="margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem; color: #fff; margin-bottom: 2rem; text-align: center;">Investimento</h2>
+                <div class="bento-box" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 2rem; text-align: center;">
+                    <p style='font-size: 1.1rem;'>Consulte nossa equipe para obter os valores e formas de pagamento atualizados.</p><br><a href='https://wa.me/5541999999999' class='btn btn-primary'>Consultar Valores</a>
+                </div>
+            </div>
+
+            <div class="faq-container">
                     <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
                     <div class="accordion">
                         <div class="accordion-item">

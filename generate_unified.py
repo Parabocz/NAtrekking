@@ -191,7 +191,7 @@ for item in data:
 
             buckets = {
                 'specs': [], 'intro': [], 'warnings': [],
-                'timeline_data': [], 'included': [], 'excluded': [], 'faq_data': [],
+                'timeline_data': [], 'included': [], 'excluded': [], 'faq_data': [], 'price_data': [],
             }
             
             ctx = {
@@ -218,6 +218,9 @@ for item in data:
             for line in all_lines:
                 ll = line.lower()
                 if is_noise(line):
+                    continue
+                if re.search(r'(R\$|US\$|USD)\s*[\d\.,]+', line, re.IGNORECASE):
+                    buckets['price_data'].append(line)
                     continue
                 
                 if ll in ['incluso no investimento', 'incluso no pacote', 'o que está incluso']:
@@ -334,6 +337,13 @@ for item in data:
                     </div>
                 </div>'''
                 
+
+            if buckets['price_data']:
+                price_content = "".join(f"<p style='font-size: 1.1rem; margin-bottom: 0.5rem;'>{p}</p>" for p in buckets['price_data'])
+                price_content += "<br><a href='https://wa.me/5541999999999' class='btn btn-primary'>Garantir minha vaga</a>"
+            else:
+                price_content = "<p style='font-size: 1.1rem;'>Consulte nossa equipe para obter os valores e formas de pagamento atualizados.</p><br><a href='https://wa.me/5541999999999' class='btn btn-primary'>Consultar Valores</a>"
+
             faq_content = faq_html or """<div class="accordion-item">
                 <button class="accordion-header"><span>Tem dúvidas?</span><span class="icon">+</span></button>
                 <div class="accordion-body"><div class="accordion-content"><p>Entre em contato com nossa equipe — estamos prontos para ajudar você a planejar a expedição perfeita.</p></div></div>
@@ -351,6 +361,7 @@ for item in data:
         page_html = page_html.replace('{{ EXCLUDED_CONTENT }}', excluded_content)
         page_html = page_html.replace('{{ TIMELINE_CONTENT }}', timeline_content)
         page_html = page_html.replace('{{ FAQ_CONTENT }}', faq_content)
+        page_html = page_html.replace('{{ PRICE_CONTENT }}', price_content)
         page_html = page_html.replace('{{ ORIGINAL_LINK }}', url or '#')
 
                 # 3. Conditional Elevation

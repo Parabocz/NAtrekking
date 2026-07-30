@@ -59,9 +59,9 @@
 
         <section class="expedition-details-section" id="detalhes">
             <div class="container expedition-details-container">
-                <!-- Bento Grid: Intro, Incluso, Não Incluso -->
-                <div class="bento-grid">
-                    <div class="bento-box bento-intro">
+            <div class="bento-grid" style="grid-template-columns: 1fr; margin-bottom: 3rem;">
+                <div class="bento-box bento-intro">
+                    
                         <h2 class="bento-title">O que esperar</h2>
                         <div class="bento-content expedition-intro-text">
                             {{ INTRO_CONTENT }}
@@ -91,6 +91,260 @@
 
                 <!-- Accordion for FAQs and Policies -->
                 <div class="faq-container">
+                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
+                    <div class="accordion">
+                        {{ FAQ_CONTENT }}
+                    </div>
+                </div>
+            </div>
+                <!-- CTA Footer -->
+                <div id="garantir-vaga" class="cta-footer">
+                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
+                    <a href="{{ ORIGINAL_LINK }}" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
+                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="../script.js?v=2.0"></script>
+    <script>
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const body = item.querySelector('.accordion-body');
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.accordion-item.active').forEach(a => {
+                    a.classList.remove('active');
+                    a.querySelector('.accordion-body').style.maxHeight = '0';
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Timeline scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
+                </div>
+            </div>
+
+            <div class="timeline-container" style="margin-bottom: 3rem;">
+                
+                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
+                    <div class="timeline">
+                        {{ TIMELINE_CONTENT }}
+                    </div>
+                </div>
+
+                <!-- Accordion for FAQs and Policies -->
+                <div class="faq-container">
+                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
+                    <div class="accordion">
+                        {{ FAQ_CONTENT }}
+                    </div>
+                </div>
+            </div>
+                <!-- CTA Footer -->
+                <div id="garantir-vaga" class="cta-footer">
+                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
+                    <a href="{{ ORIGINAL_LINK }}" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
+                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="../script.js?v=2.0"></script>
+    <script>
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const body = item.querySelector('.accordion-body');
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.accordion-item.active').forEach(a => {
+                    a.classList.remove('active');
+                    a.querySelector('.accordion-body').style.maxHeight = '0';
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Timeline scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
+            </div>
+
+            <div class="bento-grid" style="margin-bottom: 3rem;">
+                <div class="bento-box bento-included">
+                    
+                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
+                        <ul class="bento-list list-check">
+                            {{ INCLUDED_CONTENT }}
+                        </ul>
+                    </div>
+                    <div class="bento-box bento-excluded">
+                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
+                        <ul class="bento-list list-cross">
+                            {{ EXCLUDED_CONTENT }}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Vertical Timeline for Itinerary -->
+                <div class="timeline-container">
+                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
+                    <div class="timeline">
+                        {{ TIMELINE_CONTENT }}
+                    </div>
+                </div>
+
+                <!-- Accordion for FAQs and Policies -->
+                <div class="faq-container">
+                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
+                    <div class="accordion">
+                        {{ FAQ_CONTENT }}
+                    </div>
+                </div>
+            </div>
+                <!-- CTA Footer -->
+                <div id="garantir-vaga" class="cta-footer">
+                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
+                    <a href="{{ ORIGINAL_LINK }}" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
+                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="../script.js?v=2.0"></script>
+    <script>
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const body = item.querySelector('.accordion-body');
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.accordion-item.active').forEach(a => {
+                    a.classList.remove('active');
+                    a.querySelector('.accordion-body').style.maxHeight = '0';
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Timeline scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
+                </div>
+                <div class="bento-box bento-excluded">
+                    
+                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
+                        <ul class="bento-list list-cross">
+                            {{ EXCLUDED_CONTENT }}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Vertical Timeline for Itinerary -->
+                <div class="timeline-container">
+                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
+                    <div class="timeline">
+                        {{ TIMELINE_CONTENT }}
+                    </div>
+                </div>
+
+                <!-- Accordion for FAQs and Policies -->
+                <div class="faq-container">
+                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
+                    <div class="accordion">
+                        {{ FAQ_CONTENT }}
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="price-container" style="margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem; color: #fff; margin-bottom: 2rem; text-align: center;">Investimento</h2>
+                <div class="bento-box" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 2rem; text-align: center;">
+                    {{ PRICE_CONTENT }}
+                </div>
+            </div>
+
+            <div class="faq-container">
                     <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
                     <div class="accordion">
                         {{ FAQ_CONTENT }}
