@@ -130,12 +130,21 @@ for exp in data:
 
     page_html = template.replace('{{ TITLE }}', exp.get('title', 'Expedição'))
     img_path = exp.get('img', 'public/hero_mountain_bg_1785256610841.jpg').replace('public/', '/')
-    page_html = page_html.replace('{{ HERO_IMAGE }}', img_path)
+    page_html = page_html.replace('{{ BACKGROUND_IMG }}', img_path)
+    page_html = page_html.replace('..//public', '..') # safety
     page_html = page_html.replace('{{ DATES }}', exp.get('dates', ''))
-    page_html = page_html.replace('{{ DURATION }}', exp.get('dur', ''))
-    page_html = page_html.replace('{{ LOCATION }}', exp.get('loc', ''))
+    page_html = page_html.replace('{{ DUR }}', exp.get('dur', ''))
+    page_html = page_html.replace('{{ LOC }}', exp.get('loc', ''))
     page_html = page_html.replace('{{ DIFFICULTY }}', exp.get('difficulty', ''))
-    page_html = page_html.replace('{{ ELEVATION }}', exp.get('elevation', ''))
+    elevation_val = exp.get('elevation', 'Consultar')
+    if elevation_val and elevation_val != 'N/A' and elevation_val != 'Consultar':
+        elevation_html = f'''<div class="meta-item">
+            <span class="meta-label">Elevação</span>
+            <span class="meta-value">{elevation_val}</span>
+        </div>'''
+    else:
+        elevation_html = ''
+    page_html = page_html.replace('{{ ELEVATION_BLOCK }}', elevation_html)
     
     page_html = page_html.replace('{{ HISTORIA_CONTENT }}', historia_content)
     page_html = page_html.replace('{{ VIBE_CONTENT }}', vibe_content)
