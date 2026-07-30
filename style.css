@@ -958,7 +958,7 @@ ACCORDION
 
     padding: 6rem 5%;
 
-    background-color: var(--bg-color);
+    background-color: var(--bg-dark);
 
     position: relative;
 
@@ -1250,7 +1250,7 @@ ACCORDION
 
     border-radius: 50%;
 
-    background: var(--bg-color);
+    background: var(--bg-dark);
 
     border: 2px solid var(--primary-color);
 
@@ -1791,7 +1791,7 @@ ACCORDION
 /* Expedition Details Section */
 .expedition-details-section {
     padding: 6rem 5%;
-    background-color: var(--bg-color);
+    background-color: var(--bg-dark);
     position: relative;
     z-index: 10;
 }
@@ -1956,7 +1956,7 @@ ACCORDION
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: var(--bg-color);
+    background: var(--bg-dark);
     border: 2px solid rgba(255,255,255,0.2);
     transition: all 0.3s ease;
     z-index: 2;
@@ -2097,8 +2097,8 @@ ACCORDION
 
 /* --- WIX STATIC CONTENT OVERRIDES --- */
 #wix-static-content {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-dark);
+    color: var(--text-white);
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -2132,7 +2132,7 @@ ACCORDION
 #wix-static-content h4, 
 #wix-static-content h5, 
 #wix-static-content h6 {
-    color: var(--accent-color) !important;
+    color: var(--accent) !important;
     margin-top: 2rem !important;
     margin-bottom: 1rem !important;
     font-weight: 700 !important;
