@@ -162,7 +162,7 @@ for exp in data:
     page_html = page_html.replace('{{ FAQ_CONTENT }}', faq_html)
     page_html = page_html.replace('{{ POLITICA_CONTENT }}', politica_html)
 
-        wix_html = ""
+    wix_html = ""
     if 'wix_static' in buckets:
         import os
         from bs4 import BeautifulSoup
