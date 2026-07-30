@@ -162,10 +162,10 @@ for exp in data:
     page_html = page_html.replace('{{ POLITICA_CONTENT }}', politica_html)
 
     wix_html = ""
-    if 'wix_static' in content:
+    if 'wix_static' in buckets:
         import os
         from bs4 import BeautifulSoup
-        wix_path = content['wix_static']
+        wix_path = buckets['wix_static']
         if os.path.exists(wix_path):
             with open(wix_path, 'r', encoding='utf-8') as wf:
                 wsoup = BeautifulSoup(wf.read(), 'html.parser')
