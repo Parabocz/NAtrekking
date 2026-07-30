@@ -1,0 +1,111 @@
+
+/* ── CTA Footer inside expedition page ─────────────────────────── */
+.cta-footer {
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.cta-footer-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 2.5rem;
+    color: var(--text-primary);
+}
+
+/* ── Bento Box color variants ───────────────────────────────────── */
+.bento-included {
+    border-color: rgba(76, 175, 80, 0.2);
+}
+
+.bento-included:hover {
+    border-color: rgba(76, 175, 80, 0.4);
+    box-shadow: 0 0 30px rgba(76, 175, 80, 0.05);
+}
+
+.bento-excluded {
+    border-color: rgba(255, 75, 75, 0.2);
+}
+
+.bento-excluded:hover {
+    border-color: rgba(255, 75, 75, 0.3);
+    box-shadow: 0 0 30px rgba(255, 75, 75, 0.05);
+}
+
+.bento-subtitle i.fa-check {
+    color: #4CAF50;
+}
+
+.bento-subtitle i.fa-xmark {
+    color: #ff4b4b;
+}
+
+/* ── Timeline polish ────────────────────────────────────────────── */
+.timeline-item:first-child .timeline-dot {
+    background: var(--primary-color);
+    box-shadow: 0 0 12px var(--primary-color);
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    border-left: 3px solid var(--primary-color);
+    padding-left: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+/* stagger the timeline item transitions */
+.timeline-item:nth-child(even) .timeline-content {
+    background: rgba(255,255,255,0.035);
+}
+
+/* ── Accordion polish ───────────────────────────────────────────── */
+.accordion-header {
+    font-family: var(--font-body, 'Outfit', sans-serif);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.accordion-item.active {
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+.accordion-content p {
+    margin-bottom: 0.8rem;
+}
+
+/* ── Expedition intro text ──────────────────────────────────────── */
+.expedition-intro-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.expedition-intro-text p:first-child {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.85);
+}
+
+/* ── Section titles ─────────────────────────────────────────────── */
+.timeline-main-title, .faq-main-title {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-main-title::after, .faq-main-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+}

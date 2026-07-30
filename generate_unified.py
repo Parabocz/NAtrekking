@@ -129,7 +129,8 @@ for exp in data:
         """
 
     page_html = template.replace('{{ TITLE }}', exp.get('title', 'Expedição'))
-    page_html = page_html.replace('{{ HERO_IMAGE }}', "../" + exp.get('img', 'public/hero_mountain_bg_1785256610841.jpg'))
+    img_path = exp.get('img', 'public/hero_mountain_bg_1785256610841.jpg').replace('public/', '/')
+    page_html = page_html.replace('{{ HERO_IMAGE }}', img_path)
     page_html = page_html.replace('{{ DATES }}', exp.get('dates', ''))
     page_html = page_html.replace('{{ DURATION }}', exp.get('dur', ''))
     page_html = page_html.replace('{{ LOCATION }}', exp.get('loc', ''))

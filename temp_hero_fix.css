@@ -1,0 +1,29 @@
+
+/* ── FIX: Hero título nas páginas de expedição ─────────────────── */
+.expedition-hero .hero-pre-headline,
+.expedition-hero .hero-headline,
+.expedition-hero .expedition-meta,
+.expedition-hero .btn-primary {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.expedition-hero-content {
+    align-items: flex-start;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+}
+
+.expedition-hero .hero-headline {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.expedition-hero .hero-pre-headline {
+    color: var(--accent);
+    letter-spacing: 0.3em;
+    font-size: 0.9rem;
+    opacity: 1 !important;
+}
