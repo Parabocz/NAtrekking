@@ -203,7 +203,7 @@ if (filterDropdown && filterCards.length > 0) {
 }
 
 // --- Accordion Logic ---
-document.addEventListener('DOMContentLoaded', () => {
+// Accordion logic without DOMContentLoaded wrapper
     const accordions = document.querySelectorAll('.accordion-header');
     accordions.forEach(acc => {
         acc.addEventListener('click', function() {
