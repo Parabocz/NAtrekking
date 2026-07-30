@@ -71,56 +71,75 @@ for exp in data:
         atencao_content = ""
 
     timeline_html = ""
-    for step in buckets['cronograma']:
-        step_title = step.get('titulo', 'Passo')
-        step_details = step.get('detalhes', [])
-        if not step_details and 'descricao' in step:
-            # Handle string with newlines if 'descricao' is used
-            step_details = step['descricao'].split('\n')
-        details_html = "".join(f"<li>{d}</li>" for d in step_details)
-        timeline_html += f"""
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3 class="timeline-title">{step_title}</h3>
-                <ul class="timeline-details">
-                    {details_html}
-                </ul>
+    if isinstance(buckets.get('cronograma'), str):
+        timeline_html = buckets['cronograma']
+    else:
+        for step in buckets.get('cronograma', []):
+            step_title = step.get('titulo', 'Passo')
+            step_details = step.get('detalhes', [])
+            if not step_details and 'descricao' in step:
+                step_details = step['descricao'].split('\n')
+            details_html = "".join(f"<li>{d}</li>" for d in step_details)
+            timeline_html += f"""
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">{step_title}</h3>
+                    <ul class="timeline-details">
+                        {details_html}
+                    </ul>
+                </div>
             </div>
-        </div>
-        """
+            """
     if not timeline_html:
         timeline_html = "<p>Roteiro detalhado em breve.</p>"
 
-    included_html = "".join(f"<li><i class='fas fa-check'></i> {item}</li>" for item in buckets['incluso']) if buckets['incluso'] else "<li>Consultar equipe</li>"
-    excluded_html = "".join(f"<li><i class='fas fa-times'></i> {item}</li>" for item in buckets['nao_incluso']) if buckets['nao_incluso'] else "<li>Consultar equipe</li>"
+    if isinstance(buckets.get('incluso'), str):
+        included_html = buckets['incluso']
+    else:
+        included_html = "".join(f"<li><i class='fas fa-check'></i> {item}</li>" for item in buckets.get('incluso', [])) if buckets.get('incluso') else "<li>Consultar equipe</li>"
+        
+    if isinstance(buckets.get('nao_incluso', []), str):
+        excluded_html = buckets['nao_incluso']
+    elif isinstance(buckets.get('excluso', []), str):
+        excluded_html = buckets['excluso']
+    else:
+        items = buckets.get('nao_incluso', buckets.get('excluso', []))
+        excluded_html = "".join(f"<li><i class='fas fa-times'></i> {item}</li>" for item in items) if items else "<li>Consultar equipe</li>"
 
-    if buckets['investimento']:
+    if isinstance(buckets.get('price', ''), str) and buckets.get('price', ''):
+        price_content = buckets['price']
+    elif buckets.get('investimento'):
         price_content = "".join(f"<p style='font-size: 1.1rem; margin-bottom: 0.5rem;'>{p}</p>" for p in buckets['investimento'])
         price_content += "<br><a href='https://wa.me/5541999999999' class='btn btn-primary'>Garantir minha vaga</a>"
     else:
         price_content = "<p style='font-size: 1.1rem;'>Consulte nossa equipe para obter os valores e formas de pagamento atualizados.</p><br><a href='https://wa.me/5541999999999' class='btn btn-primary'>Consultar Valores</a>"
 
     faq_html = ""
-    for faq in buckets['faq']:
-        q = faq.get('pergunta', '')
-        a_list = faq.get('resposta', [])
-        if isinstance(a_list, str):
-            a_list = [a_list]
-        a_html = "".join(f"<p>{ans}</p>" for ans in a_list)
-        faq_html += f"""
-        <div class="accordion-item">
-            <button class="accordion-header">
-                {q}
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="accordion-content">
-                {a_html}
+    if isinstance(buckets.get('faq'), str):
+        faq_html = buckets['faq']
+    else:
+        for faq in buckets.get('faq', []):
+            q = faq.get('pergunta', '')
+            a_list = faq.get('resposta', [])
+            if isinstance(a_list, str):
+                a_list = [a_list]
+            a_html = "".join(f"<p>{ans}</p>" for ans in a_list)
+            faq_html += f"""
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    {q}
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    {a_html}
+                </div>
             </div>
-        </div>
-        """
+            """
 
     politica_html = ""
-    if buckets['politica']:
+    if isinstance(buckets.get('politica'), str):
+        politica_html = buckets['politica']
+    elif buckets.get('politica'):
         p_html = "".join(f"<p style='margin-bottom: 0.5rem;'>{p}</p>" for p in buckets['politica'])
         politica_html = f"""
         <div class="accordion-item">
@@ -155,7 +174,14 @@ for exp in data:
     page_html = page_html.replace('{{ HISTORIA_CONTENT }}', historia_content)
     page_html = page_html.replace('{{ VIBE_CONTENT }}', vibe_content)
     page_html = page_html.replace('{{ ATENCAO_CONTENT }}', atencao_content)
+    
+    atencao_content = buckets.get('atencao', '')
+    if isinstance(atencao_content, list):
+        atencao_content = "".join(f"<p>{p}</p>" for p in atencao_content)
+    
+    page_html = page_html.replace('{{ ATENCAO_CONTENT }}', atencao_content)
     page_html = page_html.replace('{{ TIMELINE_CONTENT }}', timeline_html)
+    
     page_html = page_html.replace('{{ INCLUDED_CONTENT }}', included_html)
     page_html = page_html.replace('{{ EXCLUDED_CONTENT }}', excluded_html)
     page_html = page_html.replace('{{ PRICE_CONTENT }}', price_content)
