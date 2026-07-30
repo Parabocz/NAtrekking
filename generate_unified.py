@@ -73,6 +73,9 @@ for exp in data:
     for step in buckets['cronograma']:
         step_title = step.get('titulo', 'Passo')
         step_details = step.get('detalhes', [])
+        if not step_details and 'descricao' in step:
+            # Handle string with newlines if 'descricao' is used
+            step_details = step['descricao'].split('\n')
         details_html = "".join(f"<li>{d}</li>" for d in step_details)
         timeline_html += f"""
         <div class="timeline-item">
@@ -100,6 +103,8 @@ for exp in data:
     for faq in buckets['faq']:
         q = faq.get('pergunta', '')
         a_list = faq.get('resposta', [])
+        if isinstance(a_list, str):
+            a_list = [a_list]
         a_html = "".join(f"<p>{ans}</p>" for ans in a_list)
         faq_html += f"""
         <div class="accordion-item">
