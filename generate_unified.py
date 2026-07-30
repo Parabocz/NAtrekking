@@ -1,3 +1,4 @@
+import re
 import os
 import json
 
@@ -173,8 +174,10 @@ for exp in data:
                 site_pages = wsoup.find(id='SITE_PAGES')
                 if site_pages:
                     wix_html = styles + str(site_pages)
+                    wix_html = re.sub(r'--alpha\s+-', '--alpha-', wix_html)
                 else:
                     wix_html = styles + ''.join([str(c) for c in wsoup.body.children if c.name != 'script'])
+                    wix_html = re.sub(r'--alpha\s+-', '--alpha-', wix_html)
     
     page_html = page_html.replace('{{ WIX_STATIC_HTML }}', wix_html)
 
