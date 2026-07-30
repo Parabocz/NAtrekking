@@ -21,7 +21,7 @@
 
     <main>
         <section class="hero expedition-hero">
-            <div class="hero-bg" style="background-image: url('../public/patagonia_argentina_hero_1785360613356.jpg');"></div>
+            <div class="hero-bg" style="background-image: url('../{{ BACKGROUND_IMG }}');"></div>
             <div class="hero-overlay"></div>
             <div class="noise-overlay"></div>
             <div class="hero-content expedition-hero-content">
@@ -31,17 +31,17 @@
                 <div class="expedition-meta">
                     <div class="meta-item">
                         <span class="meta-label">Data</span>
-                        <span class="meta-value">07 A 13/JAN/2027</span>
+                        <span class="meta-value">07 a 13/jan/2027</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Local</span>
-                        <span class="meta-value">ARGENTINA (EL CALAFATE/CHALTÉN)</span>
+                        <span class="meta-value">{{ LOC }}</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Duração</span>
-                        <span class="meta-value">7 DIAS</span>
+                        <span class="meta-value">{{ DUR }}</span>
                     </div>
-                    
+                    {{ ELEVATION_BLOCK }}
                     <div class="meta-item">
                         <span class="meta-label">Dificuldade</span>
                         <span class="meta-value">Moderada</span>
@@ -59,412 +59,53 @@
 
         <section class="expedition-details-section" id="detalhes">
             <div class="container expedition-details-container">
+            <!-- 1 & 2: Historia e Vibe -->
             <div class="bento-grid" style="grid-template-columns: 1fr; margin-bottom: 3rem;">
-                <div class="bento-box bento-intro">
-                    
-                        <h2 class="bento-title">O que esperar</h2>
-                        <div class="bento-content expedition-intro-text">
-                            <p>07 a 13 de janeiro de 2027</p><p>Nossa expedição  será uma mescla entre passeios turísticos e hikings entre montanhas, lagunas e glaciares, dito isso não se engane ainda assim necessitará de um bom preparo físico para completar todos os atrativos.</p><p>Para nossa expedição não necessitara de equipamentos de pernoite pois ao final do dia sempre retornamos para a nossa hospedagem.</p><p>13 de janeiro de 2027</p><div class='expedition-specs' style='margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px;'><h4 style='color: var(--primary-color); margin-bottom: 1rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;'>Especificações da Expedição</h4><ul style='list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem;'><li style='color: rgba(255,255,255,0.8);'><strong>Data:</strong> 07 a 13 de janeiro de 2027</li><li style='color: rgba(255,255,255,0.8);'><strong>Ponto de encontro:</strong> Hospedagem em El Calafate</li><li style='color: rgba(255,255,255,0.8);'><strong>Distância:</strong> 70 km aprox</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Física:</strong> intermediário</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Técnica:</strong> intermediário</li></ul></div>
-                        </div>
+                <div class="bento-box bento-intro" style="padding: 3rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;">O Destino</h2>
+                    <div style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem; color: #ddd;">
+                        <p>Detalhes completos em breve.</p>
                     </div>
-                    <div class="bento-box bento-included">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
-                        <ul class="bento-list list-check">
-                            <li>Transporte aeroporto/hospedagem, hospedagem/aeroporto.</li><li>Hospedagem (quarto compartilhado) do dia 07 a 12 de janeiro</li><li>Transporte ida e volta Parque Nacional Los Glaciares</li><li>Entrada Parque Nacional Los Glaciares</li><li>Transporte El Chalten/Aeroporto</li>
-                        </ul>
-                    </div>
-                    <div class="bento-box bento-excluded">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer duvida é só perguntar.</li><li>Desconto para pagamento a vista via Wise fica 2.331,35 dólares</li><li>Desconto para pagamento parcelado via Wise fica 2.606,06 dólares em 1+5 de 434,34 dólares</li><li>(jul, ago, set, out, nov, dez)</li><li>Pagamento parcelado no Pix</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Como vai rolar a trip</h2>
+                    <div style="font-size: 1.1rem; line-height: 1.6; color: #bbb;">
+                        <p style='margin-bottom: 1rem;'>Nossa expedição  será uma mescla entre passeios turísticos e hikings entre montanhas, lagunas e glaciares, dito isso não se engane ainda assim necessitará de um bom preparo físico para completar todos os atrativos.</p><p style='margin-bottom: 1rem;'>(*Os transportes foram pensados para melhor lhe atender, para sua experiencia ser a mais confortável possível, por isso os transportes podem variar sendo de van, carros particulares, barco, onibus..)</p><p style='margin-bottom: 1rem;'>Levamos um dispositivo spotX para emergências. Através de sua tecnologia ativaremos a função de rastreamento por satélite, para que seus familiares e amigos possam acompanhar seu progresso em campo, em seus computadores ou celulares através do portal SpotFINDME. O dispositivo envia waypoints (pontos em um mapa). Dessa forma, as pessoas que te seguem poderão conhecer sua jornada online.</p><p style='margin-bottom: 1rem;'>Incluso também três camisetas especiais da N.A Trekking ( 2 unidades com proteção UV, 1 unidade promocional de algodão).</p><p style='margin-bottom: 1rem;'>Seguro Individual Internacional com extensão para atividades de aventura. (cobertura de 07 a 13 de janeiro de 2027) (Caso necessitar mais dias podemos cotar para você) (Obrigatório estar coberto desde o dia de saída do Brasil até o dia de retorno para o Brasil)</p><p style='margin-bottom: 1rem;'>(Caso necessitar mais dias podemos cotar para você) (Obrigatório estar coberto desde o dia de saída do Brasil até o dia de retorno para o Brasil)</p><p style='margin-bottom: 1rem;'>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p style='margin-bottom: 1rem;'>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p style='margin-bottom: 1rem;'>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p style='margin-bottom: 1rem;'>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p style='margin-bottom: 1rem;'>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p style='margin-bottom: 1rem;'>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p style='margin-bottom: 1rem;'>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p style='margin-bottom: 1rem;'>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p>
                     </div>
                 </div>
             </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/calafate-chalten-especial" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
+            <!-- 3: Specs (already handled in the hero section) -->
+
+            <!-- 5: Atenção (Warnings) -->
+            <div style='background: rgba(244,67,54,0.1); border-left: 4px solid #F44336; padding: 1.5rem; margin-bottom: 3rem; border-radius: 4px;'>
+            <h3 style='color: #F44336; margin-bottom: 1rem;'><i class='fas fa-exclamation-triangle'></i> Atenção</h3>
+            <p style='margin-bottom:0.5rem; color:#ddd;'>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p style='margin-bottom:0.5rem; color:#ddd;'>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS.</p>
         </div>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
-                </div>
-            </div>
-
+            <!-- 4: Cronograma -->
             <div class="timeline-container" style="margin-bottom: 3rem;">
-                
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
+                <h2 class="section-title">O Roteiro Passo a Passo</h2>
+                <div class="timeline">
+                    <p>Roteiro detalhado em breve.</p>
                 </div>
             </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/calafate-chalten-especial" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
-            </div>
-
+            <!-- 6 & 7: Incluso / Não Incluso -->
             <div class="bento-grid" style="margin-bottom: 3rem;">
                 <div class="bento-box bento-included">
-                    
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
-                        <ul class="bento-list list-check">
-                            <li>Transporte aeroporto/hospedagem, hospedagem/aeroporto.</li><li>Hospedagem (quarto compartilhado) do dia 07 a 12 de janeiro</li><li>Transporte ida e volta Parque Nacional Los Glaciares</li><li>Entrada Parque Nacional Los Glaciares</li><li>Transporte El Chalten/Aeroporto</li>
-                        </ul>
-                    </div>
-                    <div class="bento-box bento-excluded">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer duvida é só perguntar.</li><li>Desconto para pagamento a vista via Wise fica 2.331,35 dólares</li><li>Desconto para pagamento parcelado via Wise fica 2.606,06 dólares em 1+5 de 434,34 dólares</li><li>(jul, ago, set, out, nov, dez)</li><li>Pagamento parcelado no Pix</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/calafate-chalten-especial" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
+                    <h3 class="box-title"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Incluso no Investimento</h3>
+                    <ul class="included-list">
+                        <li><i class='fas fa-check'></i> Transporte aeroporto/hospedagem, hospedagem/aeroporto.</li><li><i class='fas fa-check'></i> Hospedagem (quarto compartilhado) do dia 07 a 12 de janeiro</li><li><i class='fas fa-check'></i> Transporte ida e volta Parque Nacional Los Glaciares</li><li><i class='fas fa-check'></i> Entrada Parque Nacional Los Glaciares</li><li><i class='fas fa-check'></i> Transporte El Chalten/Aeroporto</li>
+                    </ul>
                 </div>
                 <div class="bento-box bento-excluded">
-                    
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer duvida é só perguntar.</li><li>Desconto para pagamento a vista via Wise fica 2.331,35 dólares</li><li>Desconto para pagamento parcelado via Wise fica 2.606,06 dólares em 1+5 de 434,34 dólares</li><li>(jul, ago, set, out, nov, dez)</li><li>Pagamento parcelado no Pix</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                
+                    <h3 class="box-title"><i class="fas fa-times-circle" style="color: #F44336; margin-right: 10px;"></i> Não Incluso</h3>
+                    <ul class="excluded-list">
+                        <li><i class='fas fa-times'></i> Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li><i class='fas fa-times'></i> Alterações por parte do cliente no tipo de hospedagem e datas.</li><li><i class='fas fa-times'></i> E qualquer coisa que não esteja na aba incluso.</li><li><i class='fas fa-times'></i> Qualquer duvida é só perguntar.</li><li><i class='fas fa-times'></i> Desconto para pagamento a vista via Wise fica 2.331,35 dólares</li><li><i class='fas fa-times'></i> Desconto para pagamento parcelado via Wise fica 2.606,06 dólares em 1+5 de 434,34 dólares</li><li><i class='fas fa-times'></i> (jul, ago, set, out, nov, dez)</li><li><i class='fas fa-times'></i> Pagamento parcelado no Pix</li><li><i class='fas fa-times'></i> Politica de Cancelamento</li><li><i class='fas fa-times'></i> * Cancelamento até 30 dias do início da viagem: 70% do valor total</li><li><i class='fas fa-times'></i> * Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</li><li><i class='fas fa-times'></i> * Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</li><li><i class='fas fa-times'></i> * Cancelamento a menos de 07 dias do início da viagem: Sem devolução</li><li><i class='fas fa-times'></i> Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</li><li><i class='fas fa-times'></i> *Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- 8: Investimento -->
             <div class="price-container" style="margin-bottom: 3rem;">
                 <h2 style="font-size: 2rem; color: #fff; margin-bottom: 2rem; text-align: center;">Investimento</h2>
                 <div class="bento-box" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 2rem; text-align: center;">
@@ -472,94 +113,55 @@
                 </div>
             </div>
 
-            <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/calafate-chalten-especial" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            <!-- 9 & 10: Política & FAQ -->
+            <div class="faq-container" style="margin-bottom: 3rem;">
+                <h2 class="section-title">Perguntas Frequentes & Políticas</h2>
+                <div class="accordion">
+                    
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Para nossa expedição não necessitara de equipamentos de pernoite pois ao final do dia sempre retornamos para a nossa hospedagem.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Data: 07 a 13 de janeiro de 2027</p><p>13 de janeiro de 2027</p><p>Ponto de encontro: Hospedagem em El Calafate</p><p>Distância: 70 km aprox</p><p>Dificuldade Física: intermediário</p><p>Dificuldade Técnica: intermediário</p><p>Patagônia Argentina Especial-Jan 2027</p><p>Hospedagem (quarto compartilhado)</p><p>Transporte aeroporto/hospedagem</p><p>Dia de chegada em El Calafate</p><p>Acordaremos por volta de umas 07:00 da manhã para o café da manhã. Finalizado nosso café da manhã as 09:00 nosso transporte passará em nossa hospedagem para nos levar ao Parque Nacional Los Glaciares para a visita ao Glaciar Perito Moreno.</p><p>Ao chegar no Parque faremos a navegação no lago do Glaciar Perito Moreno para ver o Glaciar de frente e bem de pertinho. Essa navegação dura em torno de 1:00h a 1:30h.</p><p>Ao finalizar a navegação levaremos vocês para um passeio nas passarelas e mirantes para ter uma vista lateral do Glaciar.</p><p>Terminando mais essa etapa tomaremos um café na cafeteria dentro do Parque e depois retornaremos para El Calafate.</p><p>Glaciar Perito Moreno</p><p>Transporte ida e volta até o Parque</p><p>Transporte El Calafate/El Chalten</p><p>El Calafate x El Chalten</p><p>Acordaremos por volta das 08:00 horas para o café da manhã. As 09:30 nosso trasfer passará na nossa hospedagem para nos levar até o ponto de partida do nosso transporte principal que partirá as 11:00 da manhã de El Calafate com previsão de chegada as 13:40 em El Chaltén onde faremos o check-in na hospedagem e partiremos para uma caminhada que deve durar 3 horas até o mirante do Paredão de onde é possível ver toda a cidade e também o Cerro Fitz Roy e o Cerro Torre.</p><p>Acordaremos as 06:00 para nosso café da manhã. Nesse dia nossa saída será as 07:30 com destino a Laguna e Mirante do Cerro Torre. Nossa caminhada deve durar cerca de 8 horas no total com previsão de chegada as 15:30 em nossa hospedagem.</p><p>351 metros de ganho de elevação.</p><p>Acordaremos as 06:00 para o café da manhã e iniciaremos a caminhada as 07:30 para a trilha Loma del Pliegue Tumbado que deve durar em torno de 8 horas de caminhada com a previsão de finalizar em nossa hospedagem as 16:00 horas aproximadamente.</p><p>898 ganho de elevação.</p><p>Acordaremos as 05:00 da manhã nesse dia que sem duvidas é o mais duro de toda a expedição Patagônia.. Saída as 06:30 da manhã e a previsão de retorno é as 17:30. Nesse dia visitaremos a Laguna Capri, Laguna de Los Três e Laguna Madre e Hija totalizando aprox 29 km de caminhada. Esse será o dia em que teremos a melhor vista do Cerro Fitz Roy.</p><p>868 de ganho de elevação.</p><p>Transporte hospedagem/aeroporto</p><p>Dia reservado para o retorno para El Calafate - Brasil</p>
             </div>
         </div>
-    </footer>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Comprar o aéreo com o horário de embarque após as 13:00, por conta da distância do aeroporto e imprevistos com o clima
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Expedição Monte Roraima</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Quais documentos preciso?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Quais vacinas são necessárias?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        
+                    
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
+    

@@ -21,7 +21,7 @@
 
     <main>
         <section class="hero expedition-hero">
-            <div class="hero-bg" style="background-image: url('../public/atacama_hero_1785360644849.jpg');"></div>
+            <div class="hero-bg" style="background-image: url('../{{ BACKGROUND_IMG }}');"></div>
             <div class="hero-overlay"></div>
             <div class="noise-overlay"></div>
             <div class="hero-content expedition-hero-content">
@@ -31,20 +31,17 @@
                 <div class="expedition-meta">
                     <div class="meta-item">
                         <span class="meta-label">Data</span>
-                        <span class="meta-value">08 A 18/JAN/2027</span>
+                        <span class="meta-value">08 a 18/jan/2027</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Local</span>
-                        <span class="meta-value">CHILE (DESERTO DO ATACAMA)</span>
+                        <span class="meta-value">{{ LOC }}</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Duração</span>
-                        <span class="meta-value">11 DIAS</span>
+                        <span class="meta-value">{{ DUR }}</span>
                     </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Elevação Máx</span>
-                        <span class="meta-value">5.920m</span>
-                    </div>
+                    {{ ELEVATION_BLOCK }}
                     <div class="meta-item">
                         <span class="meta-label">Dificuldade</span>
                         <span class="meta-value">Muito Alta</span>
@@ -62,372 +59,62 @@
 
         <section class="expedition-details-section" id="detalhes">
             <div class="container expedition-details-container">
+            <!-- 1 & 2: Historia e Vibe -->
             <div class="bento-grid" style="grid-template-columns: 1fr; margin-bottom: 3rem;">
-                <div class="bento-box bento-intro">
-                    
-                        <h2 class="bento-title">O que esperar</h2>
-                        <div class="bento-content expedition-intro-text">
-                            <p>Desafie-se entre os gigantes do deserto mais árido do mundo! Uma jornada épica pelos vulcões Lascar (5600m), Colorado (5748m) e Acamarachi (6048m), de 08 a 18 de janeiro. Altitude, aventura e paisagens surreais te esperam!</p><p>08 a 18 de janeiro de 2027</p><p>No Deserto do Atacama, os vulcões Lascar, Colorado e Acamarachi dominam o horizonte com sua imponência vulcânica, cada um com sua própria história e mistérios geológicos. O Lascar, um dos vulcões mais ativos da região, exibe sua fumarola constantemente, lembrando-nos da força da natureza. O Colorado, com suas encostas avermelhadas, parece uma obra de arte esculpida pelo tempo. Já o Acamarachi, com seu perfil imponente, desafia os mais aventureiros a conquistarem seu cume e contemplarem a vastidão do deserto aos seus pés.</p><p>Esses gigantes vulcânicos são testemunhas silenciosas da grandiosidade e da fragilidade do nosso planeta.</p><div class='expedition-specs' style='margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px;'><h4 style='color: var(--primary-color); margin-bottom: 1rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;'>Especificações da Expedição</h4><ul style='list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem;'><li style='color: rgba(255,255,255,0.8);'><strong>Data:</strong> 08 a 18 de janeiro de 2027</li><li style='color: rgba(255,255,255,0.8);'><strong>Ponto de encontro:</strong> aeroporto de Calama</li><li style='color: rgba(255,255,255,0.8);'><strong>Ganho de elevação:</strong> 2754 m</li><li style='color: rgba(255,255,255,0.8);'><strong>Perda de elevação:</strong> 2754 m</li><li style='color: rgba(255,255,255,0.8);'><strong>Distância:</strong> 20 km aprox</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Física:</strong> Intermediário/Difícil</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Técnica:</strong> Intermediário</li></ul></div>
-                        </div>
+                <div class="bento-box bento-intro" style="padding: 3rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;">O Destino</h2>
+                    <div style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem; color: #ddd;">
+                        <p style='margin-bottom: 1rem;'>Desafie-se entre os gigantes do deserto mais árido do mundo! Uma jornada épica pelos vulcões Lascar (5600m), Colorado (5748m) e Acamarachi (6048m), de 08 a 18 de janeiro. Altitude, aventura e paisagens surreais te esperam!</p><p style='margin-bottom: 1rem;'>No Deserto do Atacama, os vulcões Lascar, Colorado e Acamarachi dominam o horizonte com sua imponência vulcânica, cada um com sua própria história e mistérios geológicos. O Lascar, um dos vulcões mais ativos da região, exibe sua fumarola constantemente, lembrando-nos da força da natureza. O Colorado, com suas encostas avermelhadas, parece uma obra de arte esculpida pelo tempo. Já o Acamarachi, com seu perfil imponente, desafia os mais aventureiros a conquistarem seu cume e contemplarem a vastidão do deserto aos seus pés.</p><p style='margin-bottom: 1rem;'>Esses gigantes vulcânicos são testemunhas silenciosas da grandiosidade e da fragilidade do nosso planeta.</p>
                     </div>
-                    <div class="bento-box bento-included">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
-                        <ul class="bento-list list-check">
-                            <li>Transporte aeroporto/hospedagem, hospedagem/aeroporto.</li><li>Hospedagem (quarto compartilhado) dias 8, 9, 10, 11, 12, 13, 14, 15, 16 e 17 jan.</li><li>Café da manhã dias 9, 10, 11 e 13 jan.</li><li>Lanche de trilha dias 9, 10, 11, 13 e 16 jan.</li><li>Jantar dias 8, 9, 10, 11, 13, 15 e 17 jan.</li><li>Transporte de ida e volta para os destinos</li>
-                        </ul>
-                    </div>
-                    <div class="bento-box bento-excluded">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Passagens aéreas do Brasil ao Chile e do Chile para o Brasil.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>Alimentação dia 12, 14 e 18</li><li>Café da manhã dia 8, 15 e 17</li><li>Almoço dia 8, 15, 10, 11, e 17</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer dúvida é só perguntar.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Dia 15 e 16 de janeiro</h3>
-                            <p>Esse dia você deve se organizar para dormir um pouco mais pela manha ou a tarde, porque as 18:00 vai rolar nosso jantar e última reunião antes da saída para o principal objetivo da expedição que é o Vulcão Acamarachi.</p><p>Sairemos as 21:00 de São Pedro do Atacama para iniciar a aproximação ao Vulcão Acamarachi em veículos 4x4 com previsão de chegada as 01:00 na base do vulcão para inicio da caminhada.</p><p>Esse é um vulcão mais técnico, precisa de mais atenção pois o terreno tem muitas pedras soltas mas o maior desafio é o aclive em si pois partiremos da cota dos 4900 m de altitude em uma marcha continua até a cota dos 6048 m que é o cume do vulcão, levando em torno de 8 a 10 horas de subida a depender da velocidade que o grupo conseguir empregar.</p><p>A descida por sua vez se leva de 4 a 5 horas para retornar ao ponto inicial, previsão de chegada as 16:00 na hospedagem.</p><p>Hospedagem (quarto compartilhado) dias 15 e 16.</p><p>Lanche de trilha - dia 16</p><p>Café da manhã e almoço - dia 15</p><p>Bebidas para o jantar</p><p>Esse dia reservamos para descanso pois vamos ter virado a noite do dia anterior para ascensão ao cume do Acamarachi, nesse dia você pode aproveitar para a compra de lembrancinhas e aproveitar a tranquila São Pedro de Atacama, pois a noite teremos um jantar especial de despedida para todo o grupo.</p><p>Esse dia reservamos para o retorno para o Brasil e ajustaremos o transfer conforme sua necessidade e horário do voo.</p><p>Transporte hospedagem/aeroporto</p><p>COMO TODOS SABEM O VULCÃO LASCAR AINDA ESTA EM ATIVIDADE, COM ISSO CASO HAJA ATIVIDADE FORA DO NORMAL ONDE NÂO SEJA POSSIVEL A ASCENSÃO A ESSA MONTANHA É POSSIVEL QUE TENHAMOS QUE AJUSTAR NOSSA EXPEDIÇÃO PARA ALGUMA OUTRA MONTANHA OU ROTEIRO, NECESSÁRIO A FIM DE PRESERVAR A SEGURANÇA DO GRUPO E SEGUIR AS LEIS E DECRETOS VIGENTES NA DATA DA NOSSA EXPEDIÇÃO.</p><p>Expedição Monte Roraima</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Como vai rolar a trip</h2>
+                    <div style="font-size: 1.1rem; line-height: 1.6; color: #bbb;">
+                        <p style='margin-bottom: 1rem;'>Nossa expedição acontecerá no formato hiking todos os dias, ou seja, todos os dias ao final da atividade retornaremos para o conforto da nossa hospedagem.</p><p style='margin-bottom: 1rem;'>Levamos um dispositivo spotX para emergências. Através de sua tecnologia ativaremos a função de rastreamento por satélite, para que seus familiares e amigos possam acompanhar seu progresso em campo, em seus computadores ou celulares através do portal SpotFINDME. O dispositivo envia waypoints (pontos em um mapa). Dessa forma, as pessoas que te seguem poderão conhecer sua jornada online.</p><p style='margin-bottom: 1rem;'>Incluso também três camisetas especiais da N.A Trekking ( 2 unidades com proteção UV, 1 unidade promocional de algodão).</p><p style='margin-bottom: 1rem;'>Seguro Individual Internacional com extensão para atividades de aventura. (cobertura de 08/01/2027 a 18/01/2027) (Caso necessitar mais dias podemos cotar para você) (Obrigatório estar coberto desde o dia de saída do Brasil até o dia de retorno para o Brasil)</p><p style='margin-bottom: 1rem;'>(Caso necessitar mais dias podemos cotar para você) (Obrigatório estar coberto desde o dia de saída do Brasil até o dia de retorno para o Brasil)</p><p style='margin-bottom: 1rem;'>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p style='margin-bottom: 1rem;'>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p style='margin-bottom: 1rem;'>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p style='margin-bottom: 1rem;'>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p style='margin-bottom: 1rem;'>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p style='margin-bottom: 1rem;'>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p style='margin-bottom: 1rem;'>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p style='margin-bottom: 1rem;'>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p>
                     </div>
                 </div>
             </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/vulcões-do-atacama-jan-27" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
+            <!-- 3: Specs (already handled in the hero section) -->
+
+            <!-- 5: Atenção (Warnings) -->
+            <div style='background: rgba(244,67,54,0.1); border-left: 4px solid #F44336; padding: 1.5rem; margin-bottom: 3rem; border-radius: 4px;'>
+            <h3 style='color: #F44336; margin-bottom: 1rem;'><i class='fas fa-exclamation-triangle'></i> Atenção</h3>
+            <p style='margin-bottom:0.5rem; color:#ddd;'>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p style='margin-bottom:0.5rem; color:#ddd;'>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p>
         </div>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
-                </div>
-            </div>
-
+            <!-- 4: Cronograma -->
             <div class="timeline-container" style="margin-bottom: 3rem;">
-                
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Dia 15 e 16 de janeiro</h3>
-                            <p>Esse dia você deve se organizar para dormir um pouco mais pela manha ou a tarde, porque as 18:00 vai rolar nosso jantar e última reunião antes da saída para o principal objetivo da expedição que é o Vulcão Acamarachi.</p><p>Sairemos as 21:00 de São Pedro do Atacama para iniciar a aproximação ao Vulcão Acamarachi em veículos 4x4 com previsão de chegada as 01:00 na base do vulcão para inicio da caminhada.</p><p>Esse é um vulcão mais técnico, precisa de mais atenção pois o terreno tem muitas pedras soltas mas o maior desafio é o aclive em si pois partiremos da cota dos 4900 m de altitude em uma marcha continua até a cota dos 6048 m que é o cume do vulcão, levando em torno de 8 a 10 horas de subida a depender da velocidade que o grupo conseguir empregar.</p><p>A descida por sua vez se leva de 4 a 5 horas para retornar ao ponto inicial, previsão de chegada as 16:00 na hospedagem.</p><p>Hospedagem (quarto compartilhado) dias 15 e 16.</p><p>Lanche de trilha - dia 16</p><p>Café da manhã e almoço - dia 15</p><p>Bebidas para o jantar</p><p>Esse dia reservamos para descanso pois vamos ter virado a noite do dia anterior para ascensão ao cume do Acamarachi, nesse dia você pode aproveitar para a compra de lembrancinhas e aproveitar a tranquila São Pedro de Atacama, pois a noite teremos um jantar especial de despedida para todo o grupo.</p><p>Esse dia reservamos para o retorno para o Brasil e ajustaremos o transfer conforme sua necessidade e horário do voo.</p><p>Transporte hospedagem/aeroporto</p><p>COMO TODOS SABEM O VULCÃO LASCAR AINDA ESTA EM ATIVIDADE, COM ISSO CASO HAJA ATIVIDADE FORA DO NORMAL ONDE NÂO SEJA POSSIVEL A ASCENSÃO A ESSA MONTANHA É POSSIVEL QUE TENHAMOS QUE AJUSTAR NOSSA EXPEDIÇÃO PARA ALGUMA OUTRA MONTANHA OU ROTEIRO, NECESSÁRIO A FIM DE PRESERVAR A SEGURANÇA DO GRUPO E SEGUIR AS LEIS E DECRETOS VIGENTES NA DATA DA NOSSA EXPEDIÇÃO.</p><p>Expedição Monte Roraima</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/vulcões-do-atacama-jan-27" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
+                <h2 class="section-title">O Roteiro Passo a Passo</h2>
+                <div class="timeline">
+                    
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3 class="timeline-title">Dia 15 e 16 de janeiro</h3>
+                <ul class="timeline-details">
+                    <li>Esse dia você deve se organizar para dormir um pouco mais pela manha ou a tarde, porque as 18:00 vai rolar nosso jantar e última reunião antes da saída para o principal objetivo da expedição que é o Vulcão Acamarachi.</li><li>Sairemos as 21:00 de São Pedro do Atacama para iniciar a aproximação ao Vulcão Acamarachi em veículos 4x4 com previsão de chegada as 01:00 na base do vulcão para inicio da caminhada.</li><li>Esse é um vulcão mais técnico, precisa de mais atenção pois o terreno tem muitas pedras soltas mas o maior desafio é o aclive em si pois partiremos da cota dos 4900 m de altitude em uma marcha continua até a cota dos 6048 m que é o cume do vulcão, levando em torno de 8 a 10 horas de subida a depender da velocidade que o grupo conseguir empregar.</li><li>A descida por sua vez se leva de 4 a 5 horas para retornar ao ponto inicial, previsão de chegada as 16:00 na hospedagem.</li><li>Hospedagem (quarto compartilhado) dias 15 e 16.</li><li>Lanche de trilha - dia 16</li><li>Café da manhã e almoço - dia 15</li><li>Bebidas para o jantar</li><li>Esse dia reservamos para descanso pois vamos ter virado a noite do dia anterior para ascensão ao cume do Acamarachi, nesse dia você pode aproveitar para a compra de lembrancinhas e aproveitar a tranquila São Pedro de Atacama, pois a noite teremos um jantar especial de despedida para todo o grupo.</li><li>Esse dia reservamos para o retorno para o Brasil e ajustaremos o transfer conforme sua necessidade e horário do voo.</li><li>Transporte hospedagem/aeroporto</li><li>COMO TODOS SABEM O VULCÃO LASCAR AINDA ESTA EM ATIVIDADE, COM ISSO CASO HAJA ATIVIDADE FORA DO NORMAL ONDE NÂO SEJA POSSIVEL A ASCENSÃO A ESSA MONTANHA É POSSIVEL QUE TENHAMOS QUE AJUSTAR NOSSA EXPEDIÇÃO PARA ALGUMA OUTRA MONTANHA OU ROTEIRO, NECESSÁRIO A FIM DE PRESERVAR A SEGURANÇA DO GRUPO E SEGUIR AS LEIS E DECRETOS VIGENTES NA DATA DA NOSSA EXPEDIÇÃO.</li><li>Expedição Monte Roraima</li>
+                </ul>
             </div>
         </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
+        
+                </div>
             </div>
 
+            <!-- 6 & 7: Incluso / Não Incluso -->
             <div class="bento-grid" style="margin-bottom: 3rem;">
                 <div class="bento-box bento-included">
-                    
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
-                        <ul class="bento-list list-check">
-                            <li>Transporte aeroporto/hospedagem, hospedagem/aeroporto.</li><li>Hospedagem (quarto compartilhado) dias 8, 9, 10, 11, 12, 13, 14, 15, 16 e 17 jan.</li><li>Café da manhã dias 9, 10, 11 e 13 jan.</li><li>Lanche de trilha dias 9, 10, 11, 13 e 16 jan.</li><li>Jantar dias 8, 9, 10, 11, 13, 15 e 17 jan.</li><li>Transporte de ida e volta para os destinos</li>
-                        </ul>
-                    </div>
-                    <div class="bento-box bento-excluded">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Passagens aéreas do Brasil ao Chile e do Chile para o Brasil.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>Alimentação dia 12, 14 e 18</li><li>Café da manhã dia 8, 15 e 17</li><li>Almoço dia 8, 15, 10, 11, e 17</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer dúvida é só perguntar.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Dia 15 e 16 de janeiro</h3>
-                            <p>Esse dia você deve se organizar para dormir um pouco mais pela manha ou a tarde, porque as 18:00 vai rolar nosso jantar e última reunião antes da saída para o principal objetivo da expedição que é o Vulcão Acamarachi.</p><p>Sairemos as 21:00 de São Pedro do Atacama para iniciar a aproximação ao Vulcão Acamarachi em veículos 4x4 com previsão de chegada as 01:00 na base do vulcão para inicio da caminhada.</p><p>Esse é um vulcão mais técnico, precisa de mais atenção pois o terreno tem muitas pedras soltas mas o maior desafio é o aclive em si pois partiremos da cota dos 4900 m de altitude em uma marcha continua até a cota dos 6048 m que é o cume do vulcão, levando em torno de 8 a 10 horas de subida a depender da velocidade que o grupo conseguir empregar.</p><p>A descida por sua vez se leva de 4 a 5 horas para retornar ao ponto inicial, previsão de chegada as 16:00 na hospedagem.</p><p>Hospedagem (quarto compartilhado) dias 15 e 16.</p><p>Lanche de trilha - dia 16</p><p>Café da manhã e almoço - dia 15</p><p>Bebidas para o jantar</p><p>Esse dia reservamos para descanso pois vamos ter virado a noite do dia anterior para ascensão ao cume do Acamarachi, nesse dia você pode aproveitar para a compra de lembrancinhas e aproveitar a tranquila São Pedro de Atacama, pois a noite teremos um jantar especial de despedida para todo o grupo.</p><p>Esse dia reservamos para o retorno para o Brasil e ajustaremos o transfer conforme sua necessidade e horário do voo.</p><p>Transporte hospedagem/aeroporto</p><p>COMO TODOS SABEM O VULCÃO LASCAR AINDA ESTA EM ATIVIDADE, COM ISSO CASO HAJA ATIVIDADE FORA DO NORMAL ONDE NÂO SEJA POSSIVEL A ASCENSÃO A ESSA MONTANHA É POSSIVEL QUE TENHAMOS QUE AJUSTAR NOSSA EXPEDIÇÃO PARA ALGUMA OUTRA MONTANHA OU ROTEIRO, NECESSÁRIO A FIM DE PRESERVAR A SEGURANÇA DO GRUPO E SEGUIR AS LEIS E DECRETOS VIGENTES NA DATA DA NOSSA EXPEDIÇÃO.</p><p>Expedição Monte Roraima</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/vulcões-do-atacama-jan-27" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
+                    <h3 class="box-title"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Incluso no Investimento</h3>
+                    <ul class="included-list">
+                        <li><i class='fas fa-check'></i> Transporte aeroporto/hospedagem, hospedagem/aeroporto.</li><li><i class='fas fa-check'></i> Hospedagem (quarto compartilhado) dias 8, 9, 10, 11, 12, 13, 14, 15, 16 e 17 jan.</li><li><i class='fas fa-check'></i> Café da manhã dias 9, 10, 11 e 13 jan.</li><li><i class='fas fa-check'></i> Lanche de trilha dias 9, 10, 11, 13 e 16 jan.</li><li><i class='fas fa-check'></i> Jantar dias 8, 9, 10, 11, 13, 15 e 17 jan.</li><li><i class='fas fa-check'></i> Transporte de ida e volta para os destinos</li>
+                    </ul>
                 </div>
                 <div class="bento-box bento-excluded">
-                    
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Passagens aéreas do Brasil ao Chile e do Chile para o Brasil.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>Alimentação dia 12, 14 e 18</li><li>Café da manhã dia 8, 15 e 17</li><li>Almoço dia 8, 15, 10, 11, e 17</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer dúvida é só perguntar.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Dia 15 e 16 de janeiro</h3>
-                            <p>Esse dia você deve se organizar para dormir um pouco mais pela manha ou a tarde, porque as 18:00 vai rolar nosso jantar e última reunião antes da saída para o principal objetivo da expedição que é o Vulcão Acamarachi.</p><p>Sairemos as 21:00 de São Pedro do Atacama para iniciar a aproximação ao Vulcão Acamarachi em veículos 4x4 com previsão de chegada as 01:00 na base do vulcão para inicio da caminhada.</p><p>Esse é um vulcão mais técnico, precisa de mais atenção pois o terreno tem muitas pedras soltas mas o maior desafio é o aclive em si pois partiremos da cota dos 4900 m de altitude em uma marcha continua até a cota dos 6048 m que é o cume do vulcão, levando em torno de 8 a 10 horas de subida a depender da velocidade que o grupo conseguir empregar.</p><p>A descida por sua vez se leva de 4 a 5 horas para retornar ao ponto inicial, previsão de chegada as 16:00 na hospedagem.</p><p>Hospedagem (quarto compartilhado) dias 15 e 16.</p><p>Lanche de trilha - dia 16</p><p>Café da manhã e almoço - dia 15</p><p>Bebidas para o jantar</p><p>Esse dia reservamos para descanso pois vamos ter virado a noite do dia anterior para ascensão ao cume do Acamarachi, nesse dia você pode aproveitar para a compra de lembrancinhas e aproveitar a tranquila São Pedro de Atacama, pois a noite teremos um jantar especial de despedida para todo o grupo.</p><p>Esse dia reservamos para o retorno para o Brasil e ajustaremos o transfer conforme sua necessidade e horário do voo.</p><p>Transporte hospedagem/aeroporto</p><p>COMO TODOS SABEM O VULCÃO LASCAR AINDA ESTA EM ATIVIDADE, COM ISSO CASO HAJA ATIVIDADE FORA DO NORMAL ONDE NÂO SEJA POSSIVEL A ASCENSÃO A ESSA MONTANHA É POSSIVEL QUE TENHAMOS QUE AJUSTAR NOSSA EXPEDIÇÃO PARA ALGUMA OUTRA MONTANHA OU ROTEIRO, NECESSÁRIO A FIM DE PRESERVAR A SEGURANÇA DO GRUPO E SEGUIR AS LEIS E DECRETOS VIGENTES NA DATA DA NOSSA EXPEDIÇÃO.</p><p>Expedição Monte Roraima</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                
+                    <h3 class="box-title"><i class="fas fa-times-circle" style="color: #F44336; margin-right: 10px;"></i> Não Incluso</h3>
+                    <ul class="excluded-list">
+                        <li><i class='fas fa-times'></i> Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li><i class='fas fa-times'></i> Passagens aéreas do Brasil ao Chile e do Chile para o Brasil.</li><li><i class='fas fa-times'></i> Alterações por parte do cliente no tipo de hospedagem e datas.</li><li><i class='fas fa-times'></i> Alimentação dia 12, 14 e 18</li><li><i class='fas fa-times'></i> Café da manhã dia 8, 15 e 17</li><li><i class='fas fa-times'></i> Almoço dia 8, 15, 10, 11, e 17</li><li><i class='fas fa-times'></i> E qualquer coisa que não esteja na aba incluso.</li><li><i class='fas fa-times'></i> Qualquer dúvida é só perguntar.</li><li><i class='fas fa-times'></i> Politica de Cancelamento</li><li><i class='fas fa-times'></i> * Cancelamento até 30 dias do início da viagem: 70% do valor total</li><li><i class='fas fa-times'></i> * Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</li><li><i class='fas fa-times'></i> * Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</li><li><i class='fas fa-times'></i> * Cancelamento a menos de 07 dias do início da viagem: Sem devolução</li><li><i class='fas fa-times'></i> Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</li><li><i class='fas fa-times'></i> *Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</li><li><i class='fas fa-times'></i> Contato N.A Internacional</li><li><i class='fas fa-times'></i> Politicas de privacidade</li><li><i class='fas fa-times'></i> N.A Trekking - CNPJ: 41.266.722/0001-70</li><li><i class='fas fa-times'></i> Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</li><li><i class='fas fa-times'></i> Direitos de Autor © natrekking.com™. Todos os direitos reservados.</li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- 8: Investimento -->
             <div class="price-container" style="margin-bottom: 3rem;">
                 <h2 style="font-size: 2rem; color: #fff; margin-bottom: 2rem; text-align: center;">Investimento</h2>
                 <div class="bento-box" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 2rem; text-align: center;">
@@ -435,78 +122,45 @@
                 </div>
             </div>
 
-            <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/vulcões-do-atacama-jan-27" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            <!-- 9 & 10: Política & FAQ -->
+            <div class="faq-container" style="margin-bottom: 3rem;">
+                <h2 class="section-title">Perguntas Frequentes & Políticas</h2>
+                <div class="accordion">
+                    
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Por se tratar de uma expedição em alta montanha precisaremos aclimatar(acostumar) em altitude para atingir nosso principal objetivo que é chegar ao cume do Vulcão Acamarachi com 6048 m. Esse processo leva alguns dias e durante ele faremos vários atrativos na região como: as Lagunas altiplanas, Geyser Del Tatio, Vulcão Lascar 5600 m, Vulcão Colorado 5748 m, para só depois chegarmos ao cume do Vulcão Acamarachi.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
             </div>
         </div>
-    </footer>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Não se preocupe que ajudaremos vc com toda a preparação física, escolha dos equipamentos, compra do aéreo e tudo que precisar para chegar 100% no dia da expedição.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Data: 08 a 18 de janeiro de 2027</p><p>Ponto de encontro: aeroporto de Calama</p><p>Ganho de elevação: 2754 m</p><p>Perda de elevação: 2754 m</p><p>Distância: 20 km aprox</p><p>Dificuldade Física: Intermediário/Difícil</p><p>Dificuldade Técnica: Intermediário</p><p>Atacama - Janeiro de 2027</p><p>Esse dia reservamos para a sua chegada no Chile.</p><p>Pegaremos você no aeroporto e levaremos ate a hospedagem. Opte por voos com chegada na parte da manha , pois dessa forma vc consegue participar do citytoor que se inicia as 14:00 do mesmo dia.</p><p>As 20:00 jantar de recepção e reunião/briefing da expedição.</p><p>Hospedagem (quarto compartilhado)</p><p>Transporte aeroporto/hospedagem (ajustamos conforme o horário do seu voo)</p><p>Jantar de Boas Vindas</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Nesse dia sairemos as 06:00 para visita as lagunas altiplanas já iniciando o processo de aclimatação onde chegaremos a 4600 m de altitude.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Visitaremos a Laguna Mininque, Laguna Miscanti, Tropico de Capricórnio e Laguna Tuyaito.</p><p>Retornaremos para a nossa hospedagem por volta das 16:00.</p><p>Lanche de trilha e jantar</p><p>Nesse dia sairemos as 04:00 para visitar o Geyser Del Tatio. Esse dia reserva 3 km de caminhada, retornaremos por volta das 11:00 para nossa hospedagem.</p><p>Restante do dia para descanso.</p><p>Café da manhã, lanche de trilha e jantar</p><p>Hoje faremos nosso primeiro vulcão o Vulcão Lascar com 5600m. Sairemos as 04:00 da nossa hospedagem e nosso horário de retorno esta programado para as 11:00 aprox.</p><p>Restante da tarde livre</p><p>Esse dia usaremos para descanso e organização da logística pois a altitude suga bastante nossas energias e no próximo dia vamos ter a ascensão ao Vulcão Colorado que é um vulcão pouco visitado e mais selvagem/técnico.</p><p>Sairemos as 03:30 com retorno previsto para as 19:00. Esse será o dia mais duro até o momento onde faremos o cume do Vulcão Colorado com 5748 m de altitude. Esse vulcão está localizado na fronteira do Chile com a Bolívia e está cercado por muitos outros vulcões deixando o visual ainda mais lindo.</p><p>Dia livre para descanso</p>
+            </div>
+        </div>
+        
+                    
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
+    

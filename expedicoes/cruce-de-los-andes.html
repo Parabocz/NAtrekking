@@ -21,7 +21,7 @@
 
     <main>
         <section class="hero expedition-hero">
-            <div class="hero-bg" style="background-image: url('../public/andes_hero_1785360668799.jpg');"></div>
+            <div class="hero-bg" style="background-image: url('../{{ BACKGROUND_IMG }}');"></div>
             <div class="hero-overlay"></div>
             <div class="noise-overlay"></div>
             <div class="hero-content expedition-hero-content">
@@ -31,17 +31,17 @@
                 <div class="expedition-meta">
                     <div class="meta-item">
                         <span class="meta-label">Data</span>
-                        <span class="meta-value">20 A 27/MAR/2027</span>
+                        <span class="meta-value">20 a 27/mar/2027</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Local</span>
-                        <span class="meta-value">ARGENTINA E CHILE</span>
+                        <span class="meta-value">{{ LOC }}</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Duração</span>
-                        <span class="meta-value">8 DIAS</span>
+                        <span class="meta-value">{{ DUR }}</span>
                     </div>
-                    
+                    {{ ELEVATION_BLOCK }}
                     <div class="meta-item">
                         <span class="meta-label">Dificuldade</span>
                         <span class="meta-value">Moderada</span>
@@ -59,796 +59,53 @@
 
         <section class="expedition-details-section" id="detalhes">
             <div class="container expedition-details-container">
+            <!-- 1 & 2: Historia e Vibe -->
             <div class="bento-grid" style="grid-template-columns: 1fr; margin-bottom: 3rem;">
-                <div class="bento-box bento-intro">
-                    
-                        <h2 class="bento-title">O que esperar</h2>
-                        <div class="bento-content expedition-intro-text">
-                            <p>20 a 27 de março de 2027</p><p>A travessia dos Andes, liderada por San Martín em 1817, foi uma operação decisiva na luta pela independência da América do Sul. O Exército dos Andes, formado em Mendoza, atravessou a cordilheira com 4.000 soldados e 1.400 auxiliares, utilizando seis rotas diferentes. O objetivo era libertar o Chile e avançar para o Peru. A campanha foi um sucesso estratégico, culminando na conquista de Santiago e sendo fundamental para a independência da região.</p><p>A travessia da Cordilheira dos Andes é considerada um dos grandes eventos históricos e um dos maiores feitos militares da história mundial. Esta campanha militar garantiu a independência de vastos territórios e pôs fim ao poder colonial da Espanha sobre a América do Sul</p><p>Esse roteiro acontecera no formato expedição onde haverá uma equipe de apoio com guias, mulas, cozinheiro e auxiliares.</p><div class='expedition-specs' style='margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px;'><h4 style='color: var(--primary-color); margin-bottom: 1rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;'>Especificações da Expedição</h4><ul style='list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem;'><li style='color: rgba(255,255,255,0.8);'><strong>Data:</strong> 20 a 27 de março de 2027</li><li style='color: rgba(255,255,255,0.8);'><strong>Ponto de encontro:</strong> Hospedagem em Mendoza</li><li style='color: rgba(255,255,255,0.8);'><strong>Ganho de elevação:</strong> 3083 m</li><li style='color: rgba(255,255,255,0.8);'><strong>Perda de elevação:</strong> 2459 m</li><li style='color: rgba(255,255,255,0.8);'><strong>Distância:</strong> 50 km aprox</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Física:</strong> Intermediário</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Técnica:</strong> Intermediário</li><li style='color: rgba(255,255,255,0.8);'>Classificamos esse trekking como difícil por ser muitos km e muitos dias fazendo com que haja um desgaste físico e mental pra quem não está acostumado. Não há pontos técnicos mas todo o trajeto demanda atenção pois qualquer necessidade médica por se tratar de um local selvagem se torna muito difícil. Como haverá apoio com mulas para a alimentação e barracas e também para até 10kg de pertence pessoal fica mais tranquilo e acessível pra maioria das pessoas saudáveis e com um bom preparo físico. Mas não podemos esquecer que estaremos a cima dos 2500 metros chegando a 4400 nessa travessia fazendo com que por conta da altitude nosso corpo se sinta mais cansado. Sigam as recomendações da nossa equipe que certamente não haverá problemas.</li><li style='color: rgba(255,255,255,0.8);'><strong>Ganho de elevação:</strong> 700 metros</li><li style='color: rgba(255,255,255,0.8);'><strong>Ganho de elevação:</strong> 1.150 metros</li></ul></div>
-                        </div>
+                <div class="bento-box bento-intro" style="padding: 3rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;">O Destino</h2>
+                    <div style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem; color: #ddd;">
+                        <p style='margin-bottom: 1rem;'>A travessia dos Andes, liderada por San Martín em 1817, foi uma operação decisiva na luta pela independência da América do Sul. O Exército dos Andes, formado em Mendoza, atravessou a cordilheira com 4.000 soldados e 1.400 auxiliares, utilizando seis rotas diferentes. O objetivo era libertar o Chile e avançar para o Peru. A campanha foi um sucesso estratégico, culminando na conquista de Santiago e sendo fundamental para a independência da região.</p><p style='margin-bottom: 1rem;'>A travessia da Cordilheira dos Andes é considerada um dos grandes eventos históricos e um dos maiores feitos militares da história mundial. Esta campanha militar garantiu a independência de vastos territórios e pôs fim ao poder colonial da Espanha sobre a América do Sul</p><p style='margin-bottom: 1rem;'>Esse roteiro acontecera no formato expedição onde haverá uma equipe de apoio com guias, mulas, cozinheiro e auxiliares.</p><p style='margin-bottom: 1rem;'>A expedição inicia muito antes da data pois vamos fazer com o grupo vários encontros virtuais onde tiramos todas as dúvidas e ajudamos na organização da logística pessoal de cada um de vocês.</p>
                     </div>
-                    <div class="bento-box bento-included">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
-                        <ul class="bento-list list-check">
-                            <li>1 Noite em hospedagem em Mendoza (quartos compartilhados)</li><li>1 Noite em hospedagem em Santiago do Chile (quartos compartilhados).</li><li>Transporte da hospedagem até o início da travessia</li><li>Transporte desde Termas del Plomo, até Santiago do Chile.</li><li>Cavalos de apoio e tropeiros para a travessia de rios caudalosos.</li><li>Todos utensílios de cozinha.</li><li>Guias profissionais, assistentes e carregadores.</li><li>Equipe treinada em primeiros socorros em áreas selvagens.</li><li>Serviço de ambulância a cavalo.</li><li>Levamos um cavalo com sela junto com o grupo, para poder usá-lo caso alguém se machuque ou alguma outra contingência.</li><li>Kit de primeiros socorros de montanha completo.</li><li>Tubo de oxigênio médico.</li><li>Equipamentos de uso comum (tendas de alta montanha, aquecedores, panelas).</li><li>Comunicação VHF entre guias e tropeiros.</li><li>Cada Guia Profissional carrega um GPS.</li><li>Assessoria completa antes da expedição.</li><li>Brindes da N.A Trekking.</li><li>Devolução do seu equipamento alugado (caso o tenha alugado na loja indicada).</li><li>Assessoria na compra ou aluguel do equipamento que você vai precisar.</li>
-                        </ul>
-                    </div>
-                    <div class="bento-box bento-excluded">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Aluguel de equipamentos.</li><li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Refeições fora do itinerário de montanha.</li><li>Passagens aéreas do Brasil a Mendoza e de Santiago para o Brasil.</li><li>Transporte do Aeroporto para o hospedagem e da hospedagem para o Aeroporto.</li><li>E qualquer coisa que não esteja na aba incluso</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para a expedição. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto equipamento vou ter que carregar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: A sua mochila não vai pesar mais que 6-10 kg. Todo o equipamento de grupo será transporte por mulas. Você não vai ter que carregar nenhum destes. O equipamento pessoal que você vai usar para dormir ou se trocar, será levado pelas mulas então você não tem que se preocupar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Apenas RG ou Passaporte dentro da validade e em bom estado.</p><p>RG com menos de 10 anos de expedição.</p><p>Passaporte com no mínimo 6 meses de validade.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>- Haverá comunicação na montanha?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Não há sinal de celular lá, então prepare-se para desconexão total com o mundo exterior. Para emergências temos rádio e comunicador satelital.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Minha família consegue saber onde estou?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>: Sim, caso for da sua escolha disponibilizamos um link para acompanhar nosso deslocamento via Spot.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tenho que dividir barracas com alguém?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim. Todas as barracas são divididas por 2 pessoas e isso é previamente acertado. Dividir uma barraca com alguém cria um vínculo de parceria essencial para sobreviver e se dar bem nesses ambientes hostis que são as montanhas.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais vôos preciso pegar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Do Brasil para Mendoza - Argentina</p><p>De Santiago - Chile para o Brasil</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-E se eu abandonar ou desistir da expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Se você desistir da expedição enquanto você ainda está no Brasil é possível recuperar parte do seu investimento, conforme nossa politica de cancelamento. Entre em contato para saber mais.</p><p>Se você desistir da expedição em Mendoza, antes de ir à montanha, você pode continuar usufruindo dos serviços que lhe brindamos, como transporte e hospedagem. No entanto não podemos devolver o dinheiro que você investiu pois toda a logística já vai estar contratada.</p><p>Se você desistir durante a expedição, você vai ter que arcar com os custos de transporte e estadia individuais. Todo aquele que deixar a expedição por motivos pessoais ou de saúde, deve arcar com os custos.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto dinheiro preciso levar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Você deve levar dinheiro suficiente caso precise abandonar o trekking. Recomendamos você levar um total de U$200 na moeda americana e mais 500 reais trocados em pesos argentinos já quando chegar em Mendoza para a viagem toda. Caso não utilizar depois é só trocar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Qual é o treinamento que preciso para uma travessia dessas?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Recomendamos que você venha aos Andes com um treinamento cardio-vascular moderado. Corrida ou bicicleta 2 ou 3 vezes por semana durante os 2 ou 3 meses que antecipam a expedição ajudariam muito!</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Como é o clima lá em cima?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Mesmo estando lá no verão, há que lembrar que estaremos no meio dos Andes e o clima é imprevisível. Podemos ter até ter dias quentes e muito frio logo à seguir. A presença de vento faz com que tudo mude. Ou seja, espere de tudo! Na média os dias são amenos com mais ou menos 15 graus de temperatura e noites com frio negativo de 5 graus positivos à 5 negativos. Ocasionalmente podemos ter tempestades de neve.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Restrições alimentares como vcs tratam?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Nos avise antecipadamente que atenderemos da melhor forma possível.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso cozinhar durante a expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Não, toda alimentação será preparada pela nossa equipe.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso ter equipamentos?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Caso não tenha equipamentos poderá alugar em Mendoza.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tem água no caminho?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim vários pontos de água, porém precisa ter recipientes pra armazenar pelo menos 3 litros de água e trata-la sempre.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Como vai rolar a trip</h2>
+                    <div style="font-size: 1.1rem; line-height: 1.6; color: #bbb;">
+                        <p style='margin-bottom: 1rem;'>Conforme dito anteriormente... Mendoza é uma cidade linda e com muitos atrativos.. recomendo fortemente que cheguem 1 ou 2 dias antes para conhecer junto comigo tudo que tem de melhor nessa baita Cidade.</p><p style='margin-bottom: 1rem;'>Hospedagem (quarto compartilhado)</p><p style='margin-bottom: 1rem;'>Transporte aeroporto-hospedagem</p><p style='margin-bottom: 1rem;'>Primeiro dia de nossa expedição.</p><p style='margin-bottom: 1rem;'>Usaremos esse dia para a Logística, partindo do Brasil de vários estados e chegando na hospedagem em Mendoza onde vamos conhecer todos os integrantes que vão compor esse baita time!</p><p style='margin-bottom: 1rem;'>Barracas de alta montanha compartilhadas por 2 membros. (Caso queira individual, deve solicitá-lo com 15 dias de antecedência, e tem um custo extra de aluguel).</p><p style='margin-bottom: 1rem;'>Pensão completa em alimentação, desde o almoço a pé no dia 1 da travessia até o café da manha a pé no último dia de travessia).</p>
                     </div>
                 </div>
             </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/crucedelosandes2027" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
+            <!-- 3: Specs (already handled in the hero section) -->
+
+            <!-- 5: Atenção (Warnings) -->
+            <div style='background: rgba(244,67,54,0.1); border-left: 4px solid #F44336; padding: 1.5rem; margin-bottom: 3rem; border-radius: 4px;'>
+            <h3 style='color: #F44336; margin-bottom: 1rem;'><i class='fas fa-exclamation-triangle'></i> Atenção</h3>
+            <p style='margin-bottom:0.5rem; color:#ddd;'>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para a expedição. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p style='margin-bottom:0.5rem; color:#ddd;'>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p style='margin-bottom:0.5rem; color:#ddd;'>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p>
         </div>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
-                </div>
-            </div>
-
+            <!-- 4: Cronograma -->
             <div class="timeline-container" style="margin-bottom: 3rem;">
-                
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para a expedição. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto equipamento vou ter que carregar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: A sua mochila não vai pesar mais que 6-10 kg. Todo o equipamento de grupo será transporte por mulas. Você não vai ter que carregar nenhum destes. O equipamento pessoal que você vai usar para dormir ou se trocar, será levado pelas mulas então você não tem que se preocupar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Apenas RG ou Passaporte dentro da validade e em bom estado.</p><p>RG com menos de 10 anos de expedição.</p><p>Passaporte com no mínimo 6 meses de validade.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>- Haverá comunicação na montanha?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Não há sinal de celular lá, então prepare-se para desconexão total com o mundo exterior. Para emergências temos rádio e comunicador satelital.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Minha família consegue saber onde estou?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>: Sim, caso for da sua escolha disponibilizamos um link para acompanhar nosso deslocamento via Spot.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tenho que dividir barracas com alguém?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim. Todas as barracas são divididas por 2 pessoas e isso é previamente acertado. Dividir uma barraca com alguém cria um vínculo de parceria essencial para sobreviver e se dar bem nesses ambientes hostis que são as montanhas.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais vôos preciso pegar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Do Brasil para Mendoza - Argentina</p><p>De Santiago - Chile para o Brasil</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-E se eu abandonar ou desistir da expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Se você desistir da expedição enquanto você ainda está no Brasil é possível recuperar parte do seu investimento, conforme nossa politica de cancelamento. Entre em contato para saber mais.</p><p>Se você desistir da expedição em Mendoza, antes de ir à montanha, você pode continuar usufruindo dos serviços que lhe brindamos, como transporte e hospedagem. No entanto não podemos devolver o dinheiro que você investiu pois toda a logística já vai estar contratada.</p><p>Se você desistir durante a expedição, você vai ter que arcar com os custos de transporte e estadia individuais. Todo aquele que deixar a expedição por motivos pessoais ou de saúde, deve arcar com os custos.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto dinheiro preciso levar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Você deve levar dinheiro suficiente caso precise abandonar o trekking. Recomendamos você levar um total de U$200 na moeda americana e mais 500 reais trocados em pesos argentinos já quando chegar em Mendoza para a viagem toda. Caso não utilizar depois é só trocar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Qual é o treinamento que preciso para uma travessia dessas?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Recomendamos que você venha aos Andes com um treinamento cardio-vascular moderado. Corrida ou bicicleta 2 ou 3 vezes por semana durante os 2 ou 3 meses que antecipam a expedição ajudariam muito!</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Como é o clima lá em cima?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Mesmo estando lá no verão, há que lembrar que estaremos no meio dos Andes e o clima é imprevisível. Podemos ter até ter dias quentes e muito frio logo à seguir. A presença de vento faz com que tudo mude. Ou seja, espere de tudo! Na média os dias são amenos com mais ou menos 15 graus de temperatura e noites com frio negativo de 5 graus positivos à 5 negativos. Ocasionalmente podemos ter tempestades de neve.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Restrições alimentares como vcs tratam?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Nos avise antecipadamente que atenderemos da melhor forma possível.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso cozinhar durante a expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Não, toda alimentação será preparada pela nossa equipe.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso ter equipamentos?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Caso não tenha equipamentos poderá alugar em Mendoza.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tem água no caminho?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim vários pontos de água, porém precisa ter recipientes pra armazenar pelo menos 3 litros de água e trata-la sempre.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
+                <h2 class="section-title">O Roteiro Passo a Passo</h2>
+                <div class="timeline">
+                    <p>Roteiro detalhado em breve.</p>
                 </div>
             </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/crucedelosandes2027" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
-            </div>
-
+            <!-- 6 & 7: Incluso / Não Incluso -->
             <div class="bento-grid" style="margin-bottom: 3rem;">
                 <div class="bento-box bento-included">
-                    
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
-                        <ul class="bento-list list-check">
-                            <li>1 Noite em hospedagem em Mendoza (quartos compartilhados)</li><li>1 Noite em hospedagem em Santiago do Chile (quartos compartilhados).</li><li>Transporte da hospedagem até o início da travessia</li><li>Transporte desde Termas del Plomo, até Santiago do Chile.</li><li>Cavalos de apoio e tropeiros para a travessia de rios caudalosos.</li><li>Todos utensílios de cozinha.</li><li>Guias profissionais, assistentes e carregadores.</li><li>Equipe treinada em primeiros socorros em áreas selvagens.</li><li>Serviço de ambulância a cavalo.</li><li>Levamos um cavalo com sela junto com o grupo, para poder usá-lo caso alguém se machuque ou alguma outra contingência.</li><li>Kit de primeiros socorros de montanha completo.</li><li>Tubo de oxigênio médico.</li><li>Equipamentos de uso comum (tendas de alta montanha, aquecedores, panelas).</li><li>Comunicação VHF entre guias e tropeiros.</li><li>Cada Guia Profissional carrega um GPS.</li><li>Assessoria completa antes da expedição.</li><li>Brindes da N.A Trekking.</li><li>Devolução do seu equipamento alugado (caso o tenha alugado na loja indicada).</li><li>Assessoria na compra ou aluguel do equipamento que você vai precisar.</li>
-                        </ul>
-                    </div>
-                    <div class="bento-box bento-excluded">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Aluguel de equipamentos.</li><li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Refeições fora do itinerário de montanha.</li><li>Passagens aéreas do Brasil a Mendoza e de Santiago para o Brasil.</li><li>Transporte do Aeroporto para o hospedagem e da hospedagem para o Aeroporto.</li><li>E qualquer coisa que não esteja na aba incluso</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para a expedição. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto equipamento vou ter que carregar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: A sua mochila não vai pesar mais que 6-10 kg. Todo o equipamento de grupo será transporte por mulas. Você não vai ter que carregar nenhum destes. O equipamento pessoal que você vai usar para dormir ou se trocar, será levado pelas mulas então você não tem que se preocupar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Apenas RG ou Passaporte dentro da validade e em bom estado.</p><p>RG com menos de 10 anos de expedição.</p><p>Passaporte com no mínimo 6 meses de validade.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>- Haverá comunicação na montanha?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Não há sinal de celular lá, então prepare-se para desconexão total com o mundo exterior. Para emergências temos rádio e comunicador satelital.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Minha família consegue saber onde estou?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>: Sim, caso for da sua escolha disponibilizamos um link para acompanhar nosso deslocamento via Spot.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tenho que dividir barracas com alguém?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim. Todas as barracas são divididas por 2 pessoas e isso é previamente acertado. Dividir uma barraca com alguém cria um vínculo de parceria essencial para sobreviver e se dar bem nesses ambientes hostis que são as montanhas.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais vôos preciso pegar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Do Brasil para Mendoza - Argentina</p><p>De Santiago - Chile para o Brasil</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-E se eu abandonar ou desistir da expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Se você desistir da expedição enquanto você ainda está no Brasil é possível recuperar parte do seu investimento, conforme nossa politica de cancelamento. Entre em contato para saber mais.</p><p>Se você desistir da expedição em Mendoza, antes de ir à montanha, você pode continuar usufruindo dos serviços que lhe brindamos, como transporte e hospedagem. No entanto não podemos devolver o dinheiro que você investiu pois toda a logística já vai estar contratada.</p><p>Se você desistir durante a expedição, você vai ter que arcar com os custos de transporte e estadia individuais. Todo aquele que deixar a expedição por motivos pessoais ou de saúde, deve arcar com os custos.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto dinheiro preciso levar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Você deve levar dinheiro suficiente caso precise abandonar o trekking. Recomendamos você levar um total de U$200 na moeda americana e mais 500 reais trocados em pesos argentinos já quando chegar em Mendoza para a viagem toda. Caso não utilizar depois é só trocar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Qual é o treinamento que preciso para uma travessia dessas?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Recomendamos que você venha aos Andes com um treinamento cardio-vascular moderado. Corrida ou bicicleta 2 ou 3 vezes por semana durante os 2 ou 3 meses que antecipam a expedição ajudariam muito!</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Como é o clima lá em cima?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Mesmo estando lá no verão, há que lembrar que estaremos no meio dos Andes e o clima é imprevisível. Podemos ter até ter dias quentes e muito frio logo à seguir. A presença de vento faz com que tudo mude. Ou seja, espere de tudo! Na média os dias são amenos com mais ou menos 15 graus de temperatura e noites com frio negativo de 5 graus positivos à 5 negativos. Ocasionalmente podemos ter tempestades de neve.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Restrições alimentares como vcs tratam?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Nos avise antecipadamente que atenderemos da melhor forma possível.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso cozinhar durante a expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Não, toda alimentação será preparada pela nossa equipe.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso ter equipamentos?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Caso não tenha equipamentos poderá alugar em Mendoza.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tem água no caminho?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim vários pontos de água, porém precisa ter recipientes pra armazenar pelo menos 3 litros de água e trata-la sempre.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/crucedelosandes2027" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
+                    <h3 class="box-title"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Incluso no Investimento</h3>
+                    <ul class="included-list">
+                        <li><i class='fas fa-check'></i> 1 Noite em hospedagem em Mendoza (quartos compartilhados)</li><li><i class='fas fa-check'></i> 1 Noite em hospedagem em Santiago do Chile (quartos compartilhados).</li><li><i class='fas fa-check'></i> Transporte da hospedagem até o início da travessia</li><li><i class='fas fa-check'></i> Transporte desde Termas del Plomo, até Santiago do Chile.</li><li><i class='fas fa-check'></i> Cavalos de apoio e tropeiros para a travessia de rios caudalosos.</li><li><i class='fas fa-check'></i> Todos utensílios de cozinha.</li><li><i class='fas fa-check'></i> Guias profissionais, assistentes e carregadores.</li><li><i class='fas fa-check'></i> Equipe treinada em primeiros socorros em áreas selvagens.</li><li><i class='fas fa-check'></i> Serviço de ambulância a cavalo.</li><li><i class='fas fa-check'></i> Levamos um cavalo com sela junto com o grupo, para poder usá-lo caso alguém se machuque ou alguma outra contingência.</li>
+                    </ul>
                 </div>
                 <div class="bento-box bento-excluded">
-                    
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Aluguel de equipamentos.</li><li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Refeições fora do itinerário de montanha.</li><li>Passagens aéreas do Brasil a Mendoza e de Santiago para o Brasil.</li><li>Transporte do Aeroporto para o hospedagem e da hospedagem para o Aeroporto.</li><li>E qualquer coisa que não esteja na aba incluso</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para a expedição. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto equipamento vou ter que carregar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: A sua mochila não vai pesar mais que 6-10 kg. Todo o equipamento de grupo será transporte por mulas. Você não vai ter que carregar nenhum destes. O equipamento pessoal que você vai usar para dormir ou se trocar, será levado pelas mulas então você não tem que se preocupar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Apenas RG ou Passaporte dentro da validade e em bom estado.</p><p>RG com menos de 10 anos de expedição.</p><p>Passaporte com no mínimo 6 meses de validade.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>- Haverá comunicação na montanha?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Não há sinal de celular lá, então prepare-se para desconexão total com o mundo exterior. Para emergências temos rádio e comunicador satelital.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Minha família consegue saber onde estou?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>: Sim, caso for da sua escolha disponibilizamos um link para acompanhar nosso deslocamento via Spot.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tenho que dividir barracas com alguém?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim. Todas as barracas são divididas por 2 pessoas e isso é previamente acertado. Dividir uma barraca com alguém cria um vínculo de parceria essencial para sobreviver e se dar bem nesses ambientes hostis que são as montanhas.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais vôos preciso pegar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Do Brasil para Mendoza - Argentina</p><p>De Santiago - Chile para o Brasil</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-E se eu abandonar ou desistir da expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Se você desistir da expedição enquanto você ainda está no Brasil é possível recuperar parte do seu investimento, conforme nossa politica de cancelamento. Entre em contato para saber mais.</p><p>Se você desistir da expedição em Mendoza, antes de ir à montanha, você pode continuar usufruindo dos serviços que lhe brindamos, como transporte e hospedagem. No entanto não podemos devolver o dinheiro que você investiu pois toda a logística já vai estar contratada.</p><p>Se você desistir durante a expedição, você vai ter que arcar com os custos de transporte e estadia individuais. Todo aquele que deixar a expedição por motivos pessoais ou de saúde, deve arcar com os custos.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto dinheiro preciso levar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Você deve levar dinheiro suficiente caso precise abandonar o trekking. Recomendamos você levar um total de U$200 na moeda americana e mais 500 reais trocados em pesos argentinos já quando chegar em Mendoza para a viagem toda. Caso não utilizar depois é só trocar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Qual é o treinamento que preciso para uma travessia dessas?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Recomendamos que você venha aos Andes com um treinamento cardio-vascular moderado. Corrida ou bicicleta 2 ou 3 vezes por semana durante os 2 ou 3 meses que antecipam a expedição ajudariam muito!</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Como é o clima lá em cima?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Mesmo estando lá no verão, há que lembrar que estaremos no meio dos Andes e o clima é imprevisível. Podemos ter até ter dias quentes e muito frio logo à seguir. A presença de vento faz com que tudo mude. Ou seja, espere de tudo! Na média os dias são amenos com mais ou menos 15 graus de temperatura e noites com frio negativo de 5 graus positivos à 5 negativos. Ocasionalmente podemos ter tempestades de neve.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Restrições alimentares como vcs tratam?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Nos avise antecipadamente que atenderemos da melhor forma possível.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso cozinhar durante a expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Não, toda alimentação será preparada pela nossa equipe.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso ter equipamentos?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Caso não tenha equipamentos poderá alugar em Mendoza.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tem água no caminho?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim vários pontos de água, porém precisa ter recipientes pra armazenar pelo menos 3 litros de água e trata-la sempre.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                
+                    <h3 class="box-title"><i class="fas fa-times-circle" style="color: #F44336; margin-right: 10px;"></i> Não Incluso</h3>
+                    <ul class="excluded-list">
+                        <li>Consultar equipe</li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- 8: Investimento -->
             <div class="price-container" style="margin-bottom: 3rem;">
                 <h2 style="font-size: 2rem; color: #fff; margin-bottom: 2rem; text-align: center;">Investimento</h2>
                 <div class="bento-box" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 2rem; text-align: center;">
@@ -856,190 +113,315 @@
                 </div>
             </div>
 
-            <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para a expedição. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto equipamento vou ter que carregar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: A sua mochila não vai pesar mais que 6-10 kg. Todo o equipamento de grupo será transporte por mulas. Você não vai ter que carregar nenhum destes. O equipamento pessoal que você vai usar para dormir ou se trocar, será levado pelas mulas então você não tem que se preocupar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Apenas RG ou Passaporte dentro da validade e em bom estado.</p><p>RG com menos de 10 anos de expedição.</p><p>Passaporte com no mínimo 6 meses de validade.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>- Haverá comunicação na montanha?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Não há sinal de celular lá, então prepare-se para desconexão total com o mundo exterior. Para emergências temos rádio e comunicador satelital.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Minha família consegue saber onde estou?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>: Sim, caso for da sua escolha disponibilizamos um link para acompanhar nosso deslocamento via Spot.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tenho que dividir barracas com alguém?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim. Todas as barracas são divididas por 2 pessoas e isso é previamente acertado. Dividir uma barraca com alguém cria um vínculo de parceria essencial para sobreviver e se dar bem nesses ambientes hostis que são as montanhas.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quais vôos preciso pegar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R:Do Brasil para Mendoza - Argentina</p><p>De Santiago - Chile para o Brasil</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-E se eu abandonar ou desistir da expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Se você desistir da expedição enquanto você ainda está no Brasil é possível recuperar parte do seu investimento, conforme nossa politica de cancelamento. Entre em contato para saber mais.</p><p>Se você desistir da expedição em Mendoza, antes de ir à montanha, você pode continuar usufruindo dos serviços que lhe brindamos, como transporte e hospedagem. No entanto não podemos devolver o dinheiro que você investiu pois toda a logística já vai estar contratada.</p><p>Se você desistir durante a expedição, você vai ter que arcar com os custos de transporte e estadia individuais. Todo aquele que deixar a expedição por motivos pessoais ou de saúde, deve arcar com os custos.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Quanto dinheiro preciso levar?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Você deve levar dinheiro suficiente caso precise abandonar o trekking. Recomendamos você levar um total de U$200 na moeda americana e mais 500 reais trocados em pesos argentinos já quando chegar em Mendoza para a viagem toda. Caso não utilizar depois é só trocar.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Qual é o treinamento que preciso para uma travessia dessas?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Recomendamos que você venha aos Andes com um treinamento cardio-vascular moderado. Corrida ou bicicleta 2 ou 3 vezes por semana durante os 2 ou 3 meses que antecipam a expedição ajudariam muito!</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Como é o clima lá em cima?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Mesmo estando lá no verão, há que lembrar que estaremos no meio dos Andes e o clima é imprevisível. Podemos ter até ter dias quentes e muito frio logo à seguir. A presença de vento faz com que tudo mude. Ou seja, espere de tudo! Na média os dias são amenos com mais ou menos 15 graus de temperatura e noites com frio negativo de 5 graus positivos à 5 negativos. Ocasionalmente podemos ter tempestades de neve.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Restrições alimentares como vcs tratam?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Nos avise antecipadamente que atenderemos da melhor forma possível.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso cozinhar durante a expedição?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Não, toda alimentação será preparada pela nossa equipe.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Preciso ter equipamentos?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Caso não tenha equipamentos poderá alugar em Mendoza.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>-Tem água no caminho?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>R: Sim vários pontos de água, porém precisa ter recipientes pra armazenar pelo menos 3 litros de água e trata-la sempre.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/crucedelosandes2027" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            <!-- 9 & 10: Política & FAQ -->
+            <div class="faq-container" style="margin-bottom: 3rem;">
+                <h2 class="section-title">Perguntas Frequentes & Políticas</h2>
+                <div class="accordion">
+                    
+        <div class="accordion-item">
+            <button class="accordion-header">
+                A passagem aérea muitos de vocês tem dúvidas...fica tranquilo(a) que vamos te ajudar na escolha do aéreo e economizar nisso também.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>O ponto de encontro será em Mendoza (Argentina) em uma hospedagem que recebe pessoas do mundo todo, então se prepare para uma imersão cultural do inicio ao fim.</p><p>Chegando no aeroporto de Mendoza você pode pegar um uber ou taxi até a hospedagem, ambas ferramentas de transporte funcionam muito bem em Mendoza e são muito seguros.</p><p>Recomendamos que você chegue pelo menos dois dias antes pra conhecer Mendoza que é uma cidade muito segura e com uma qualidade de vida exemplo pra muitas regiões do mundo. Ah e não esquecendo da gastronomia da cidade que com certeza vai agradar a todos os paladares.</p><p>Qualquer dúvida estamos sempre a disposição.</p>
             </div>
         </div>
-    </footer>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Recomendamos que vc chegue antes do meio dia em Mendoza se possível pois faremos a conferencia dos equipamentos de cada participante e caso faltar algo o participante terá que providenciar comprando ou alugando na cidade.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>É importante que você tenha tudo pronto ate o fim da tarde, pois entre 18h e 20h nossa equipe ira levar seus pertences para o transporte e prepará-las para o dia seguinte.</p><p>Distância do aeroporto a hospedagem 13 km aprox.</p><p>As 08:30 nosso transporte estará pronto para nos levar até o refúgio Portinari, onde realizaremos todos os procedimentos de imigração.</p><p>Finalmente entramos na Cordilheira!</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                De lá, começamos nossa primeira caminhada: 4 horas de subida para o refúgio Scaravelli, onde passaremos a noite e desfrutaremos de um delicioso jantar. A primeira subida é muito importante para iniciar o processo de aclimatação
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Ganho de elevação: 700 metros</p><p>Altitude máxima: 3.200 metros acima do nível do mar</p><p>Transporte até o inicio da trilha</p><p>Um merecido descanso no Refúgio Scaravelli</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Nossos guias irão propor atividades de aclimatação nos arredores da Área de Manantiales. Faremos uma caminhada simples, com o objetivo de antecipar os possíveis sintomas causados pela altitude. Quando se trata de se acostumar com altitudes mais elevadas, subir progressivamente e manter-se em movimento será de grande importância.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Para nos prepararmos para o nosso dia mais intenso, acordamos cedo para um café da manhã nutritivo e começaremos a caminhada que deve 12 horas até chegarmos ao acampamento "La Olla". O dia é longo porque temos que passar por um passo alto(Portillo Argentino 4.400 m): será necessário subir até 4.400 msnm, e depois descer para 3.300 msnm, e chegar a um bom lugar para acampar e descansar. Nesse dia, chegaremos a altitude máxima de toda a expedição (4.400 msnm), e teremos completado um dos mais longos desafios.</p><p>Ganho de elevação: 1.150 metros</p><p>Altura máxima: 4.400 msnm</p><p>Acampamento Contreras</p><p>Rio Tunuyán com vista para o vulcão Tupungato, geleiras e "seis mil"</p><p>Neste dia nos mudamos para o acampamento "Contreras". Para isso, atravessamos o grande rio Tunuyán Superior (a travessia será feita a cavalo, pois devido ao seu fluxo não é possível fazê-la a pé). O passeio nos dá vistas mágicas da face sul de Tupungato, com majestosas geleiras e colinas de mais de 6.000 mts. Desfrutaremos de meio dia de descanso em Contreras, um lugar com temperaturas agradáveis, ideal para superar o dia anterior</p><p>Altitude máxima: 3.250 msnm</p><p>De Contreras a Gauchito Gil</p><p>Continuamos a progredir em direção ao objetivo.</p><p>Caminhamos aproximadamente 6 horas até chegarmos quase a cruzar a fronteira com o Chile. À medida que avançamos, testemunharemos a imensidão dos Andes, e poderemos identificar as colinas que podem ser vistas de lá, como o Nevado de Piuquenes e Marmolejo.</p><p>O próximo dia será muito importante</p><p>Altitude máxima: 3.300 msnm</p><p>Transporte final da trilha -  hospedagem</p><p>Fronteira Argentina x Chile</p><p>Passo Internacional "Portillo de Piuquenes". Fronteira Argentina x Chile.</p><p>Começamos cedo: saímos ao amanhecer e, por volta do meio-dia chegamos ao cruzamento da fronteira com o Chile.</p><p>Depois das festividades e das fotos, um último esforço: uma longa descida de 4 horas e 1.100 metros de desnível, em direção à nossa recompensa, as fontes termais de "Plomo". Lá nós poderemos nos recuperar da caminhada nas aguas termais e com um bom lanche reforçado.</p><p>Finalmente, nosso transfer nos buscará para nos levar a Santiago do Chile.</p><p>Anoite nos poderemos nos juntar e sair para jantar para comemorar nosso objetivo alcançado.</p><p>Nos despedimos em Santiago do Chile:</p><p>Ao acordar partilhamos um bom café da manha, para que mais tarde cada um possa organizar e realizar o seu retorno. Saudamo-nos com toda a satisfação e felicidade que os dias que vivemos nos deixam e até a próxima aventura!</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                ... mas recomendo que tirem esse dia para explorar comigo Santiago que tem uma grande variedade de lojas de equipamentos de Montanha com itens que não chegam aqui no Brasil.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Transporte hospedagem - aeroporto</p><p>Expedição Monte Roraima</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Transporte de até 10 quilos de equipamentos pessoais em mulas. (será controlado no primeiro acampamento, se você quiser carregar mais, os quilos extras são cobrados separadamente pelos tropeiros, pergunte-nos se deseja este serviço de transporte de quilos extras)
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Kit de primeiros socorros de montanha completo.</p><p>Tubo de oxigênio médico.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Equipamentos de uso comum (tendas de alta montanha, aquecedores, panelas).
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Comunicação VHF entre guias e tropeiros.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Cada Guia Profissional carrega um GPS.</p><p>Levamos também um SpotX que trabalha com outra constelação de satélites afim de garantir o rastreamento e qualquer serviço de resgate se emergencialmente for necessário.</p><p>Assessoria completa antes da expedição.</p><p>Incluso também três camisetas N.A Trekking (2 camisas com proteção UV para a caminhada e 1 de algodão exclusiva do roteiro para o translado).</p><p>Brindes da N.A Trekking.</p><p>Seguro Internacional válido de 20 a 27 de março de 2027 (Caso necessitar mais dias podemos cotar pra você) (Obrigatório estar coberto desde o dia de saída do Brasil até o dia de retorno para o Brasil)</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Devolução do seu equipamento alugado (caso o tenha alugado na loja indicada).
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Assessoria na compra ou aluguel do equipamento que você vai precisar.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Aluguel de equipamentos.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</p><p>Refeições fora do itinerário de montanha.</p><p>Passagens aéreas do Brasil a Mendoza e de Santiago para o Brasil.</p><p>Transporte do Aeroporto para o hospedagem e da hospedagem para o Aeroporto.</p><p>E qualquer coisa que não esteja na aba incluso</p><p>Politica de Cancelamento</p><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, Guia Local, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Quanto equipamento vou ter que carregar?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                R: A sua mochila não vai pesar mais que 6-10 kg. Todo o equipamento de grupo será transporte por mulas. Você não vai ter que carregar nenhum destes. O equipamento pessoal que você vai usar para dormir ou se trocar, será levado pelas mulas então você não tem que se preocupar.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Quais documentos preciso?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>R: Apenas RG ou Passaporte dentro da validade e em bom estado.</p><p>RG com menos de 10 anos de expedição.</p><p>Passaporte com no mínimo 6 meses de validade.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                - Haverá comunicação na montanha?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>R:Não há sinal de celular lá, então prepare-se para desconexão total com o mundo exterior. Para emergências temos rádio e comunicador satelital.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Minha família consegue saber onde estou?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>: Sim, caso for da sua escolha disponibilizamos um link para acompanhar nosso deslocamento via Spot.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Tenho que dividir barracas com alguém?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                R: Sim. Todas as barracas são divididas por 2 pessoas e isso é previamente acertado. Dividir uma barraca com alguém cria um vínculo de parceria essencial para sobreviver e se dar bem nesses ambientes hostis que são as montanhas.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Quais vôos preciso pegar?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>R:Do Brasil para Mendoza - Argentina</p><p>De Santiago - Chile para o Brasil</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -E se eu abandonar ou desistir da expedição?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>R: Se você desistir da expedição enquanto você ainda está no Brasil é possível recuperar parte do seu investimento, conforme nossa politica de cancelamento. Entre em contato para saber mais.</p><p>Se você desistir da expedição em Mendoza, antes de ir à montanha, você pode continuar usufruindo dos serviços que lhe brindamos, como transporte e hospedagem. No entanto não podemos devolver o dinheiro que você investiu pois toda a logística já vai estar contratada.</p><p>Se você desistir durante a expedição, você vai ter que arcar com os custos de transporte e estadia individuais. Todo aquele que deixar a expedição por motivos pessoais ou de saúde, deve arcar com os custos.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Quanto dinheiro preciso levar?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                R: Você deve levar dinheiro suficiente caso precise abandonar o trekking. Recomendamos você levar um total de U$200 na moeda americana e mais 500 reais trocados em pesos argentinos já quando chegar em Mendoza para a viagem toda. Caso não utilizar depois é só trocar.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Qual é o treinamento que preciso para uma travessia dessas?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>R: Recomendamos que você venha aos Andes com um treinamento cardio-vascular moderado. Corrida ou bicicleta 2 ou 3 vezes por semana durante os 2 ou 3 meses que antecipam a expedição ajudariam muito!</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Como é o clima lá em cima?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                R: Mesmo estando lá no verão, há que lembrar que estaremos no meio dos Andes e o clima é imprevisível. Podemos ter até ter dias quentes e muito frio logo à seguir. A presença de vento faz com que tudo mude. Ou seja, espere de tudo! Na média os dias são amenos com mais ou menos 15 graus de temperatura e noites com frio negativo de 5 graus positivos à 5 negativos. Ocasionalmente podemos ter tempestades de neve.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Restrições alimentares como vcs tratam?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>R: Nos avise antecipadamente que atenderemos da melhor forma possível.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Preciso cozinhar durante a expedição?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>R: Não, toda alimentação será preparada pela nossa equipe.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Preciso ter equipamentos?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                R: Caso não tenha equipamentos poderá alugar em Mendoza.
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                -Tem água no caminho?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>R: Sim vários pontos de água, porém precisa ter recipientes pra armazenar pelo menos 3 litros de água e trata-la sempre.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        
+                    
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
+    

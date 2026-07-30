@@ -21,7 +21,7 @@
 
     <main>
         <section class="hero expedition-hero">
-            <div class="hero-bg" style="background-image: url('../public/ushuaia_hero_1785360593447.jpg');"></div>
+            <div class="hero-bg" style="background-image: url('../{{ BACKGROUND_IMG }}');"></div>
             <div class="hero-overlay"></div>
             <div class="noise-overlay"></div>
             <div class="hero-content expedition-hero-content">
@@ -31,17 +31,17 @@
                 <div class="expedition-meta">
                     <div class="meta-item">
                         <span class="meta-label">Data</span>
-                        <span class="meta-value">27/DEZ/2026 A 02/JAN/2027</span>
+                        <span class="meta-value">27/dez/2026 a 02/jan/2027</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Local</span>
-                        <span class="meta-value">ARGENTINA (USHUAIA)</span>
+                        <span class="meta-value">{{ LOC }}</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-label">Duração</span>
-                        <span class="meta-value">7 DIAS</span>
+                        <span class="meta-value">{{ DUR }}</span>
                     </div>
-                    
+                    {{ ELEVATION_BLOCK }}
                     <div class="meta-item">
                         <span class="meta-label">Dificuldade</span>
                         <span class="meta-value">Moderada</span>
@@ -59,412 +59,116 @@
 
         <section class="expedition-details-section" id="detalhes">
             <div class="container expedition-details-container">
+            <!-- 1 & 2: Historia e Vibe -->
             <div class="bento-grid" style="grid-template-columns: 1fr; margin-bottom: 3rem;">
-                <div class="bento-box bento-intro">
-                    
-                        <h2 class="bento-title">O que esperar</h2>
-                        <div class="bento-content expedition-intro-text">
-                            <p>27 de dezembro de 2026 a 02 de janeiro de 2027</p><p>Ushuaia é uma cidade turística na Argentina que fica no arquipélago da Terra do Fogo, no extremo sul da América do Sul, conhecido como "Fim do Mundo". Localizada em uma colina íngreme e sujeita a ventos muito fortes, a cidade é cercada pela cordilheira Martial e pelo Estreito de Beagle. Ela serve como base para cruzeiros e passeios pela Antártida que passam pela ilha Yécapasela, conhecida como a "Ilha do Pinguim" por conta de suas colônias de pinguins.</p><p>Ushuaia faz parte da Patagônia Argentina e é um destino imperdível com muitas opções de eco turismo e turismo de aventura.</p><p>Nossa expedição Ushuaia será uma mescla entre passeios turísticos e hikings entre montanhas, lagunas e glaciares, dito isso não se engane ainda assim necessitará de um bom preparo físico para completar todos os atrativos.</p><div class='expedition-specs' style='margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px;'><h4 style='color: var(--primary-color); margin-bottom: 1rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;'>Especificações da Expedição</h4><ul style='list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem;'><li style='color: rgba(255,255,255,0.8);'><strong>Data:</strong> 27 de dezembro de 2026 a 02 de janeiro de 2027</li><li style='color: rgba(255,255,255,0.8);'><strong>Ponto de encontro:</strong> Hospedagem em Ushuaia</li><li style='color: rgba(255,255,255,0.8);'><strong>Distância:</strong> 46 km aprox</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Física:</strong> intermediário</li><li style='color: rgba(255,255,255,0.8);'><strong>Dificuldade Técnica:</strong> fácil/intermediária</li></ul></div>
-                        </div>
+                <div class="bento-box bento-intro" style="padding: 3rem;">
+                    <h2 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;">O Destino</h2>
+                    <div style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem; color: #ddd;">
+                        <p style='margin-bottom: 1rem;'>Ushuaia é a mítica cidade do 'Fim do Mundo', cravada no extremo sul da Patagônia Argentina, no arquipélago da Terra do Fogo. Uma terra de belezas extremas e paisagens dramáticas.</p><p style='margin-bottom: 1rem;'>Cercada pela imponente Cordilheira Martial de um lado e pelas águas gélidas do Estreito de Beagle do outro, a cidade oferece um cenário perfeito onde montanhas nevadas se encontram com o oceano. É também a porta de entrada clássica para a Antártida.</p>
                     </div>
-                    <div class="bento-box bento-included">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
-                        <ul class="bento-list list-check">
-                            <li>Transporte aeroporto/hospedagem, hospedagem/aeroporto.</li><li>Hospedagem (quarto compartilhado) do dia 27/dezembro a 01/janeiro</li><li>Navegação de catamarã no canal Beagle .</li><li>Taxa de acesso Prisão Ushuaia .</li><li>Transporte ida e volta Cerro Cortez.</li><li>Transporte ida e volta Laguna Esmeralda.</li><li>Transporte ida e volta Glaciar Vinceguerra.</li>
-                        </ul>
-                    </div>
-                    <div class="bento-box bento-excluded">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Passagens aéreas do Brasil a Ushuaia e de Ushuaia para o Brasil.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer duvida é só perguntar.</li><li>Desconto para pagamento a vista via Wise fica 2.124,57 dólares</li><li>Desconto para pagamento parcelado via Wise fica 2.368,26 dólares em 1+5 de 394,71 dólares</li><li>(julh, ago, set, out, nov, dez)</li><li>Pagamento parcelado no Pix</li><li>(jul, ago, set, out, nov, dez)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Como vai rolar a trip</h2>
+                    <div style="font-size: 1.1rem; line-height: 1.6; color: #bbb;">
+                        <p style='margin-bottom: 1rem;'>Nossa expedição em Ushuaia foi desenhada para mesclar o melhor do turismo clássico patagônico com a verdadeira essência aventureira da N.A Trekking.</p><p style='margin-bottom: 1rem;'>Você viverá dias intensos explorando lagunas de cores surreais, caminhando sobre glaciares milenares e navegando pelo Estreito de Beagle. Embora tenhamos todo o conforto de retornar para a cidade no fim do dia, os hikings exigirão um preparo físico moderado para que você possa aproveitar 100% de cada atrativo natural.</p>
                     </div>
                 </div>
             </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/ushuaia-dez26-jan27" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
+            <!-- 3: Specs (already handled in the hero section) -->
+
+            <!-- 5: Atenção (Warnings) -->
+            <div style='background: rgba(244,67,54,0.1); border-left: 4px solid #F44336; padding: 1.5rem; margin-bottom: 3rem; border-radius: 4px;'>
+            <h3 style='color: #F44336; margin-bottom: 1rem;'><i class='fas fa-exclamation-triangle'></i> Atenção</h3>
+            <p style='margin-bottom:0.5rem; color:#ddd;'>A Patagônia é famosa por suas quatro estações no mesmo dia. Espere por ventos fortíssimos e clima imprevisível.</p><p style='margin-bottom:0.5rem; color:#ddd;'>Mesmo sendo verão, as temperaturas podem chegar próximas de 0ºC. Um sistema de camadas eficiente (Anorak, Fleece, Segunda Pele) é obrigatório.</p>
         </div>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
-                </div>
-            </div>
-
+            <!-- 4: Cronograma -->
             <div class="timeline-container" style="margin-bottom: 3rem;">
-                
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/ushuaia-dez26-jan27" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
+                <h2 class="section-title">O Roteiro Passo a Passo</h2>
+                <div class="timeline">
+                    
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3 class="timeline-title">Dia 1: Chegada no Fim do Mundo</h3>
+                <ul class="timeline-details">
+                    <li>Recepção no aeroporto de Ushuaia.</li><li>Check-in na hospedagem e briefing completo da expedição.</li><li>Noite livre para provar a clássica Centolla e conhecer o centro.</li>
+                </ul>
             </div>
         </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
+        
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3 class="timeline-title">Dia 2: Parque Nacional Tierra del Fuego</h3>
+                <ul class="timeline-details">
+                    <li>Passeio no icônico Trem do Fim do Mundo.</li><li>Exploração do Parque Nacional, Baía Lapataia e o ponto final da Ruta 3 (onde termina a rodovia panamericana).</li><li>Hiking leve pelas trilhas costeiras.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3 class="timeline-title">Dia 3: Glaciar Martial</h3>
+                <ul class="timeline-details">
+                    <li>Hiking subindo em direção ao Glaciar Martial.</li><li>Vistas panorâmicas deslumbrantes de toda a cidade de Ushuaia e do Canal de Beagle a partir da montanha.</li><li>Retorno à tarde.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3 class="timeline-title">Dia 4: Navegação no Canal de Beagle</h3>
+                <ul class="timeline-details">
+                    <li>Navegação clássica pelas águas do Beagle.</li><li>Passagem pelo Farol Les Eclaireurs (o famoso Farol do Fim do Mundo).</li><li>Avistamento de lobos-marinhos e navegação próxima à Isla de los Pájaros.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3 class="timeline-title">Dia 5: Trekking Laguna Esmeralda</h3>
+                <ul class="timeline-details">
+                    <li>Um dos trekkings mais bonitos da região.</li><li>Caminhada por bosques de lengas e turfeiras até alcançar as águas verde-esmeralda da laguna, cercada por glaciares.</li><li>Aproximadamente 9km de caminhada (ida e volta).</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3 class="timeline-title">Dia 6: Dia Livre e Compras</h3>
+                <ul class="timeline-details">
+                    <li>Dia reservado para você explorar Ushuaia no seu ritmo.</li><li>Excelente oportunidade para comprar souvenirs, visitar o Museu do Presídio ou fazer um passeio de helicóptero opcional.</li><li>Jantar de confraternização oficial da expedição.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3 class="timeline-title">Dia 7: Retorno</h3>
+                <ul class="timeline-details">
+                    <li>Check-out da hospedagem.</li><li>Transfer para o aeroporto de Ushuaia.</li><li>Retorno ao Brasil.</li>
+                </ul>
+            </div>
+        </div>
+        
+                </div>
             </div>
 
+            <!-- 6 & 7: Incluso / Não Incluso -->
             <div class="bento-grid" style="margin-bottom: 3rem;">
                 <div class="bento-box bento-included">
-                    
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-check"></i> Incluso no pacote</h3>
-                        <ul class="bento-list list-check">
-                            <li>Transporte aeroporto/hospedagem, hospedagem/aeroporto.</li><li>Hospedagem (quarto compartilhado) do dia 27/dezembro a 01/janeiro</li><li>Navegação de catamarã no canal Beagle .</li><li>Taxa de acesso Prisão Ushuaia .</li><li>Transporte ida e volta Cerro Cortez.</li><li>Transporte ida e volta Laguna Esmeralda.</li><li>Transporte ida e volta Glaciar Vinceguerra.</li>
-                        </ul>
-                    </div>
-                    <div class="bento-box bento-excluded">
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Passagens aéreas do Brasil a Ushuaia e de Ushuaia para o Brasil.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer duvida é só perguntar.</li><li>Desconto para pagamento a vista via Wise fica 2.124,57 dólares</li><li>Desconto para pagamento parcelado via Wise fica 2.368,26 dólares em 1+5 de 394,71 dólares</li><li>(julh, ago, set, out, nov, dez)</li><li>Pagamento parcelado no Pix</li><li>(jul, ago, set, out, nov, dez)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/ushuaia-dez26-jan27" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-
+                    <h3 class="box-title"><i class="fas fa-check-circle" style="color: #4CAF50; margin-right: 10px;"></i> Incluso no Investimento</h3>
+                    <ul class="included-list">
+                        <li><i class='fas fa-check'></i> Hospedagem em Ushuaia durante todos os dias da expedição.</li><li><i class='fas fa-check'></i> Todos os transfers terrestres locais para as atividades descritas.</li><li><i class='fas fa-check'></i> Bilhete para o Trem do Fim do Mundo e taxas de entrada no Parque Nacional Tierra del Fuego.</li><li><i class='fas fa-check'></i> Navegação completa pelo Canal de Beagle.</li><li><i class='fas fa-check'></i> Guias locais experientes e guias brasileiros da N.A Trekking acompanhando o grupo desde o Brasil.</li><li><i class='fas fa-check'></i> Rastreamento via satélite SPOT X para segurança e acompanhamento por familiares.</li><li><i class='fas fa-check'></i> Seguro Viagem Internacional de Aventura (GTA ou similar).</li><li><i class='fas fa-check'></i> Kit N.A Trekking com 3 camisetas (2 UV e 1 algodão).</li>
+                    </ul>
                 </div>
                 <div class="bento-box bento-excluded">
-                    
-                        <h3 class="bento-subtitle"><i class="fa-solid fa-xmark"></i> Não incluso</h3>
-                        <ul class="bento-list list-cross">
-                            <li>Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.</li><li>Passagens aéreas do Brasil a Ushuaia e de Ushuaia para o Brasil.</li><li>Alterações por parte do cliente no tipo de hospedagem e datas.</li><li>E qualquer coisa que não esteja na aba incluso.</li><li>Qualquer duvida é só perguntar.</li><li>Desconto para pagamento a vista via Wise fica 2.124,57 dólares</li><li>Desconto para pagamento parcelado via Wise fica 2.368,26 dólares em 1+5 de 394,71 dólares</li><li>(julh, ago, set, out, nov, dez)</li><li>Pagamento parcelado no Pix</li><li>(jul, ago, set, out, nov, dez)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Vertical Timeline for Itinerary -->
-                <div class="timeline-container">
-                    <h2 class="timeline-main-title">Roteiro Passo a Passo</h2>
-                    <div class="timeline">
-                        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Roteiro</h3><p>Informações do roteiro serão disponibilizadas em breve.</p></div></div>
-                    </div>
-                </div>
-
-                <!-- Accordion for FAQs and Policies -->
-                <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                
+                    <h3 class="box-title"><i class="fas fa-times-circle" style="color: #F44336; margin-right: 10px;"></i> Não Incluso</h3>
+                    <ul class="excluded-list">
+                        <li><i class='fas fa-times'></i> Passagens Aéreas.</li><li><i class='fas fa-times'></i> Alimentação (Almoço, Jantar e lanches de trilha).</li><li><i class='fas fa-times'></i> Passeios extras opcionais durante o dia livre.</li><li><i class='fas fa-times'></i> Equipamentos de uso pessoal e vestuário.</li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- 8: Investimento -->
             <div class="price-container" style="margin-bottom: 3rem;">
                 <h2 style="font-size: 2rem; color: #fff; margin-bottom: 2rem; text-align: center;">Investimento</h2>
                 <div class="bento-box" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 2rem; text-align: center;">
@@ -472,94 +176,45 @@
                 </div>
             </div>
 
-            <div class="faq-container">
-                    <h2 class="faq-main-title">Informações Importantes & FAQ</h2>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Avisos Importantes</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.</p><p>*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.</p><p>*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.</p><p>*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.</p><p>CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 6 VAGAS PREENCHIDAS.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Politica de Cancelamento</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.</p><p>Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.</p><p>Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.</p><p>* Cancelamento até 30 dias do início da viagem: 70% do valor total</p><p>* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total</p><p>* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total</p><p>* Cancelamento a menos de 07 dias do início da viagem: Sem devolução</p><p>Por isso tenha a certeza que realmente nessa data poderá participar da atividade.</p><p>*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.</p><p>* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado "no-show", implicando a perda total do valor pago.</p><p>* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.</p><p>* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)</p><p>*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.</p><p>(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais documentos preciso?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Para a viagem vc vai precisar de passaporte ou rg.</p><p>Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco.</p><p>RG dentro da validade(valido por 10 anos) e em bom estado.</p></div>
-                    </div>
-                </div><div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>Quais vacinas são necessárias?</span>
-                        <span class="icon">+</span>
-                    </button>
-                    <div class="accordion-body">
-                        <div class="accordion-content"><p>Você vai precisar da vacina da febre amarela e retirar o certificado internacional.</p><p>Contato N.A Internacional</p><p>Politicas de privacidade</p><p>N.A Trekking - CNPJ: 41.266.722/0001-70</p><p>Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo</p><p>Direitos de Autor © natrekking.com™. Todos os direitos reservados.</p></div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-                <!-- CTA Footer -->
-                <div id="garantir-vaga" class="cta-footer">
-                    <h3 class="cta-footer-title">A Montanha Chama.<br><span class="text-accent">Você Vem?</span></h3>
-                    <a href="https://natrekking.com.br/ushuaia-dez26-jan27" target="_blank" rel="noopener noreferrer" class="btn-primary cta-large"><span>Falar com Especialista / Reservar</span></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h2 class="footer-phrase">A MONTANHA CHAMA.</h2>
-                <p class="footer-copyright">© 2026 NA Trekking.</p>
+            <!-- 9 & 10: Política & FAQ -->
+            <div class="faq-container" style="margin-bottom: 3rem;">
+                <h2 class="section-title">Perguntas Frequentes & Políticas</h2>
+                <div class="accordion">
+                    
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Qual o nível de dificuldade física?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Nossa classificação é moderada. Caminharemos por terrenos irregulares, bosques e turfeiras. Não há necessidade de experiência prévia com alta montanha, mas recomendamos que você tenha o costume de praticar atividades físicas regularmente.</p>
             </div>
         </div>
-    </footer>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Quais documentos preciso para entrar na Argentina?
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>Brasileiros podem viajar para a Argentina apenas com o RG (Identidade) emitido há menos de 10 anos, em bom estado de conservação, ou Passaporte válido.</p><p>CNH (Carteira de Motorista) não é aceita como documento de imigração.</p>
+            </div>
+        </div>
+        
+                    
+        <div class="accordion-item">
+            <button class="accordion-header" style="color: #F44336;">
+                Política de Cancelamento
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p style='margin-bottom: 0.5rem;'>Em caso de cancelamento por iniciativa do cliente, a devolução será feita de acordo com a deliberação normativa nº 161 da EMBRATUR.</p><p style='margin-bottom: 0.5rem;'>Condições climáticas que impeçam a realização de alguma atividade não gerarão reembolso, mas tentaremos realocar a atividade conforme disponibilidade.</p><p style='margin-bottom: 0.5rem;'>No-show no ponto de encontro implica perda de 100% do valor pago.</p>
+            </div>
+        </div>
+        
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="../script.js?v=2.0"></script>
-    <script>
-        // Accordion
-        document.querySelectorAll('.accordion-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const body = item.querySelector('.accordion-body');
-                const isActive = item.classList.contains('active');
-                document.querySelectorAll('.accordion-item.active').forEach(a => {
-                    a.classList.remove('active');
-                    a.querySelector('.accordion-body').style.maxHeight = '0';
-                });
-                if (!isActive) {
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-                }
-            });
-        });
-
-        // Timeline scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.timeline-item').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
+    
