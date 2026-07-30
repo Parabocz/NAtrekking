@@ -171,30 +171,42 @@ for exp in data:
             with open(wix_path, 'r', encoding='utf-8') as wf:
                 wsoup = BeautifulSoup(wf.read(), 'html.parser')
                 
-                # Extract all styles
-                style_tags = wsoup.head.find_all('style')
-                styles_content = ""
-                for s in style_tags:
-                    styles_content += s.string if s.string else ""
-                
-                # Save styles to public directory to bypass Vite processing
-                os.makedirs('public/wix', exist_ok=True)
-                css_filename = f"wix_{exp['filename'].replace('.html', '.css')}"
-                css_path = os.path.join('public', 'wix', css_filename)
-                
-                with open(css_path, 'w', encoding='utf-8') as cssf:
-                    cssf.write(styles_content)
-                
-                # Inject a link tag instead of inline styles
-                link_tag = f'<link rel="stylesheet" href="/wix/{css_filename}">'
-                
+                # Semantic Text Extractor
                 site_pages = wsoup.find(id='SITE_PAGES')
-                if site_pages:
-                    wix_html = link_tag + str(site_pages)
-                else:
-                    wix_html = link_tag + ''.join([str(c) for c in wsoup.body.children if c.name != 'script'])
+                if not site_pages:
+                    site_pages = wsoup.body
+                
+                blocks = []
+                # Traverse and extract meaningful text
+                for el in site_pages.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span']):
+                    text = el.get_text(strip=True)
+                    if not text: continue
+                    
+                    # Avoid duplicated nested spans
+                    if blocks and (text in blocks[-1] or blocks[-1] in text):
+                        # If the new text is longer (e.g. parent p containing span), replace it
+                        if len(text) > len(blocks[-1]):
+                            blocks[-1] = text
+                        continue
+                    
+                    blocks.append(text)
+                
+                # Render clean HTML
+                clean_html = '<div class="container" style="max-width: 900px; margin: 4rem auto; padding: 0 2rem;">'
+                
+                for b in blocks:
+                    # Very short lines might be headers or labels
+                    if len(b) < 30 and b.istitle():
+                        clean_html += f'<h3 style="color: var(--accent); margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.5rem;">{b}</h3>'
+                    elif len(b) < 50:
+                        clean_html += f'<h4 style="color: var(--text-white); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.2rem; font-weight: 600;">{b}</h4>'
+                    else:
+                        clean_html += f'<p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1rem; font-size: 1.1rem;">{b}</p>'
+                
+                clean_html += '</div>'
+                wix_html = clean_html
     
-    page_html = page_html.replace('{{ WIX_STATIC_HTML }}', wix_html)
+    
 
 
     out_path = os.path.join('expedicoes', exp['filename'])
