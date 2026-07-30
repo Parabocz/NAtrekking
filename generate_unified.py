@@ -59,12 +59,21 @@ for exp in data:
         'investimento': [], 'politica': [], 'faq': []
     })
 
-    historia_content = "".join(f"<p style='margin-bottom: 1rem;'>{p}</p>" for p in buckets['historia']) if buckets['historia'] else "<p>Detalhes completos em breve.</p>"
-    vibe_content = "".join(f"<p style='margin-bottom: 1rem;'>{p}</p>" for p in buckets['vibe']) if buckets['vibe'] else ""
+    if isinstance(buckets.get('historia'), str):
+        historia_content = buckets['historia']
+    else:
+        historia_content = "".join(f"<p style='margin-bottom: 1rem;'>{p}</p>" for p in buckets['historia']) if buckets['historia'] else "<p>Detalhes completos em breve.</p>"
+        
+    if isinstance(buckets.get('vibe'), str):
+        vibe_content = buckets['vibe']
+    else:
+        vibe_content = "".join(f"<p style='margin-bottom: 1rem;'>{p}</p>" for p in buckets['vibe']) if buckets['vibe'] else ""
     
-    if buckets['atencao']:
+    if isinstance(buckets.get('atencao'), str):
+        atencao_content = buckets['atencao']
+    elif buckets.get('atencao'):
         atencao_content = f"""<div style='background: rgba(244,67,54,0.1); border-left: 4px solid #F44336; padding: 1.5rem; margin-bottom: 3rem; border-radius: 4px;'>
-            <h3 style='color: #F44336; margin-bottom: 1rem;'><i class='fas fa-exclamation-triangle'></i> Atenção</h3>
+            <h3 style='color: #F44336; display: flex; align-items: center; gap: 0.5rem;'><i class='fas fa-exclamation-triangle'></i> Atenção</h3>
             {"".join(f"<p style='margin-bottom:0.5rem; color:#ddd;'>{p}</p>" for p in buckets['atencao'])}
         </div>"""
     else:
