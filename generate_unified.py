@@ -205,6 +205,7 @@ for exp in data:
                 
                 clean_html += '</div>'
                 wix_html = clean_html
+    page_html = page_html.replace('{{ WIX_STATIC_HTML }}', wix_html)
     
     
 
