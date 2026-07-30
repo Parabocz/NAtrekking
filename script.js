@@ -203,8 +203,8 @@ if (filterDropdown && filterCards.length > 0) {
 }
 
 // --- Accordion Logic ---
-// Accordion logic without DOMContentLoaded wrapper
-    const accordions = document.querySelectorAll('.accordion-header');
+const accordions = document.querySelectorAll('.accordion-header');
+if (accordions.length > 0) {
     accordions.forEach(acc => {
         acc.addEventListener('click', function() {
             this.classList.toggle('active');
@@ -215,15 +215,18 @@ if (filterDropdown && filterCards.length > 0) {
                 content.style.paddingBottom = '0';
                 content.style.opacity = '0';
             } else {
-                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.maxHeight = content.scrollHeight + 40 + "px";
                 content.style.paddingTop = '1rem';
                 content.style.paddingBottom = '1rem';
                 content.style.opacity = '1';
             }
         });
     });
+}
 
-    // --- Timeline Intersection Observer ---
+// --- Timeline Intersection Observer ---
+const timelineItems = document.querySelectorAll('.timeline-item');
+if (timelineItems.length > 0) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -232,7 +235,7 @@ if (filterDropdown && filterCards.length > 0) {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.timeline-item').forEach(item => {
+    timelineItems.forEach(item => {
         observer.observe(item);
     });
-});
+}
