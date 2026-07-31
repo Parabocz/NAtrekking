@@ -278,7 +278,13 @@
         "icon": "fa-map-marker-alt"
       }
     ],
-    "atencao": [],
+    "atencao": [
+      "Exige bom preparo físico; guia avalia condições diariamente.",
+      "Horários podem variar (trânsito, clima, ritmo do grupo, decisão dos guias).",
+      "Atrativos podem ser reordenados para segurança/melhor experiência.",
+      "Sempre há guia na frente e atrás do grupo.",
+      "Sem garantia de bom tempo; cancelamento só por risco de segurança."
+    ],
     "incluso": [
       "Hospedagem c/ café (dias 4,5,12,13,14,15 out)",
       "mesmos itens do",
@@ -344,7 +350,13 @@
         "icon": "fa-map-marker-alt"
       }
     ],
-    "atencao": [],
+    "atencao": [
+      "Exige bom preparo físico; guia avalia condições diariamente.",
+      "Horários podem variar (trânsito, clima, ritmo do grupo, decisão dos guias).",
+      "Atrativos podem ser reordenados para segurança/melhor experiência.",
+      "Sempre há guia na frente e atrás do grupo.",
+      "Sem garantia de bom tempo; cancelamento só por risco de segurança."
+    ],
     "incluso": [
       "Hospedagem c/ café (dias 4,5,12,13,14,15 out)",
       "mesmos itens do",
@@ -502,9 +514,12 @@
   },
   "https://natrekking.com.br/patagonia-especial": {
     "historia": [
+      "A Patagônia é um dos cenários mais deslumbrantes e selvagens do planeta. No extremo sul da América, glaciares imensos, montanhas pontiagudas e lagos azul-turquesa criam uma atmosfera de pura magia e imensidão.",
+      "Estar na Patagônia no Réveillon é celebrar a virada cercado pela força indomável da natureza, renovando as energias diante das paisagens de Tierra del Fuego e Los Glaciares."
+    ],
+    "vibe": [
       "Mescla de passeios turísticos e hikings entre montanhas, lagunas e\nglaciares — exige bom preparo físico mesmo sem pernoite em barraca\n(retorno à hospedagem todo dia). Passeios turísticos: trem do fim do\nmundo, Farol do Fim do Mundo, Correio do Fim do Mundo (desativado),\nponto final da Ruta 3, Prisão de Ushuaia, Forte Bulnes, Glaciar\nPerito Moreno. Trilhas: Cerro Cortez, Glaciar Vinciguerra, Laguna\nEsmeralda, Base das Torres, Mirante do Paredão, Mirante Cerro Torre,\nLoma del Pliegue Tumbado, Laguna de Los Três."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -766,9 +781,12 @@
   },
   "https://natrekking.com.br/patagoniachilenaespecial": {
     "historia": [
+      "A Patagônia Chilena abriga maravilhas lendárias, como as imponentes Torres del Paine. É um território de ventos fortes, montanhas dramáticas e uma energia ancestral inexplicável.",
+      "A imponência da natureza local proporciona um sentimento profundo de liberdade, inspirando cada explorador a superar seus limites diante do cenário deslumbrante de lagos glaciais e fauna rica."
+    ],
+    "vibe": [
       "Mescla de passeio turístico e hiking, sem pernoite em barraca."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -847,9 +865,12 @@
   },
   "https://natrekking.com.br/calafate-chalten-especial": {
     "historia": [
+      "El Chaltén, a capital nacional do trekking na Argentina, é guardiã do mítico Cerro Fitz Roy, enquanto El Calafate abriga o espetacular Glaciar Perito Moreno.",
+      "Essa região desperta o aventureiro que existe em nós. O contraste do gelo eterno caindo no lago com os picos dourados pelo sol transforma essa jornada em uma das experiências mais marcantes da vida."
+    ],
+    "vibe": [
       "Mescla de passeios turísticos e hikings entre montanhas, lagunas e\nglaciares, sem pernoite em barraca."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -987,7 +1008,11 @@
       }
     ],
     "atencao": [
-      "Padrão + aviso adicional: o Vulcão Lascar está em atividade — em",
+      "Exige bom preparo físico; guia avalia condições diariamente.",
+      "Horários podem variar (trânsito, clima, ritmo do grupo, decisão dos guias).",
+      "Atrativos podem ser reordenados para segurança/melhor experiência.",
+      "Sempre há guia na frente e atrás do grupo.",
+      "Sem garantia de bom tempo; cancelamento só por risco de segurança.",
       "caso de atividade fora do normal que impeça a ascensão, a expedição",
       "pode ser ajustada para outra montanha/roteiro por segurança.",
       "Cancelamento se risco de segurança ou não atingir 6 vagas preenchidas."
@@ -1032,9 +1057,12 @@
   },
   "https://natrekking.com.br/torresdelpaineo2027": {
     "historia": [
+      "O Parque Nacional Torres del Paine, no Chile, é o verdadeiro paraíso intocado. O cobiçado Circuito O revela o lado mais selvagem e remoto do parque, incluindo glaciares suspensos e florestas densas.",
+      "É uma imersão total. Estar isolado na grandiosidade dos andes patagônicos é uma experiência que desafia o corpo e transforma a mente para sempre."
+    ],
+    "vibe": [
       "Formato autossuficiente (leva-se tudo, exceto barraca e colchonete)\npara os 8 dias do Circuito O. Estrutura em todas as áreas de camping\ncom banho quente (exceto 1 local), água potável, carregamento de\ncelular/powerbank, alguns com WIFI pago e mercadinho. Em 4 das 7\nnoites do circuito há restaurantes disponíveis. Roteiro programado\npara março pois o Circuito O costuma fechar entre final de março e\nmeio de abril (risco de congelamento do Passo John Gardner)."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1336,9 +1364,12 @@
   },
   "https://natrekking.com.br/travpicosdejaragua": {
     "historia": [
+      "Os picos de Jaraguá do Sul oferecem um visual privilegiado da transição entre a Serra do Mar e a costa catarinense. As montanhas escarpadas proporcionam trilhas técnicas cercadas pela rica Mata Atlântica.",
+      "Respirar o ar puro no alto do Pico Boa Vista e do Jaraguá traz uma sensação única de conquista. É o cenário perfeito para se desconectar e contemplar as belezas naturais do nosso estado."
+    ],
+    "vibe": [
       "Travessia do Pico Boa Vista para o Pico do Jaraguá."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1369,9 +1400,12 @@
   },
   "https://natrekking.com.br/fendacruzdepedra": {
     "historia": [
+      "Escondida na exuberante Mata Atlântica, a Fenda Cruz de Pedra é uma formação geológica impressionante e um santuário ecológico no coração de Santa Catarina.",
+      "O trekking até a fenda nos insere num ambiente místico, onde o silêncio da floresta e a imponência da rocha evocam mistério e deslumbramento puro."
+    ],
+    "vibe": [
       "Conhecer a Fenda Cruz de Pedra."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1401,9 +1435,12 @@
   },
   "https://natrekking.com.br/curso-de-trekking-setembro": {
     "historia": [
+      "O Curso de Trekking em Rio dos Cedros é o seu portal de entrada para o mundo outdoor. A região da Represa de Rio dos Cedros (Região dos Lagos em SC) tem o cenário ideal para simular desafios e acampamentos reais.",
+      "Neste curso, a paisagem se torna a sala de aula. Aqui você não apenas vê a natureza, mas aprende a conviver nela, ganhando confiança, independência e a técnica necessária para suas maiores aventuras."
+    ],
+    "vibe": [
       "Curso para iniciantes em trilhas (ou quem já iniciou e quer mais\nconhecimento).\nMÓDULO 1 — Introdução ao Trekking: pré-trekking, boas práticas, tipos\nde trekking, diferença altura x altitude, como começar sem gastar\nerrado, erros comuns de iniciantes, escolha de trilhas por nível,\nchecklist pré-trilha, planejamento básico, etiqueta em trilha, o que\nesperar de trekking de vários dias.\nMÓDULO 2 — Mochilas e Organização: capacidade de mochilas, duffel bag,\nsacos estanque, organização, distribuição de peso, o que vai dentro/\nfora da mochila, como reduzir peso sem perder segurança, erros comuns.\nMÓDULO 3 — Sistema de Dormir: escolha de saco de dormir, faixa de\ntemperatura, tipos de isolantes, sistema de dormir final, como evitar\nfrio, erros comuns em noites frias.\nMÓDULO 4 — Barracas e Abrigo: tipos, escolha, montagem, escolha de\nlocal de acampamento, proteção contra vento, barraca 3x4 estações,\nerros que destroem barracas.\nMÓDULO 5 — Cozinha e Hidratação: fogareiro, quantidade de água,\ntratamento de água de rio, alimentação leve e eficiente, montagem de\nrefeições, erros de alimentação, café na montanha.\nMÓDULO 6 — Navegação e Aplicativos: melhores apps de trilha e\nprevisão do tempo, mapas offline, importar GPX, seguir rota, como\nnão se perder, erros comuns.\nMÓDULO 7 — Segurança Básica: equipamentos de segurança, itens\nobrigatórios, emergências, como pedir resgate, gestão de risco,\nsinais de perigo, desidratação, proteção solar, calos, picada de\ncobra.\nMÓDULO 8 — Vestuário e Equipamentos: botas, meias, bastão, sistema de\ncamadas, como se vestir no frio, evitar suor excessivo, roupas que\nnão funcionam, anorak x corta-vento, equipamentos úteis."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1417,7 +1454,13 @@
         "icon": "fa-map-marker-alt"
       }
     ],
-    "atencao": [],
+    "atencao": [
+      "Exige bom preparo físico; guia avalia condições diariamente.",
+      "Horários podem variar (trânsito, clima, ritmo do grupo, decisão dos guias).",
+      "Atrativos podem ser reordenados para segurança/melhor experiência.",
+      "Sempre há guia na frente e atrás do grupo.",
+      "Sem garantia de bom tempo; cancelamento só por risco de segurança."
+    ],
     "incluso": [
       "Transporte ida/volta (Curitiba e Joinville)",
       "alimentação",
@@ -1441,9 +1484,12 @@
   },
   "https://natrekking.com.br/lencois-maranhenses-jul-27": {
     "historia": [
+      "O Parque Nacional dos Lençóis Maranhenses é um espetáculo sem igual no planeta. Um oásis com dunas de areia branca interligadas por milhares de lagoas de águas doces e cristalinas que se formam após as chuvas.",
+      "Fazer a travessia caminhando nas dunas causa uma epifania. A vastidão do deserto com mergulhos refrescantes diários proporciona a sensação de caminhar sobre uma pintura viva e indescritível."
+    ],
+    "vibe": [
       "Travessia de Leste a Oeste do maior campo de dunas da América do Sul,\n~50km em 4 dias entre Atins e Santo Amaro do Maranhão, passando por\nlagoas formadas no período de chuvas."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1537,9 +1583,12 @@
   },
   "https://natrekking.com.br/rinoceronte": {
     "historia": [
+      "O Morro do Rinoceronte integra os impressionantes Campos do Quiriri, uma área de grande elevação e relevo marcante, famosa por seus nevoeiros repentinos e vistas arrebatadoras do litoral catarinense.",
+      "A amplitude visual dos campos de altitude nos lembra da nossa pequenez. Acampar sob um manto de estrelas após conquistar o Rinoceronte é viver uma imersão profunda com o universo."
+    ],
+    "vibe": [
       "Formato autossuficiente: cada participante carrega o que precisa\npara os 2 dias."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1583,9 +1632,12 @@
   },
   "https://natrekking.com.br/torredaprata": {
     "historia": [
+      "A imponente Torre da Prata é o ponto culminante do litoral sul do Brasil (1.320m), reinando no topo da Serra da Prata, no Paraná, com um desafio de subida vertical constante na densa floresta tropical.",
+      "Conquistar o cume é um atestado de resiliência. O visual que abrange a baía de Guaratuba, o Oceano Atlântico e a vastidão verde da serra traz uma gratificação que compensa cada gota de suor."
+    ],
+    "vibe": [
       "Conhecer a Torre da Prata."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1620,9 +1672,12 @@
   },
   "https://natrekking.com.br/cantagalo": {
     "historia": [
+      "A Pedra do Cantagalo é um dos tesouros escondidos de Santa Catarina. O pico oferece uma vista panorâmica incrível da floresta preservada em uma caminhada exigente, porém rápida e cativante.",
+      "A energia da mata fechada combinada com o horizonte aberto lá no alto renova a alma de qualquer aventureiro, conectando corpo e mente à essência da montanha."
+    ],
+    "vibe": [
       "Conhecer a Pedra do Cantagalo."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1653,9 +1708,12 @@
   },
   "https://natrekking.com.br/lencoismaranhensesagosto2026": {
     "historia": [
+      "O Parque Nacional dos Lençóis Maranhenses é um espetáculo sem igual no planeta. Um oásis com dunas de areia branca interligadas por milhares de lagoas de águas doces e cristalinas que se formam após as chuvas.",
+      "Fazer a travessia caminhando nas dunas causa uma epifania. A vastidão do deserto com mergulhos refrescantes diários proporciona a sensação de caminhar sobre uma pintura viva e indescritível."
+    ],
+    "vibe": [
       "Travessia de Leste a Oeste do maior campo de dunas da América do Sul,\n~50km em 4 dias entre Atins e Santo Amaro do Maranhão, passando por\nlagoas formadas no período de chuvas."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1749,9 +1807,12 @@
   },
   "https://natrekking.com.br/curso-de-trekking-agosto": {
     "historia": [
+      "O Curso de Trekking em Rio dos Cedros é o seu portal de entrada para o mundo outdoor. A região da Represa de Rio dos Cedros (Região dos Lagos em SC) tem o cenário ideal para simular desafios e acampamentos reais.",
+      "Neste curso, a paisagem se torna a sala de aula. Aqui você não apenas vê a natureza, mas aprende a conviver nela, ganhando confiança, independência e a técnica necessária para suas maiores aventuras."
+    ],
+    "vibe": [
       "Curso para iniciantes em trilhas (ou quem já iniciou e quer mais\nconhecimento).\nMÓDULO 1 — Introdução ao Trekking: pré-trekking, boas práticas, tipos\nde trekking, diferença altura x altitude, como começar sem gastar\nerrado, erros comuns de iniciantes, escolha de trilhas por nível,\nchecklist pré-trilha, planejamento básico, etiqueta em trilha, o que\nesperar de trekking de vários dias.\nMÓDULO 2 — Mochilas e Organização: capacidade de mochilas, duffel bag,\nsacos estanque, organização, distribuição de peso, o que vai dentro/\nfora da mochila, como reduzir peso sem perder segurança, erros comuns.\nMÓDULO 3 — Sistema de Dormir: escolha de saco de dormir, faixa de\ntemperatura, tipos de isolantes, sistema de dormir final, como evitar\nfrio, erros comuns em noites frias.\nMÓDULO 4 — Barracas e Abrigo: tipos, escolha, montagem, escolha de\nlocal de acampamento, proteção contra vento, barraca 3x4 estações,\nerros que destroem barracas.\nMÓDULO 5 — Cozinha e Hidratação: fogareiro, quantidade de água,\ntratamento de água de rio, alimentação leve e eficiente, montagem de\nrefeições, erros de alimentação, café na montanha.\nMÓDULO 6 — Navegação e Aplicativos: melhores apps de trilha e\nprevisão do tempo, mapas offline, importar GPX, seguir rota, como\nnão se perder, erros comuns.\nMÓDULO 7 — Segurança Básica: equipamentos de segurança, itens\nobrigatórios, emergências, como pedir resgate, gestão de risco,\nsinais de perigo, desidratação, proteção solar, calos, picada de\ncobra.\nMÓDULO 8 — Vestuário e Equipamentos: botas, meias, bastão, sistema de\ncamadas, como se vestir no frio, evitar suor excessivo, roupas que\nnão funcionam, anorak x corta-vento, equipamentos úteis."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1765,7 +1826,13 @@
         "icon": "fa-map-marker-alt"
       }
     ],
-    "atencao": [],
+    "atencao": [
+      "Exige bom preparo físico; guia avalia condições diariamente.",
+      "Horários podem variar (trânsito, clima, ritmo do grupo, decisão dos guias).",
+      "Atrativos podem ser reordenados para segurança/melhor experiência.",
+      "Sempre há guia na frente e atrás do grupo.",
+      "Sem garantia de bom tempo; cancelamento só por risco de segurança."
+    ],
     "incluso": [
       "Transporte ida/volta (Curitiba e Joinville)",
       "alimentação",
@@ -1789,9 +1856,12 @@
   },
   "https://natrekking.com.br/espraiadoxsoldados": {
     "historia": [
+      "O Morro Boa Vista (ponto culminante de SC) e as místicas formações de arenito conhecidas como Soldados de Sebold encerram alguns dos maiores segredos do interior catarinense.",
+      "Essa travessia épica de 3 dias vai testar sua força e encantar seus olhos, misturando picos gelados de altitude extrema com o encanto geológico de colunas de pedras que guardam o planalto como antigos guerreiros."
+    ],
+    "vibe": [
       "Formato autossuficiente (participante carrega todos os equipamentos\npessoais durante a caminhada). Trilha que requer bom preparo físico."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {
@@ -1835,9 +1905,12 @@
   },
   "https://natrekking.com.br/travessiaaracaxcrista": {
     "historia": [
+      "A icônica travessia da Serra do Mar entre o Pico do Araçatuba e o sagrado Monte Crista une a fronteira do Paraná com Santa Catarina pelas cristas majestosas do Quiriri.",
+      "São quilômetros caminhando por campos dourados sob céus abertos. A travessia carrega muita mística (os caminhos do Monte Crista remontam aos jesuítas e incas) e promove um autoconhecimento transformador na solidão dos ventos da serra."
+    ],
+    "vibe": [
       "Formato autossuficiente (participante carrega tudo necessário para o\nperíodo). Trilha que requer bom preparo físico."
     ],
-    "vibe": [],
     "specs": [],
     "cronograma": [
       {

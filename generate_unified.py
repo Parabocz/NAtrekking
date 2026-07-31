@@ -88,7 +88,16 @@ for exp in data:
             step_details = step.get('detalhes', [])
             if not step_details and 'descricao' in step:
                 step_details = step['descricao'].split('\n')
-            details_html = "".join(f"<li>{d}</li>" for d in step_details)
+                
+            if step_title.lower().strip() == 'dia' and step_details:
+                import re
+                m = re.match(r'^(Dias?\s+[\d\-]+(?:\s*\([^\)]+\))?)\s*[:\-—]*\s*(.*)', step_details[0].strip(), re.IGNORECASE)
+                if m:
+                    step_title = m.group(1).upper()
+                    step_details[0] = m.group(2).strip()
+            step_title = step_title.upper()
+
+            details_html = "".join(f"<li>{d}</li>" for d in step_details if d.strip())
             timeline_html += f"""
             <div class="timeline-item">
                 <div class="timeline-content">
@@ -171,9 +180,9 @@ for exp in data:
     page_html = page_html.replace('{{ DATES }}', exp.get('dates', ''))
     page_html = page_html.replace('{{ DUR }}', exp.get('dur', ''))
     page_html = page_html.replace('{{ LOC }}', exp.get('loc', ''))
-    page_html = page_html.replace('{{ DIFFICULTY }}', exp.get('difficulty', ''))
-    elevation_val = exp.get('elevation', 'Consultar')
-    if elevation_val and elevation_val != 'N/A' and elevation_val != 'Consultar':
+    
+    elevation_val = buckets.get('elevacao_ganho') or exp.get('elevation', '')
+    if elevation_val and elevation_val not in ['N/A', 'Consultar']:
         elevation_html = f'''<div class="meta-item">
             <span class="meta-label">Elevação</span>
             <span class="meta-value">{elevation_val}</span>
@@ -181,6 +190,37 @@ for exp in data:
     else:
         elevation_html = ''
     page_html = page_html.replace('{{ ELEVATION_BLOCK }}', elevation_html)
+
+    dist_val = buckets.get('distancia', '')
+    if dist_val:
+        dist_html = f'''<div class="meta-item">
+            <span class="meta-label">Distância</span>
+            <span class="meta-value">{dist_val}</span>
+        </div>'''
+    else:
+        dist_html = ''
+    page_html = page_html.replace('{{ DISTANCE_BLOCK }}', dist_html)
+
+    dif_fis = buckets.get('dif_fisica') or exp.get('difficulty', '')
+    if dif_fis:
+        dif_fis_html = f'''<div class="meta-item">
+            <span class="meta-label">Dif. Física</span>
+            <span class="meta-value">{dif_fis}</span>
+        </div>'''
+    else:
+        dif_fis_html = ''
+    page_html = page_html.replace('{{ DIFFICULTY_FISICA_BLOCK }}', dif_fis_html)
+
+    dif_tec = buckets.get('dif_tecnica', '')
+    if dif_tec:
+        dif_tec_html = f'''<div class="meta-item">
+            <span class="meta-label">Dif. Técnica</span>
+            <span class="meta-value">{dif_tec}</span>
+        </div>'''
+    else:
+        dif_tec_html = ''
+    page_html = page_html.replace('{{ DIFFICULTY_TECNICA_BLOCK }}', dif_tec_html)
+
     
     page_html = page_html.replace('{{ HISTORIA_CONTENT }}', historia_content)
     page_html = page_html.replace('{{ VIBE_CONTENT }}', vibe_content)
