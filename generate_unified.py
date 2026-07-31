@@ -191,34 +191,25 @@ for exp in data:
         elevation_html = ''
     page_html = page_html.replace('{{ ELEVATION_BLOCK }}', elevation_html)
 
-    dist_val = buckets.get('distancia', '')
-    if dist_val:
-        dist_html = f'''<div class="meta-item">
-            <span class="meta-label">Distância</span>
-            <span class="meta-value">{dist_val}</span>
-        </div>'''
-    else:
-        dist_html = ''
+    dist_val = buckets.get('distancia') or 'N/A'
+    dist_html = f'''<div class="meta-item">
+        <span class="meta-label">Distância</span>
+        <span class="meta-value">{dist_val}</span>
+    </div>'''
     page_html = page_html.replace('{{ DISTANCE_BLOCK }}', dist_html)
 
-    dif_fis = buckets.get('dif_fisica') or exp.get('difficulty', '')
-    if dif_fis:
-        dif_fis_html = f'''<div class="meta-item">
-            <span class="meta-label">Dif. Física</span>
-            <span class="meta-value">{dif_fis}</span>
-        </div>'''
-    else:
-        dif_fis_html = ''
+    dif_fis = buckets.get('dif_fisica') or exp.get('difficulty') or 'N/A'
+    dif_fis_html = f'''<div class="meta-item">
+        <span class="meta-label">Dif. Física</span>
+        <span class="meta-value">{dif_fis}</span>
+    </div>'''
     page_html = page_html.replace('{{ DIFFICULTY_FISICA_BLOCK }}', dif_fis_html)
 
-    dif_tec = buckets.get('dif_tecnica', '')
-    if dif_tec:
-        dif_tec_html = f'''<div class="meta-item">
-            <span class="meta-label">Dif. Técnica</span>
-            <span class="meta-value">{dif_tec}</span>
-        </div>'''
-    else:
-        dif_tec_html = ''
+    dif_tec = buckets.get('dif_tecnica') or 'N/A'
+    dif_tec_html = f'''<div class="meta-item">
+        <span class="meta-label">Dif. Técnica</span>
+        <span class="meta-value">{dif_tec}</span>
+    </div>'''
     page_html = page_html.replace('{{ DIFFICULTY_TECNICA_BLOCK }}', dif_tec_html)
 
     
