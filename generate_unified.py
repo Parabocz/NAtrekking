@@ -115,13 +115,15 @@ for exp in data:
         items = buckets.get('nao_incluso', buckets.get('excluso', []))
         excluded_html = "".join(f"<li><i class='fas fa-times'></i> {item}</li>" for item in items) if items else "<li>Consultar equipe</li>"
 
+    wa_number = 'https://wa.me/554799195878' if 'internacional' in exp.get('cats', []) else 'https://wa.me/5541995413484'
+
     if isinstance(buckets.get('price', ''), str) and buckets.get('price', ''):
         price_content = buckets['price']
     elif buckets.get('investimento'):
         price_content = "".join(f"<p style='font-size: 1.1rem; margin-bottom: 0.5rem;'>{p}</p>" for p in buckets['investimento'])
-        price_content += "<br><a href='https://wa.me/5541999999999' class='btn btn-primary'>Garantir minha vaga</a>"
+        price_content += f"<br><a href='{wa_number}' class='btn btn-primary' target='_blank'>Garantir minha vaga</a>"
     else:
-        price_content = "<p style='font-size: 1.1rem;'>Consulte nossa equipe para obter os valores e formas de pagamento atualizados.</p><br><a href='https://wa.me/5541999999999' class='btn btn-primary'>Consultar Valores</a>"
+        price_content = f"<p style='font-size: 1.1rem;'>Consulte nossa equipe para obter os valores e formas de pagamento atualizados.</p><br><a href='{wa_number}' class='btn btn-primary' target='_blank'>Consultar Valores</a>"
 
     faq_html = ""
     if isinstance(buckets.get('faq'), str):

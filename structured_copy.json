@@ -1,558 +1,266 @@
 {
-    "https://natrekking.com.br/kilimanjaro2026": {
-        "historia": "<p>A Tanzânia é descrita como um país de cultura rica e vida selvagem diversa. Durante a escalada do Kilimanjaro, o participante tem a chance de ver o nascer do sol do ponto mais alto da África, observar geleiras próximas à linha do equador (fenômeno raro) e contemplar a paisagem africana do topo do continente.</p>\n<br>\n<strong>Quem pode participar:</strong>\n<ul style=\"margin-top: 10px; margin-left: 20px; list-style-type: disc;\">\n    <li>Experiência prévia em trilhas com pernoite em barraca</li>\n    <li>Idade entre 18 e 65 anos (casos fora da faixa avaliados conforme saúde e condicionamento)</li>\n    <li>A empresa auxilia com programa de preparação física, aclimatação e compra de aéreo</li>\n    <li>Não recomendado para cardiopatas ou pessoas com limitações de mobilidade/longas caminhadas</li>\n</ul>",
-        "vibe": "<p>A expedição conta com equipe de apoio (guias locais, carregadores, cozinheiros, auxiliares). Ao chegar na Tanzânia, há revisão do equipamento do grupo, com possibilidade de locação de itens faltantes antes dos 7 dias de trekking até o Pico Uhuru (topo do Kilimanjaro).</p>",
-        "specs": [],
-        "cronograma": "\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 1 — 04/out — Brasil → Tanzânia</h3>\n        <p class=\"timeline-desc\">Chegada no aeroporto de Kilimanjaro, recepção por representante local e transporte até a hospedagem (~50 min).</p>\n        <div class=\"timeline-details\">\n            <div><strong>Incluso:</strong> transporte aeroporto-hospedagem, hospedagem compartilhada, café da manhã (dias seguintes)</div>\n            <div><strong>Não incluso:</strong> alimentação (almoço/jantar), passagem aérea</div>\n        </div>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 2 — 05/out — Descanso e organização</h3>\n        <p class=\"timeline-desc\">Dia de recuperação da viagem e revisão/locação de equipamentos.</p>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 3 — 06/out — Início do trekking, Rota Lemosho</h3>\n        <p class=\"timeline-desc\">Saída da hospedagem, deslocamento até o Portão Londorossi, subida até o ponto de desembarque (3.400 m) e caminhada até o Shira 1 Camp.</p>\n        <div class=\"timeline-details\">\n            <div><strong>Dados técnicos:</strong> Elevação: 3.500 m → 3.610 m | Distância: 3,5 km | Tempo: 1,5h | Temp. dia: 7°C | Temp. noite: -2°C</div>\n            <div><strong>Incluso:</strong> café da manhã, transporte até a trilha, almoço, jantar, barraca compartilhada, carregadores (até 15 kg)</div>\n        </div>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 4 — 07/out — Shira 1 → Shira 2</h3>\n        <p class=\"timeline-desc\">Caminhada leve com vistas das savanas e possibilidade de subir o Pico da Catedral (3.872 m, opcional). À tarde, caminhada de aclimatação até o Lava Tower Camp (ganho de 200 m).</p>\n        <div class=\"timeline-details\">\n            <div><strong>Dados técnicos:</strong> Elevação: 3.610 m → 3.850 m | Distância: 10 km | Tempo: 4h | Temp. dia: 7°C | Temp. noite: -2°C</div>\n        </div>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 5 — 08/out — Shira 2 → Barranco</h3>\n        <p class=\"timeline-desc\">Caminhada até a Torre de Lava (ponto-chave para aclimatação, almoço no topo) e descida até o Acampamento Barranco, onde se avista a Muralha do Barranco.</p>\n        <div class=\"timeline-details\">\n            <div><strong>Dados técnicos:</strong> Elevação: 3.850 m → 3.900 m | Distância: 10 km | Tempo: 6h | Temp. dia: 7°C | Temp. noite: -2°C</div>\n            <div><strong>Incluso:</strong> barraca, café, almoço, jantar</div>\n        </div>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 6 — 09/out — Barranco → Karanga</h3>\n        <p class=\"timeline-desc\">Escalada da Muralha do Barranco (~1h) seguida de trecho mais desafiador até o Karanga Camp. À tarde, caminhada de aclimatação rumo ao Barafu Camp (+200 m) com retorno ao acampamento.</p>\n        <div class=\"timeline-details\">\n            <div><strong>Dados técnicos:</strong> Elevação: 3.900 m → 3.995 m | Distância: 6 km | Tempo: 4h | Temp. dia: 7°C | Temp. noite: -2°C</div>\n        </div>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 7 — 10/out — Karanga → Barafu</h3>\n        <p class=\"timeline-desc\">Caminhada até o acampamento base do cume (Barafu). Caminhada de aclimatação adicional até o Kosovo Camp (4.800 m) e retorno.</p>\n        <div class=\"timeline-details\">\n            <div><strong>Dados técnicos:</strong> Elevação: 3.995 m → 4.673 m | Distância: 4 km | Tempo: 4h | Temp. dia: 1°C | Temp. noite: -8°C</div>\n        </div>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 8 — 11/out — Noite do Cume: Barafu → Pico Uhuru → Millennium Camp</h3>\n        <p class=\"timeline-desc\">Saída por volta da meia-noite, com equipe extra de carregadores de alta altitude e guias monitorando os participantes (chá quente, kits de primeiros socorros, oxigênio). Chegada ao Pico Uhuru (5.895 m) para o nascer do sol, ~30-40 min no topo. Descida até Barafu e, após 2h de descanso, continuação até o Millennium Camp. Aviso: 90% dos acidentes ocorrem na descida.</p>\n        <div class=\"timeline-details\">\n            <div><strong>Dados técnicos:</strong> Elevação: 4.673 m → 5.895 m → 3.950 m | Distância: 14 km | Tempo: 12,5h | Temp. dia: -8°C | Temp. noite: -17°C</div>\n        </div>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 9 — 12/out — Millennium Camp → Portão Mweka</h3>\n        <p class=\"timeline-desc\">Café da manhã e caminhada até a saída do parque (Portão Mweka), onde o transporte leva o grupo à hospedagem. Entrega do certificado da expedição.</p>\n        <div class=\"timeline-details\">\n            <div><strong>Dados técnicos:</strong> Elevação: 3.950 m → 1.640 m | Distância: 13 km | Tempo: 5h | Temp. dia: 7°C | Temp. noite: -2°C</div>\n            <div><strong>Incluso:</strong> transporte final, hospedagem, café da manhã</div>\n        </div>\n    </div>\n</div>\n<div class=\"timeline-item\">\n    <div class=\"timeline-dot\"></div>\n    <div class=\"timeline-content\">\n        <h3 class=\"timeline-title\">Dia 10 — 13/out — Retorno ao Brasil</h3>\n        <p class=\"timeline-desc\">Fim da expedição.</p>\n    </div>\n</div>\n",
-        "atencao": "\n<div class=\"bento-box\" style=\"margin-bottom: 3rem; background: rgba(255,152,0,0.1); border-left: 4px solid #FF9800;\">\n    <h3 class=\"box-title\" style=\"color: #FF9800; display: flex; align-items: center; gap: 0.5rem;\">\n        <i class=\"fas fa-exclamation-triangle\"></i> Avisos Importantes\n    </h3>\n    <ul class=\"included-list\">\n        <li>Roteiro exige bom preparo físico; recomenda-se treino e seguir orientações antes da viagem</li>\n        <li>Horários podem variar por trânsito, ritmo do grupo, clima ou decisão dos guias</li>\n        <li>Grupos têm níveis físicos variados; atrativos podem ser reordenados/ajustados para segurança e melhor experiência de todos; ritmo pode ser adaptado</li>\n        <li>Sempre há um guia na frente e outro atrás do grupo para manter todos próximos</li>\n        <li>Condições climáticas: a empresa não garante bom tempo; cancelamento/adiamento só ocorre se houver risco de segurança ou se não atingir 10 vagas preenchidas</li>\n    </ul>\n</div>\n",
-        "incluso": "\n<li>Hospedagem com café da manhã (dias 4, 5 e 12/out, quarto compartilhado)</li>\n<li>Transporte aeroporto ↔ hospedagem e todos os transportes do cronograma</li>\n<li>Assessoria completa pré-expedição</li>\n<li>Barracas de alta montanha (capacidade 3, compartilhadas por 2 pessoas — individual mediante solicitação com 30 dias de antecedência e custo extra)</li>\n<li>Pensão completa durante os 7 dias de trekking (do almoço do dia 6 ao café da manhã do dia 12)</li>\n<li>Guias profissionais, assistentes, chef de cozinha e carregadores</li>\n<li>Kit completo de primeiros socorros de montanha</li>\n<li>Tubo de oxigênio médico</li>\n<li>Equipamentos comuns (tendas, fogareiro, panelas, utensílios)</li>\n<li>Comunicação VHF entre guias + GPS por guia</li>\n<li>Dispositivo SpotX para rastreamento via satélite (acompanhamento por familiares/amigos online)</li>\n<li>3 camisetas com proteção UV + 2 camisetas de algodão da loja NA Trekking</li>\n<li>Brindes: 1 boné, 2 bandanas, 1 touca</li>\n<li>2 guias NA Trekking + 1 guia local</li>\n<li>Taxas de acesso</li>\n<li>Cofre/armazenamento para itens que não sobem a montanha</li>\n<li>Carregadores para até 15 kg de equipamento pessoal</li>\n<li>Seguro internacional válido de 04 a 13/out/2026 (cotação de dias extras disponível)</li>\n<li>Reuniões virtuais para tirar dúvidas</li>\n",
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": "\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Política de Cancelamento</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">\n        <ul style=\"padding-left: 20px;\">\n            <li>Segue a deliberação normativa nº 161 (09/08/1985) da EMBRATUR</li>\n            <li>Cancelamento até 30 dias antes: reembolso de 70% do valor total</li>\n            <li>Entre 29 e 21 dias antes: reembolso de 50%</li>\n            <li>Entre 20 e 8 dias antes: reembolso de 40%</li>\n            <li>Menos de 7 dias antes: sem devolução</li>\n            <li>Força maior (clima, acesso, segurança): valor convertido em crédito para viagens futuras</li>\n            <li>No-show: perda total do valor pago</li>\n            <li>Desistência voluntária durante a viagem: sem reembolso, custos assumidos pelo participante</li>\n            <li>Reembolsos processados em até 7 dias úteis (cartão de crédito pode levar até a próxima fatura)</li>\n            <li>Aviso adicional: por causa da logística contratada (transporte, hospedagem, taxas, guia local etc.), a empresa pode reter valores de multas aplicadas por prestadores de serviço</li>\n        </ul>\n    </div>\n</div>\n",
-        "faq": "\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Nível de experiência necessário</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Recomendado para iniciantes em alta montanha; subida gradual com aclimatação robusta. Sugerido ter experiência prévia em trekking no Brasil e preparo cardiovascular (bike, corrida, caminhada, futebol); pilates, musculação, crossfit e natação também ajudam.</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Custos extras</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Aéreo, seguro de resgate por helicóptero (Global Rescue), visto, alimentação, gorjeta.</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Documentos necessários</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Passaporte válido por 6+ meses; visto eletrônico da Tanzânia (US$ 50 padrão, US$ 100 para EUA); comprovante de passagem de retorno e hospedagem; certificado internacional de febre amarela impresso; certificado de vacina COVID impresso.</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Como chegar (Voos)?</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Destino é o aeroporto de Kilimanjaro (JRO). Companhias saindo de Guarulhos: Qatar Airways (via Doha), Ethiopian Airlines (via Addis Abeba), Turkish Airlines (via Istambul), KLM (via Amsterdã). A empresa auxilia na organização.</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Passagem aérea inclusa?</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Não, mas a empresa ajuda na escolha e reserva com melhor custo-benefício.</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Transfer na chegada?</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Sim, representante aguarda no aeroporto com placa de identificação.</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Clima esperado na montanha?</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">A expedição de início de outubro é período de transição para chuvas, com temperaturas mais baixas, possibilidade de neve e menos movimento na montanha (sem filas em gargalos).</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Divisão de barracas</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Por gênero (exceto casais); barracas para 3 pessoas divididas por 2; opção individual mediante consulta de valor.</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Equipamento a carregar</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Apenas itens do dia (casaco, anorak, power bank, 2L de água, lanche); o resto (até 15 kg) é levado por carregadores.</div>\n</div>\n<div class=\"accordion-item\">\n    <button class=\"accordion-header\" onclick=\"this.parentElement.classList.toggle('active')\">\n        <span>Gorjeta (Tradição local)</span>\n        <i class=\"fas fa-chevron-down\"></i>\n    </button>\n    <div class=\"accordion-content\">Recomendada. Faixa de US$ 250-300 entregue em envelope ao final da trilha (notas de US$ 50/100 emitidas a partir de 2009).</div>\n</div>\n",
-        "excluso": "\n<li>Refeições não mencionadas no cronograma</li>\n<li>Vestuário</li>\n<li>Despesas de abandono da expedição, resgate e evacuação</li>\n<li>Passagens aéreas</li>\n<li>Alterações de hospedagem/datas solicitadas pelo cliente</li>\n<li>Cobertura de resgate por helicóptero e montanhas até 6 m (obrigatório contratar antes de sair do Brasil)</li>\n<li>Gorjeta para a equipe local</li>\n<li>Qualquer item fora da aba \"incluso\"</li>\n",
-        "price": "\n<div style=\"font-size: 1.2rem; margin-bottom: 2rem;\">\n    <p>A página não exibe valores numéricos diretos, porém o investimento é negociado através do nosso atendimento oficial.</p>\n</div>\n<a href=\"https://wa.me/554799195878\" class=\"btn-primary\" style=\"display: inline-block;\">Falar com Especialista no WhatsApp</a>\n"
-    },
-    "https://natrekking.com.br/kilimanjarosafari2026": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/kilimanjaro-safari-2027": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/roraimanov2026": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/patagonia-especial": {
-        "historia": [
-            "A N.A Trekking nasceu através do Adriano Knopik (@adriknopik), Guia e fundador, com intuito de mostrar as pessoas um novo estilo de vida, onde a simplicidade e a superação estão diariamente presentes.",
-            "Somos uma empresa do Sul do Brasil com sede em Joinville- SC, mas operamos em diversos estados e em mais 6 países promovendo expedições de todos os níveis."
-        ],
-        "vibe": [
-            "Nossa expedição será uma mescla entre passeios turísticos e hikings entre montanhas, lagunas e glaciares, dito isso não se engane ainda assim necessitará de um bom preparo físico para completar todos os atrativos.",
-            "Faremos roteiros turísticos como: O trem do fim do mundo, Farol do Fim do Mundo, Correio do fim do mundo (desativado no momento), Visitação ao ponto final da Ruta 3, Prisão do Ushuaia e Glaciar Perito Moreno.",
-            "E também várias trilhas na região conhecendo montanhas lagunas e glaciares como: Loma del Pliegue Tumbado.",
-            "Para nossa expedição não necessitara de equipamentos de pernoite pois ao final do dia sempre retornamos para a nossa hospedagem."
-        ],
-        "specs": [
-            "<strong>Data:</strong> 27 de dezembro de 2026 a 13 de janeiro de 2027",
-            "<strong>Ponto de encontro:</strong> Hospedagem em Ushuaia",
-            "<strong>Distância:</strong> 130 km aprox",
-            "<strong>Dificuldade Física:</strong> intermediário",
-            "<strong>Dificuldade Técnica:</strong> intermediário"
-        ],
-        "cronograma": [
-            {
-                "dia": "Dia 1",
-                "titulo": "Chegada a Ushuaia",
-                "descricao": "Esse dia usaremos para a logística de chegada a Ushuaia.\nHospedagem (quarto compartilhado)\nTransfer aeroporto hospedagem"
-            },
-            {
-                "dia": "Dia 2",
-                "titulo": "Navegação no Canal Beagle e Prisão do Ushuaia",
-                "descricao": "Nesse dia faremos a navegação no canal Beagle visitando a ilha dos Pinguins onde esta o farol Les Éclaireurs cartão postal de Ushuaia.\nNo nosso retorno faremos uma parada na ilha Bridges onde desceremos do nosso catamarã e faremos uma curta caminhada sobre a ilha de onde é possível avistar Ushuaia e também aves da fauna local.\nO fim da navegação deve acontecer por volta das 12:00 chegando novamente a Ushuaia, onde almoçaremos e descansaremos um pouco.\nAs 15:00 iniciaremos a visitação da prisão de Ushuaia, importante local da historia de Ushuaia."
-            },
-            {
-                "dia": "Dia 3",
-                "titulo": "Cerro Cortez",
-                "descricao": "Nesse dia sairemos as 08:00 da manhã da nossa hospedagem em direção ao Cerro Cortez, onde faremos um hiking de aproximadamente 6 horas (3 horas para cada lado aprox) alcançando um dos cumes mais lindos da região com vista privilegiada de toda a Ushuaia e seus arredores, previsão de chegada as 15:00 na hospedagem.\nRestante da tarde livre.\n*Distância 12 km."
-            },
-            {
-                "dia": "Dia 4",
-                "titulo": "Laguna Esmeralda",
-                "descricao": "Nesse dia sairemos as 10:00 da manhã da nossa hospedagem em direção a famosa laguna Esmeralda, nossa caminhada deve durar em torno de 6 horas no total (3 horas para cada lado) retornando para Ushuaia entre 16/17:00 horas a depender do ritmo do grupo.\n*Distância 12 km."
-            },
-            {
-                "dia": "Dia 5",
-                "titulo": "Parque Tierra del Fuego e Trem do Fim do Mundo",
-                "descricao": "Nesse dia sairemos por volta das 07:00 da manhã para a visitação ao parque nacional Tierra del Fuego e também faremos o passeio do trem do Fim do Mundo.\nPasseio do Trem do Fim do Mundo\nPlaca do fim da Ruta 3\nCorreio do Fim do Mundo (desativado no momento)\nFinalizando por volta das 14:00.\nRestante da tarde livre."
-            },
-            {
-                "dia": "Dia 6",
-                "titulo": "Glaciar Vinceguerra",
-                "descricao": "Sairemos as 08:00 da nossa hospedagem em direção ao Glaciar Vinceguerra.\nNossa caminhada deve durar por volta de 5 a 6 horas retornando para Ushuaia no inicio da tarde."
-            },
-            {
-                "dia": "Dia 7",
-                "titulo": "Ushuaia X Punta Arenas",
-                "descricao": "Dia reservado para nosso deslocamento de Ushuaia até Punta Arenas.\nTempo: 10 horas aprox\nDistância: 500 km aprox"
-            },
-            {
-                "dia": "Dia 8",
-                "titulo": "Forte Bulnes (Estreito de Magalhães)",
-                "descricao": "Hoje vamos visitar o Forte Bulnes localizado no Estreito de Magalhães.\nFoi o primeiro assentamento chileno permanente no Estreito de Magalhães, fundado em 1843 para garantir o controle estratégico da passagem marítima mais importante da América do Sul antes da criação do Canal do Panamá.\nConstruído totalmente em madeira e enfrentando ventos extremos, frio intenso e isolamento absoluto, o forte marcou o início da ocupação chilena na região da Patagônia austral. Apesar das dificuldades, ele foi essencial para consolidar a presença do Chile no extremo sul do continente."
-            },
-            {
-                "dia": "Dia 9",
-                "titulo": "Punta Arenas x Puerto Natales",
-                "descricao": "Dia reservado para nosso deslocamento de Punta Arenas até Puerto Natales.\nDistância: 250 km aprox"
-            },
-            {
-                "dia": "Dia 10",
-                "titulo": "Parque de Torres del Paine",
-                "descricao": "Saímos cedo em direção ao Parque de Torres del Paine, de onde iniciamos nossa caminhada até a base das Torres."
-            },
-            {
-                "dia": "Dia 11",
-                "titulo": "Dia Livre em Puerto Natales",
-                "descricao": "Dia livre para explorar a cidade ou descansar."
-            },
-            {
-                "dia": "Dia 12",
-                "titulo": "Puerto Natales x El Calafate",
-                "descricao": "Dia reservado para nosso deslocamento de Puerto Natales até El Calafate.\nDistância: 280 km aprox"
-            },
-            {
-                "dia": "Dia 13",
-                "titulo": "Glaciar Perito Moreno",
-                "descricao": "Acordaremos por volta de umas 07:00 da manhã para o café da manhã. Finalizado nosso café da manhã as 09:00 nosso transporte passará em nossa hospedagem para nos levar ao Parque Nacional Los Glaciares para a visita ao Glaciar Perito Moreno.\nAo chegar no Parque faremos a navegação no lago do Glaciar Perito Moreno para ver o Glaciar de frente e bem de pertinho. Essa navegação dura em torno de 1:00h a 1:30h.\nAo finalizar a navegação levaremos vocês para um passeio nas passarelas e mirantes para ter uma vista lateral do Glaciar.\nTerminando mais essa etapa tomaremos um café na cafeteria dentro do Parque e depois retornaremos para El Calafate."
-            },
-            {
-                "dia": "Dia 14",
-                "titulo": "El Calafate x El Chalten e Mirante do Paredão",
-                "descricao": "Acordaremos por volta das 08:00 horas para o café da manhã. As 09:30 nosso trasfer passará na nossa hospedagem para nos levar até o ponto de partida do nosso transporte principal que partirá as 11:00 da manhã de El Calafate com previsão de chegada as 13:40 em El Chaltén onde faremos o check-in na hospedagem e partiremos para uma caminhada que deve durar 3 horas até o mirante do Paredão de onde é possível ver toda a cidade e também o Cerro Fitz Roy e o Cerro Torre."
-            },
-            {
-                "dia": "Dia 15",
-                "titulo": "Laguna e Mirante do Cerro Torre",
-                "descricao": "Acordaremos as 06:00 para nosso café da manhã. Nesse dia nossa saída será as 07:30 com destino a Laguna e Mirante do Cerro Torre. Nossa caminhada deve durar cerca de 8 horas no total com previsão de chegada as 15:30 em nossa hospedagem.\n351 metros de ganho de elevação."
-            },
-            {
-                "dia": "Dia 16",
-                "titulo": "Loma del Pliegue Tumbado",
-                "descricao": "Acordaremos as 06:00 para o café da manhã e iniciaremos a caminhada as 07:30 para a trilha Loma del Pliegue Tumbado que deve durar em torno de 8 horas de caminhada com a previsão de finalizar em nossa hospedagem as 16:00 horas aproximadamente.\n898 ganho de elevação."
-            },
-            {
-                "dia": "Dia 17",
-                "titulo": "Laguna Capri, Los Três e Madre e Hija (Fitz Roy)",
-                "descricao": "Acordaremos as 05:00 da manhã nesse dia que sem duvidas é o mais duro de toda a expedição Patagônia.. Saída as 06:30 da manhã e a previsão de retorno é as 17:30. Nesse dia visitaremos a Laguna Capri, Laguna de Los Três e Laguna Madre e Hija totalizando aprox 29 km de caminhada. Esse será o dia em que teremos a melhor vista do Cerro Fitz Roy.\n868 de ganho de elevação."
-            },
-            {
-                "dia": "Dia 18",
-                "titulo": "Retorno para El Calafate - Brasil",
-                "descricao": "Dia reservado para o retorno para El Calafate - Brasil\nComprar o aéreo com o horário de embarque após as 13:00, por conta da distância do aeroporto e imprevistos com o clima"
-            }
-        ],
-        "atencao": [
-            "*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para o circuito. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.",
-            "*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.",
-            "*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.",
-            "*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.",
-            "CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS."
-        ],
-        "incluso": [
-            "Transporte aeroporto/hospedagem, hospedagem/aeroporto.",
-            "Hospedagem (quarto compartilhado) do dia 27/dezembro a 12/janeiro",
-            "Navegação de catamarã no canal Beagle.",
-            "Taxa de acesso Prisão Ushuaia .",
-            "Transporte ida e volta Cerro Cortez.",
-            "Transporte ida e volta Laguna Esmeralda.",
-            "Passaporte completo com: transporte saindo da hospedagem, guia local, taxa de acesso ao parque nacional Tierra del Fuego, visitação aos principais pontos turísticos do parque, bilhete trem do Fim do Mundo, transporte retorno para Ushuaia.",
-            "Transporte ida e volta Glaciar Vinceguerra.",
-            "Transporte Ushuaia/Punta Arenas",
-            "Transporte Parque Estreito de Magalhães",
-            "Transporte Punta Arenas/Puerto Natales",
-            "Transporte ida e volta Torres del Paine",
-            "Transporte Puerto Natales/El Calafate",
-            "Transporte ida e volta Parque Nacional Los Glaciares",
-            "Entrada Parque Nacional Los Glaciares",
-            "Transporte El Calafate/El Chalten",
-            "Taxas de acesso em todos os locais/trilhas",
-            "Transporte El Chalten/Aeroporto",
-            "*Os transportes foram pensados para melhor lhe atender, para sua experiencia ser a mais confortável possível, por isso os transportes podem variar sendo de van, carros particulares, barco, onibus..)​​​",
-            "*Os transportes foram pensados para melhor lhe atender, para sua experiencia ser a mais confortável possível, por isso os transportes podem variar sendo de van, carros particulares, barco, onibus..)",
-            "Levamos um dispositivo spotX para emergências. Através de sua tecnologia ativaremos a função de rastreamento por satélite, para que seus familiares e amigos possam acompanhar seu progresso em campo, em seus computadores ou celulares através do portal SpotFINDME. O dispositivo envia waypoints (pontos em um mapa). Dessa forma, as pessoas que te seguem poderão conhecer sua jornada online.",
-            "Incluso também quatro camisetas especiais da N.A Trekking ( 2 unidades com proteção UV, 2 unidades promocionais de algodão).",
-            "Seguro Individual Internacional com extensão para atividades de aventura. (cobertura de 27 de dezembro de 2026 a 13 de janeiro de 2027) (Caso necessitar mais dias podemos cotar para você) (Obrigatório estar coberto desde o dia de saída do Brasil até o dia de retorno para o Brasil)",
-            "(Caso necessitar mais dias podemos cotar para você) (Obrigatório estar coberto desde o dia de saída do Brasil até o dia de retorno para o Brasil)"
-        ],
-        "nao_incluso": [
-            "Despesas decorrentes de eventual abandono da expedição e despesas de resgate e evacuação.",
-            "Alterações por parte do cliente no tipo de hospedagem e datas.",
-            "E qualquer coisa que não esteja na aba incluso.",
-            "Qualquer duvida é só perguntar."
-        ],
-        "investimento": [
-            "Desconto para pagamento a vista via Wise fica 3.713,92 dólares",
-            "Desconto para pagamento parcelado via Wise fica 4.196,01 dólares em 1+5 de 699,33 dólares",
-            "Desconto para pagamento a vista no Pix fica R$ 20.346,35",
-            "Desconto para pagamento parcelado no Pix fica R$ 22.147,36 em 1+5 de R$ 3.691,22",
-            "Fica R$ 23.293,46 em até 12 vezes sem juros",
-            "(12 de R$ 1.941,12 aprox)"
-        ],
-        "politica": [
-            "Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.",
-            "Para essa Expedição em especial devido a quantidade de logística empregada, assim como a quantidade de serviços que terão que ser contratados como: Transporte, reserva de hospedagem, taxas de acesso, outros membros da equipe e outros.., nos reservamos o direito de reter possíveis valores advindos de multas aplicadas por todos esses prestadores de serviço que estarão disponíveis para nossa expedição. Por isso antes da compra esteja ciente que além das regras que estão disponíveis abaixo poderá haver retenção de outros valores.",
-            "Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.",
-            "* Cancelamento até 30 dias do início da viagem: 70% do valor total",
-            "* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total",
-            "* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total",
-            "* Cancelamento a menos de 07 dias do início da viagem: Sem devolução",
-            "Por isso tenha a certeza que realmente nessa data poderá participar da atividade.",
-            "*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.",
-            "* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado 'no-show', implicando a perda total do valor pago.",
-            "* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.",
-            "* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)",
-            "*Devolução de valores pagos serão realizados em até 7 dias uteis, após o recebimento da solicitação de reembolso.",
-            "(Para pagamentos que foram feitos com cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 7 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura a depender da operadora de cartão de crédito.)"
-        ],
-        "faq": [
-            {
-                "pergunta": "Quais documentos preciso?",
-                "resposta": "Para a viagem vc vai precisar de passaporte ou rg. Passaporte com no mínimo 6 meses de validade na data da viagem e com no mínimo 3 paginas em branco. RG dentro da validade (valido por 10 anos) e em bom estado."
-            },
-            {
-                "pergunta": "Quais vacinas são necessárias?",
-                "resposta": "Você vai precisar da vacina da febre amarela e retirar o certificado internacional."
-            }
-        ],
-        "loc": "Patagônia",
-        "dur": "18 dias",
-        "elevation": "N/A"
-    },
-    "https://natrekking.com.br/ushuaia-dez26-jan27": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/patagoniachilenaespecial": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/calafate-chalten-especial": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/vulcões-do-atacama-jan-27": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/torresdelpaineo2027": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/crucedelosandes2027": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/travpicosdejaragua": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/fendacruzdepedra": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/curso-de-trekking-setembro": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/lencois-maranhenses-jul-27": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/rinoceronte": {
-        "historia": [],
-        "vibe": [
-            "Garanta seu lugar na aventura dos sonhos: Pico Rinoceronte te espera!",
-            "​Essa Trip acontecerá no formato auto suficiente, onde cada participante carrega tudo que precisará para os 2 dias de trekking.",
-            "Somos uma empresa do Sul do Brasil com sede em Joinville- SC, mas operamos em diversos estados e em mais 6 países promovendo expedições de todos os níveis.A N.A Trekking nasceu através do Adriano Knopik (@adriknopik), Guia e fundador, com intuito de mostrar as pessoas um novo estilo de vida, onde a simplicidade e a superação estão diariamente presentes."
-        ],
-        "specs": [
-            "Data:01 e 02 de agosto de 2025",
-            "Ponto de encontro:Curitiba e Joinville (posto de combustível em frente a Expoville)",
-            "Ponto de encontro:",
-            "Elevação",
-            "Ganho de elevação:581m",
-            "Ganho de elevação:581",
-            "Perda de elevação:581 m",
-            "Perda de elevação:",
-            "Dificuldade",
-            "Distância:18km aprox.",
-            "Distância:18",
-            "Dificuldade Física:Fácil",
-            "Dificuldade Física:",
-            "Dificuldade Técnica:Fácil",
-            "Dificuldade Técnica:"
-        ],
-        "cronograma": [
-            {
-                "titulo": "Dia 25 de outubro",
-                "descricao": ""
-            },
-            {
-                "titulo": "Primeiro dia",
-                "descricao": "23:00 (24/10) Saída de Curitiba\n00:30 Saída de Joinville (primeiros minutos do sábado)\n08:00 Chegada no inicio da trilha\n11:00 Chegada no acampamento\nRestante da tarde livre"
-            }
-        ],
-        "atencao": [],
-        "incluso": [
-            "Transporte de Curitiba e Joinville ate inicio da trilha",
-            "Seguro",
-            "Transporte final da trilha até Joinville e Curitiba",
-            "Seguro",
-            "Transporte de ida e volta",
-            "Taxas de acesso",
-            "2 Guias",
-            "Seguro acidentes pessoais",
-            "Botton exclusivo",
-            "1 Camisa da NA Trekking",
-            "Rastreamento em tempo real",
-            "Transporte de ida e volta",
-            "Taxas de acesso",
-            "2 Guias autorizados nos Campos do Quiriri",
-            "Seguro acidentes pessoais",
-            "Botton exclusivo",
-            "1 Camisa da NA Trekking",
-            "Rastreamento em tempo real"
-        ],
-        "nao_incluso": [
-            "Alimentação",
-            "Equipamentos",
-            "Alimentação",
-            "Equipamentos",
-            "Dia 26 de outubro",
-            "Segundo dia",
-            "05:00 Acordar",
-            "05:30 Nascer do sol",
-            "07:00 Inicio do retorno",
-            "10:00 Fim da trilha",
-            "18:00 Previsão de chegada em Joinville",
-            "19:30 Previsão de chegada em Curitiba aprox",
-            "Vai ficar de fora?",
-            "Reservar minha vaga",
-            "Atenção",
-            "*Esse é um roteiro que necessita de bom preparo físico, por isso precisa chegar bem para a expedição. O guia a todo momento estará avaliando as condições de todos durante todos os dias de trekking. Se programe com bons treinos e siga todas as recomendações.",
-            "*Os horários podem variar devido a trânsito, ritmo de grupo, previsão do tempo ou decisão dos guias para preservar a segurança do grupo ou mesmo garantir a melhor experiência.",
-            "*As expedições em grupo são compostas de pessoas de diferentes níveis de preparo físico e velocidade, com isso você precisa estar ciente de que por conta disso os atrativos podem ser ajustados e reordenados caso necessário para preservar a segurança do grupo e também focando em entregar a melhor experiência possível para todos, lembrando que por se tratar de pessoas com preparo físico e idades diferentes de você é possível que você precise caminhar um pouco mais devagar ou rápido se adaptando ao ritmo do grupo.",
-            "*Não se preocupe pois sempre haverá um guia auxiliar na parte de trás do grupo e outro na frente liderando e definindo os ritmos a fim de manter todos o mais agrupados possível.",
-            "​​",
-            "​",
-            "CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS.​",
-            "CONDIÇÕES DO TEMPO: NÃO PODEMOS GARANTIR TEMPO BOM NO DIA DA TRIP, APENAS CANCELAREMOS OU ADIAREMOS SE AS CONDIÇÕES METEOROLÓGICAS COLOCAREM EM RISCO A SEGURANÇA DOS PARTICIPANTES OU SE NÃO ATINGIREM 8 VAGAS PREENCHIDAS.",
-            "​",
-            "Experiências Inesquecíveis",
-            "\"Comida boa todo dia, equipe atenciosaNão tem o que falar. Foi muito bom.Guia gente boa!Nota 1000! Obrigado!\"",
-            "Ricardo TiburtiusExpedição Monte Roraima"
-        ],
-        "investimento": [
-            "Paula Gaio",
-            "Marcio depoimento",
-            "Keila",
-            "Bruno",
-            "Julia",
-            "Angelo",
-            "Fotos em grupo",
-            "Reservar minha vaga"
-        ],
-        "politica": [
-            "Atenção",
-            "Essa trip seguira todas as regras e decretos estabelecidos na data, podendo ser necessário o uso de carros normais caso não puder contratar vans e também poderá ser adiado caso haja alguma proibição da pratica esportiva. Nesse caso seu investimento ficará como credito para você utilizar no evento á sua escolha.",
-            "Em caso de cancelamento por iniciativa do cliente, a N.A.Trekking providenciará a possível devolução conforme especificado abaixo e de acordo com a deliberação normativa nº 161 de 09 de agosto de 1985 da EMBRATUR.",
-            "* Cancelamento até 30 dias do início da viagem: 70% do valor total",
-            "* Cancelamento entre 29 e 21 dias do início da viagem: 50% do valor total",
-            "* Cancelamento entre 20 e 08 dias do início da viagem: 40% do valor total",
-            "* Cancelamento a menos de 07 dias do início da viagem: Sem devolução",
-            "Por isso tenha a certeza que realmente nessa data poderá participar da atividade.",
-            "*Situações que impossibilitem o evento por motivo de força maior devido a fatores climáticos, de acesso ou que possam interferir na segurança dos participantes ocasionará reversão do valor pago em crédito para uso viagens futuras conforme disponibilidade e condições da N.A Trekking.",
-            "* O não comparecimento na data, hora e local de apresentação determinados para o embarque será considerado \"no-show\", implicando a perda total do valor pago.",
-            "* O contratante que, por livre e espontânea vontade, se desligar do grupo durante a viagem ou trocar a hospedagem contratada, assumirá toda e qualquer despesa decorrente dessa atitude, sem o direito a reembolso.",
-            "* Em caso de desistência durante o roteiro por motivos pessoais o participante arcará com todos os custos que possam ser gerados com sua saída do evento. (Logística)",
-            "* Devolução de valores pagos serão realizados em até 07 dias úteis, após o recebimento da solicitação de reembolso.",
-            "* Para pagamentos que foram feitos no cartão de crédito, efetuaremos o cancelamento no mesmo prazo de 07 dias úteis, porém o cancelamento e recebimento do crédito normalmente é gerado na próxima fatura e depende da operadora do cartão de crédito.",
-            "Contato N.A Brasil",
-            "Whatsapp",
-            "Instagram",
-            "Facebook",
-            "Contato N.A Internacional",
-            "Whatsapp",
-            "Instagram",
-            "Tiktok",
-            "Politicas de privacidade",
-            "N.A Trekking - CNPJ: 41.266.722/0001-70",
-            "Ir para cima",
-            "Esta empresa está cadastrada sob o numero 41.266.722/0001-70 no ministério do turismo",
-            "Direitos de Autor © natrekking.com™. Todos os direitos reservados.",
-            "bottom of page"
-        ],
-        "faq": [],
-        "wix_static": "D:\\rinoceronte.html"
-    },
-    "https://natrekking.com.br/torredaprata": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/cantagalo": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/lencoismaranhensesagosto2026": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/curso-de-trekking-agosto": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/espraiadoxsoldados": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    },
-    "https://natrekking.com.br/travessiaaracaxcrista": {
-        "historia": [],
-        "vibe": [],
-        "specs": [],
-        "cronograma": [],
-        "atencao": [],
-        "incluso": [],
-        "nao_incluso": [],
-        "investimento": [],
-        "politica": [],
-        "faq": []
-    }
+  "https://natrekking.com.br/kilimanjaro2026": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/kilimanjarosafari2026": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/kilimanjaro-safari-2027": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/roraimanov2026": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/patagonia-especial": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/ushuaia-dez26-jan27": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/patagoniachilenaespecial": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/calafate-chalten-especial": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/vulcões-do-atacama-jan-27": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/torresdelpaineo2027": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/crucedelosandes2027": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/travpicosdejaragua": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/fendacruzdepedra": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/curso-de-trekking-setembro": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/lencois-maranhenses-jul-27": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/rinoceronte": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/torredaprata": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/cantagalo": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/lencoismaranhensesagosto2026": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/curso-de-trekking-agosto": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/espraiadoxsoldados": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  },
+  "https://natrekking.com.br/travessiaaracaxcrista": {
+    "historia": [],
+    "vibe": [],
+    "specs": [],
+    "cronograma": [],
+    "atencao": [],
+    "incluso": [],
+    "nao_incluso": [],
+    "investimento": [],
+    "politica": [],
+    "faq": []
+  }
 }
