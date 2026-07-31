@@ -10,20 +10,16 @@ with open("structured_copy.json", "r", encoding="utf-8") as f:
 
 blocks = re.split(r'#{60,}', text)
 expeditions = []
-current_exp = None
 
-for block in blocks:
-    block = block.strip()
-    if not block: continue
+for i in range(len(blocks) - 1):
+    header_block = blocks[i].strip()
+    content_block = blocks[i+1].strip()
     
-    url_match = re.search(r'URL:\s*natrekking\.com\.br/([^\n\s]+)', block)
+    url_match = re.search(r'URL:\s*natrekking\.com\.br/([^\n\s]+)', header_block)
     if not url_match:
         continue
-    
+        
     url = "https://natrekking.com.br/" + url_match.group(1).strip()
-    # Skip kilimanjaro2026 if it's already there and we only want the new ones.
-    # Actually, the user's text for Kilimanjaro 2026 is exactly what we have, 
-    # but we can overwrite it or keep it.
     
     data = {
         "historia": [],
@@ -38,10 +34,7 @@ for block in blocks:
         "faq": []
     }
     
-    # Extract sections
-    # They are separated by uppercase headings
-    # Some headings: O QUE ESPERAR DESSA VIAGEM, HISTÓRIA, COMO VAI ROLAR, PARA QUEM É / O QUE VAMOS APRENDER
-    sections = re.split(r'\n(?=O QUE ESPERAR DESSA VIAGEM|HISTÓRIA|COMO VAI ROLAR|PARA QUEM É / O QUE VAMOS APRENDER|DADOS DA EXPEDIÇÃO|CRONOGRAMA|ATENÇÃO|INCLUSO NO INVESTIMENTO|INCLUSO/NÃO INCLUSO|NÃO INCLUSO|INVESTIMENTO|POLÍTICA DE CANCELAMENTO|FAQ)', block)
+    sections = re.split(r'\n(?=O QUE ESPERAR DESSA VIAGEM|HISTÓRIA|COMO VAI ROLAR|PARA QUEM É / O QUE VAMOS APRENDER|DADOS DA EXPEDIÇÃO|CRONOGRAMA|ATENÇÃO|INCLUSO NO INVESTIMENTO|INCLUSO/NÃO INCLUSO|NÃO INCLUSO|INVESTIMENTO|POLÍTICA DE CANCELAMENTO|FAQ)', content_block)
     
     for sec in sections:
         sec = sec.strip()
@@ -57,18 +50,14 @@ for block in blocks:
             data["historia"] = [p for p in content.split('\n\n') if p.strip()]
         elif header.startswith("COMO VAI ROLAR") or header.startswith("PARA QUEM É / O QUE VAMOS APRENDER"):
             data["vibe"] = [p for p in content.split('\n\n') if p.strip()]
-            if not data["historia"]: # If no history, put it in history
+            if not data["historia"]:
                 data["historia"] = data["vibe"]
                 data["vibe"] = []
-        elif header.startswith("DADOS DA EXPEDIÇÃO"):
-            # Not strictly needed since we pull from generate_unified.py, but good to have
-            pass
         elif header.startswith("CRONOGRAMA"):
-            crono_items = re.split(r'\n(?=Dia|Sábado|Domingo|04:30|04:00|07:00)', content)
+            crono_items = re.split(r'\n(?=Dia|Sábado|Domingo|04:30|04:00|07:00|23:00)', content)
             for item in crono_items:
                 item = item.strip()
                 if not item: continue
-                # title is the first line or before the —
                 parts = item.split('—', 1)
                 if len(parts) > 1:
                     titulo = parts[0].strip()

@@ -1,27 +1,315 @@
 {
   "https://natrekking.com.br/kilimanjaro2026": {
-    "historia": [],
+    "historia": [
+      "A Tanzânia tem cultura rica e vida selvagem diversa. Na escalada do\nKilimanjaro há a oportunidade de ver o nascer do sol do topo da África,\ngeleiras próximas à linha do equador e a paisagem africana do ponto\nmais alto do continente.\nQuem pode participar: experiência prévia em trilhas com pernoite em\nbarraca; idade entre 18-65 anos (casos fora da faixa avaliados\nindividualmente); não recomendado para cardiopatas ou pessoas com\nlimitação de mobilidade. A empresa auxilia com preparo físico,\naclimatação, equipamentos e compra de aéreo.\nFormato: expedição com guias locais, carregadores, cozinheiros e\nauxiliares. 7 dias de trekking até o Pico Uhuru."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (04/out)",
+        "descricao": "Brasil x Tanzânia: chegada no aeroporto de\nKilimanjaro, transporte até hospedagem (~50 min).\nIncluso: transporte aeroporto-hospedagem, hospedagem compartilhada,\ncafé da manhã | Não incluso: alimentação, passagem aérea",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (05/out)",
+        "descricao": "Descanso e organização: revisão/locação de\nequipamentos.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (06/out)",
+        "descricao": "Rota Lemosho, dia 1 de expedição: Portão Morum\n(3.500m) → Shira 1 Camp (3.610m). Distância 3,5km | 1,5h | 7°C dia /\n-2°C noite. Incluso: café, transporte trilha, almoço, jantar,\nbarraca compartilhada, carregadores até 15kg.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (07/out)",
+        "descricao": "Shira 1 → Shira 2 (3.850m), com opção de subir o\nPico da Catedral (3.872m). Depois caminhada de aclimatação até Lava\nTower (+200m). Distância 10km | 4h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (08/out)",
+        "descricao": "Shira 2 → Barranco (3.900m) via Torre de Lava\n(almoço no topo p/ aclimatação); vista da Muralha do Barranco.\nDistância 10km | 6h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (09/out)",
+        "descricao": "Barranco → Karanga (3.995m), escalada da Muralha do\nBarranco (~1h) + caminhada de aclimatação até Barafu (+200m).\nDistância 6km | 4h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (10/out)",
+        "descricao": "Karanga → Barafu (4.673m), acampamento base do\ncume + caminhada de aclimatação até Kosovo Camp (4.800m).\nDistância 4km | 4h | 1°C dia / -8°C noite.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 8 (11/out)",
+        "descricao": "Noite do cume: saída ~meia-noite, equipe extra de\ncarregadores de alta altitude, guias com chá quente, kits de\nprimeiros socorros e oxigênio. Chegada ao Pico Uhuru (5.895m) para\no nascer do sol (~30-40min no topo). Descida: Barafu → Millennium\nCamp (3.950m). Aviso: 90% dos acidentes ocorrem na descida.\nDistância 14km | 12,5h | -8°C dia / -17°C noite.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 9 (12/out)",
+        "descricao": "Millennium → Portão Mweka (1.640m), saída do parque,\nentrega do certificado da expedição. Distância 13km | 5h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 10 (13/out)",
+        "descricao": "Retorno ao Brasil.",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "Exige bom preparo físico; guia avalia condições diariamente",
+      "Horários podem variar (trânsito, clima, ritmo do grupo, decisão dos",
+      "guias)",
+      "Atrativos podem ser reordenados para segurança/melhor experiência",
+      "Sempre há guia na frente e atrás do grupo",
+      "Sem garantia de bom tempo; cancelamento só por risco de segurança",
+      "ou não atingir 10 vagas preenchidas"
+    ],
+    "incluso": [
+      "Hospedagem c/ café (dias 4,5,12 out, quarto compartilhado)",
+      "transporte aeroporto-hospedagem-aeroporto",
+      "assessoria pré-expedição",
+      "barracas de alta montanha p/ 3 (compartilhadas por 2, individual sob",
+      "consulta com 30 dias de antecedência + custo extra)",
+      "pensão completa",
+      "nos 7 dias de trekking (almoço dia 6 ao café da manhã dia 12)",
+      "guias",
+      "profissionais, chef, carregadores",
+      "kit de primeiros socorros",
+      "oxigênio",
+      "médico",
+      "equipamentos comuns (tendas, fogareiro, utensílios)",
+      "comunicação VHF",
+      "GPS por guia",
+      "dispositivo SpotX de rastreamento via",
+      "satélite",
+      "3 camisetas UV + 2 de algodão",
+      "brindes (boné, 2 bandanas,",
+      "touca)",
+      "2 guias NA Trekking + guia local",
+      "taxas de acesso",
+      "cofre para",
+      "itens que não sobem a montanha",
+      "carregadores até 15kg pessoais",
+      "seguro internacional (04-13/out/2026)",
+      "reuniões virtuais pré-viagem."
+    ],
+    "nao_incluso": [
+      "Refeições fora do cronograma",
+      "vestuário",
+      "despesas de abandono/resgate",
+      "/evacuação",
+      "passagens aéreas",
+      "alterações de hospedagem/datas pelo",
+      "cliente",
+      "resgate por helicóptero (obrigatório contratar à parte)",
+      "gorjeta para equipe local",
+      "qualquer item fora do \"incluso\"."
+    ],
     "investimento": [],
-    "politica": [],
-    "faq": []
+    "politica": [
+      "Baseada na deliberação normativa nº 161 (09/08/1985) da EMBRATUR.",
+      "- Até 30 dias antes: reembolso de 70%",
+      "- 29-21 dias antes: 50%",
+      "- 20-08 dias antes: 40%",
+      "- Menos de 7 dias antes: sem devolução",
+      "- Força maior (clima/segurança): crédito para viagem futura",
+      "- No-show: perda total",
+      "- Desistência voluntária durante a viagem: sem reembolso",
+      "- Reembolsos em até 7 dias úteis (cartão pode levar até a próxima",
+      "fatura)",
+      "- Empresa pode reter valores de multas de prestadores de serviço",
+      "(transporte, hospedagem, taxas, guia local etc.)"
+    ],
+    "faq": [
+      {
+        "pergunta": "Nível de experiência",
+        "resposta": [
+          "recomendado para iniciantes em alta montanha;\nsubida gradual, boa aclimatação. Sugerido treino cardio (bike,\ncorrida, caminhada, futebol) + pilates/musculação/crossfit/natação."
+        ]
+      },
+      {
+        "pergunta": "Custos extras",
+        "resposta": [
+          "aéreo, Global Rescue (resgate por helicóptero),\nvisto, alimentação, gorjeta."
+        ]
+      },
+      {
+        "pergunta": "Documentos",
+        "resposta": [
+          "passaporte válido 6+ meses; visto eletrônico da\nTanzânia (US$50 padrão, US$100 para americanos, ou visto na\nchegada pago em espécie); comprovante de retorno e hospedagem;\ncertificado internacional de febre amarela impresso; certificado\nde vacina COVID impresso."
+        ]
+      },
+      {
+        "pergunta": "Voos",
+        "resposta": [
+          "aeroporto de Kilimanjaro (JRO). Cias saindo de Guarulhos:\nQatar Airways (~18/semana via Doha), Ethiopian Airlines\n(~14/semana via Addis Abeba), Turkish Airlines (~13/semana via\nIstambul), KLM (~3/semana via Amsterdã)."
+        ]
+      },
+      {
+        "pergunta": "Informação",
+        "resposta": [
+          "Aéreo não incluso, mas empresa ajuda na escolha/reserva."
+        ]
+      },
+      {
+        "pergunta": "Transfer na chegada",
+        "resposta": [
+          "sim, representante com placa/logo aguarda no\naeroporto."
+        ]
+      },
+      {
+        "pergunta": "Chegada",
+        "resposta": [
+          "04/10/2026 — voos do Brasil levam ~30h, podendo chegar\nquase 2 dias após a saída."
+        ]
+      },
+      {
+        "pergunta": "Bagagem não usada na montanha",
+        "resposta": [
+          "armazenada em instalação com cofre."
+        ]
+      },
+      {
+        "pergunta": "Comunicação na montanha",
+        "resposta": [
+          "4G ocasional e não garantido; updates\ndiários no Instagram via satélite; link de rastreamento em tempo\nreal para família."
+        ]
+      },
+      {
+        "pergunta": "Clima",
+        "resposta": [
+          "melhor época jan-mar e jun-out; início de outubro é\ntransição para chuvas — temperaturas mais baixas, possibilidade de\nneve, menos gente na montanha (sem filas)."
+        ]
+      },
+      {
+        "pergunta": "Barracas",
+        "resposta": [
+          "divididas por gênero (exceto casais), 3 pessoas dividida\npor 2; individual sob consulta."
+        ]
+      },
+      {
+        "pergunta": "Equipamento a carregar",
+        "resposta": [
+          "só itens do dia (casaco de pluma, anorak,\npower bank, 2L água, lanche); resto (até 15kg) vai com carregadores."
+        ]
+      },
+      {
+        "pergunta": "Desistência",
+        "resposta": [
+          "no Brasil segue política de cancelamento; na Tanzânia\nantes da subida pode usar serviços inclusos mas sem reembolso;\ndurante a expedição, custos individuais por conta do participante."
+        ]
+      },
+      {
+        "pergunta": "Restrições alimentares",
+        "resposta": [
+          "atendidas mediante aviso prévio via\nformulário antes da viagem."
+        ]
+      },
+      {
+        "pergunta": "Cozinhar",
+        "resposta": [
+          "não é necessário, equipe própria com chef e nutricionista."
+        ]
+      },
+      {
+        "pergunta": "Equipamentos",
+        "resposta": [
+          "pode alugar alguns itens; vestuário recomenda-se\nlevar próprio (tamanhos)."
+        ]
+      },
+      {
+        "pergunta": "Água",
+        "resposta": [
+          "fornecida fervida diariamente (levar 2 recipientes 1L);\nriachos não são seguros; recomenda-se saborizador/eletrolítico."
+        ]
+      },
+      {
+        "pergunta": "Banheiros",
+        "resposta": [
+          "públicos em todos os acampamentos + banheiros exclusivos\ndo grupo; sem banho durante o trekking (lenço umedecido)."
+        ]
+      },
+      {
+        "pergunta": "Equipe",
+        "resposta": [
+          "para grupo de 10, ~50 pessoas envolvidas (4 guias de alta\nmontanha, 6 carregadores de cume, 2 chefs, 2 camareiros, 2\nencarregados de acampamento, ~24 carregadores, 2 guias brasileiros)."
+        ]
+      },
+      {
+        "pergunta": "Gorjeta",
+        "resposta": [
+          "recomendada, entregue em envelope ao final (US$250-300);\nbancos locais só aceitam notas US$50/100 emitidas a partir de 2009."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/kilimanjarosafari2026": {
-    "historia": [],
+    "historia": [
+      "Roteiro combina a escalada do Kilimanjaro com 2 dias de Safari\n(Parque Nacional Tarangire e Área de Conservação de Ngorongoro) e\nvisita a uma tribo Maasai. A Tanzânia tem quase 4 milhões de animais\nselvagens vagando pela savana. Mesmas informações de quem pode\nparticipar e formato de expedição do roteiro Kilimanjaro 2026."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "Dias 1-9 (04-12/out): idênticos ao roteiro Kilimanjaro 2026 (chegada,\ndescanso, Rota Lemosho, Shira 1/2, Barranco, Karanga, Barafu, noite\ndo cume/Pico Uhuru/Millennium Camp, Portão Mweka). Ao final do dia 9,\nopção \"sem Safari\" disponível mediante consulta de valores.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 10 (13/out)",
+        "descricao": "Dia de descanso, \"vibe Pole Pole\" da Tanzânia; troca\nde hospedagem (1h40).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 11 (14/out)",
+        "descricao": "Safari Parque Nacional Tarangire: leões, girafas,\nzebras, antílopes, búfalos, grande população de elefantes (jun-out e\ndez-mar), antigos baobás.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 12 (15/out)",
+        "descricao": "Safari Área de Conservação de Ngorongoro: cratera\ncom dezenas de milhares de animais selvagens (elefantes, búfalos,\nantílopes, leões, chitas, zebras, rinocerontes — espécie ameaçada);\nparada no Lago Magadi (hipopótamos, aves); Patrimônio Mundial UNESCO.\nProibido alimentar animais selvagens (lei aplicada por guardas\nflorestais, com multa).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 13 (16/out)",
+        "descricao": "Retorno ao Brasil: hospedagem → aeroporto (1h).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
     "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "incluso": [
+      "Hospedagem c/ café (dias 4,5,12,13,14,15 out)",
+      "mesmos itens do",
+      "Kilimanjaro 2026 (transporte, barracas, pensão completa 7 dias,",
+      "guias, kit primeiros socorros, oxigênio, VHF, GPS, SpotX, camisetas,",
+      "brindes, taxas, cofre, carregadores) + Safari incluso: lanche para",
+      "almoço nos 2 dias de Safari, gorjeta para guia do Safari, visita à",
+      "tribo Maasai. Seguro internacional válido 04-16/out/2026."
+    ],
+    "nao_incluso": [
+      "cronograma, vestuário, abandono/resgate, passagens aéreas, alterações",
+      "de hospedagem/datas, resgate por helicóptero, gorjeta equipe local)."
+    ],
     "investimento": [],
-    "politica": [],
-    "faq": []
+    "politica": [
+      "161/1985; 70%/50%/40%/0% conforme prazo)."
+    ],
+    "faq": [
+      {
+        "pergunta": "É obrigatório o Safari? Não, há opção sem Safari, mas recomendado\no pacote completo (comparação",
+        "resposta": [
+          "ir a Paris sem ver a Torre Eiffel).\nInclui visita à tribo Maasai."
+        ]
+      },
+      {
+        "pergunta": "Informação",
+        "resposta": [
+          "Gorjeta do Safari já está inclusa no pacote (a da montanha, não).\nDemais perguntas (documentos, voos, clima, barracas, água, banheiros,\nequipe, comunicação) idênticas ao roteiro Kilimanjaro 2026."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/kilimanjaro-safari-2027": {
     "historia": [],
@@ -36,231 +324,1447 @@
     "faq": []
   },
   "https://natrekking.com.br/roraimanov2026": {
-    "historia": [],
-    "vibe": [],
+    "historia": [
+      "Monte Roraima, descoberto em 1595 (colonização britânica/espanhola),\nescalado pela primeira vez em 1884 por Everard Ferdinand Im Thurm.\nLocalizado na tríplice fronteira Guiana/Venezuela/Brasil, com 2.800m\nde altura no ponto mais alto. Caracterizado por falésias, platôs,\nvegetação de Savana e Floresta Tropical, plantas carnívoras. Clima\ntropical (20-22°C médio, 10°C dia / 2°C noite no topo), alta\npluviosidade (2.000-4.000mm/ano), umidade 70-85%. Passou a atrair\ntrekkers nos anos 80. Acesso pelo lado Sul, próximo a despenhadeiros."
+    ],
+    "vibe": [
+      "Formato expedição com equipe de carregadores indígenas da comunidade\nde Paraitepuy (cozinham, montam barracas, buscam água, carregam\nequipamentos). Necessário preparo físico prévio."
+    ],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (20/nov)",
+        "descricao": "Chegada em Boa Vista (até 18h), jantar e briefing\nàs 19h30.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (21/nov)",
+        "descricao": "Santa Elena/Venezuela: saída 08h, fronteira 11h,\nchegada hospedagem 12h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (22/nov)",
+        "descricao": "Paraitepuy: saída de jipe 4x4 08h, chegada\nParaitepuy 11h, início trekking 12h rumo ao Acampamento Rio Tek\n(16h). 12km de caminhada.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (23/nov)",
+        "descricao": "Acampamento Base: saída 07h, chegada 12h. 9km, 900m\nde ganho de elevação.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (24/nov)",
+        "descricao": "Cume Monte Roraima: saída 07h, chegada acampamento\n12h. 6km, 950m de ganho de elevação.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (25/nov)",
+        "descricao": "Tríplice fronteira (Venezuela/Brasil/Guiana), Vale\ndos Cristais e o Fosso.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (26/nov)",
+        "descricao": "La Ventana (ponto mais visitado do Roraima), Jacuzzi\n(banho refrescante), Maverick (formação rochosa, 2.810m, ponto mais\nalto do Roraima).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 8 (27/nov)",
+        "descricao": "Retorno ao Acampamento Tek, 15km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 9 (28/nov)",
+        "descricao": "Retorno a Boa Vista: saída Río Tek → Paraitepuy,\nalmoço em San Francisco de Yuruani, saída 13h, chegada Boa Vista\n~20h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 10 (29/nov)",
+        "descricao": "Retorno para casa.",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "variáveis, guias na frente e atrás). Condições do tempo: cancelamento",
+      "só por risco de segurança ou não atingir 7 vagas preenchidas."
+    ],
+    "incluso": [
+      "Diárias em Boa Vista (20 e 28/nov) e Santa Elena (21/nov, quarto",
+      "compartilhado)",
+      "transportes Boa Vista↔Santa Elena↔Paraitepuy↔São",
+      "Francisco de Yuruani",
+      "1 guia NA Trekking + 1 guia local",
+      "equipe de",
+      "carregadores (+20 pessoas) para alimentação e barracas",
+      "café/almoço/",
+      "jantar em todos os dias de trekking",
+      "cozinheiro",
+      "barraca compartilhada",
+      "(2 pessoas)",
+      "banheiro ecológico",
+      "almoço em San Francisco de Yuruani",
+      "equipamentos de cozinha",
+      "3 camisas NA Trekking (2 UV manga longa + 1",
+      "algodão)",
+      "boné",
+      "brindes",
+      "rastreamento SpotX",
+      "updates no Instagram",
+      "assessoria antes/depois",
+      "encontros virtuais",
+      "taxa de US$10 do parque",
+      "taxa venezuelana de US$10 para turistas",
+      "seguro internacional com",
+      "extensão para aventura (20-29/nov/2026)",
+      "transporte de equipamentos."
+    ],
+    "nao_incluso": [
+      "Passagem aérea",
+      "alimentação fora do trekking",
+      "carregadores para",
+      "equipamentos pessoais (contratação opcional, custo à parte)",
+      "equipamentos de trekking exceto barraca",
+      "alimentação nas hospedagens",
+      "qualquer item fora do \"incluso\"."
+    ],
     "investimento": [],
-    "politica": [],
-    "faq": []
+    "politica": [
+      "(70%/50%/40%/0%), com nota adicional de retenção de valores de multas",
+      "de prestadores de serviço."
+    ],
+    "faq": [
+      {
+        "pergunta": "Documentos",
+        "resposta": [
+          "RG com menos de 10 anos de emissão, em bom estado,\napenas documento físico (para entrar na Venezuela)."
+        ]
+      },
+      {
+        "pergunta": "Vacinas",
+        "resposta": [
+          "febre amarela + certificado internacional."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/patagonia-especial": {
-    "historia": [],
+    "historia": [
+      "Mescla de passeios turísticos e hikings entre montanhas, lagunas e\nglaciares — exige bom preparo físico mesmo sem pernoite em barraca\n(retorno à hospedagem todo dia). Passeios turísticos: trem do fim do\nmundo, Farol do Fim do Mundo, Correio do Fim do Mundo (desativado),\nponto final da Ruta 3, Prisão de Ushuaia, Forte Bulnes, Glaciar\nPerito Moreno. Trilhas: Cerro Cortez, Glaciar Vinciguerra, Laguna\nEsmeralda, Base das Torres, Mirante do Paredão, Mirante Cerro Torre,\nLoma del Pliegue Tumbado, Laguna de Los Três."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
-    "investimento": [],
-    "politica": [],
-    "faq": []
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "Ushuaia + Patagônia Chilena + Calafate/Chalten em sequência)",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 1 (27/dez)",
+        "descricao": "Brasil x Ushuaia.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (28/dez)",
+        "descricao": "Canal Beagle: navegação de catamarã, ilha dos\nPinguins, Farol Les Éclaireurs, ilha Bridges; visita à Prisão de\nUshuaia às 15h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (29/dez)",
+        "descricao": "Cerro Cortez: hiking ~6h, 12km, vista privilegiada\nde Ushuaia.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (30/dez)",
+        "descricao": "Laguna Esmeralda: caminhada ~6h, 12km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (31/dez)",
+        "descricao": "Parque Tierra del Fuego + Trem do Fim do Mundo: Lago\nAcigame, Baía Lapataia, placa fim da Ruta 3, Correio do Fim do\nMundo (desativado).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (01/jan)",
+        "descricao": "Glaciar Vinciguerra: caminhada 5-6h, 11km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (02/jan)",
+        "descricao": "Ushuaia → Punta Arenas (~10h, ~500km).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 8 (03/jan)",
+        "descricao": "Forte Bulnes (Estreito de Magalhães, fundado 1843,\nprimeiro assentamento chileno permanente na região).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 9 (04/jan)",
+        "descricao": "Punta Arenas → Puerto Natales (~4h, ~250km).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 10 (05/jan)",
+        "descricao": "Base das Torres (Torres del Paine): caminhada 18km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 11 (06/jan)",
+        "descricao": "Dia livre em Puerto Natales.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 12 (07/jan)",
+        "descricao": "Puerto Natales → El Calafate (~4h, ~280km).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 13 (08/jan)",
+        "descricao": "Glaciar Perito Moreno: navegação no lago (1-1h30),\npassarelas e mirantes.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 14 (09/jan)",
+        "descricao": "El Calafate → El Chaltén; caminhada 3h até o\nMirante do Paredão (vista de Cerro Fitz Roy e Cerro Torre).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 15 (10/jan)",
+        "descricao": "Mirante Cerro Torre: caminhada ~8h, 21km, 351m de\nganho de elevação.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 16 (11/jan)",
+        "descricao": "Loma del Pliegue Tumbado: ~8h, 17km, 898m de ganho.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 17 (12/jan)",
+        "descricao": "Dia mais duro: Laguna Capri, Laguna de Los Três e\nLaguna Madre e Hija, ~29km, 868m de ganho, melhor vista do Cerro\nFitz Roy.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 18 (13/jan)",
+        "descricao": "Retorno El Calafate-Brasil (recomendação: aéreo\napós 13h).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "risco de segurança ou não atingir 8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte aeroporto/hospedagem em Ushuaia e El Chaltén/aeroporto",
+      "hospedagem compartilhada (27/dez a 12/jan)",
+      "navegação catamarã Canal",
+      "Beagle",
+      "taxa Prisão Ushuaia",
+      "transportes ida/volta Cerro Cortez,",
+      "Laguna Esmeralda, Glaciar Vinceguerra",
+      "passaporte completo Tierra del",
+      "Fuego (transporte, guia local, taxas, trem)",
+      "transportes Ushuaia↔",
+      "Punta Arenas↔Puerto Natales↔El Calafate↔El Chaltén",
+      "entrada e",
+      "navegação Parque Nacional Los Glaciares",
+      "taxas de acesso em todas as",
+      "trilhas",
+      "dispositivo SpotX",
+      "4 camisetas (2 UV + 2 algodão)",
+      "boné",
+      "brindes",
+      "guia NA Trekking",
+      "seguro internacional com extensão para",
+      "aventura (27/dez/2026-13/jan/2027)."
+    ],
+    "nao_incluso": [
+      "Alimentação",
+      "vestuário",
+      "despesas de abandono/resgate/evacuação",
+      "passagens aéreas",
+      "alterações de hospedagem/datas",
+      "qualquer item fora",
+      "do \"incluso\"."
+    ],
+    "investimento": [
+      "Pagamento em dólar via Wise:",
+      "- À vista: US$ 3.713,92",
+      "- Parcelado (1+5): US$ 4.196,01 total, parcelas de US$ 699,33",
+      "(jul-dez)",
+      "Pagamento em real via Pix:",
+      "- À vista: R$ 20.346,35",
+      "- Parcelado (1+5): R$ 22.147,36 total, parcelas de R$ 3.691,22",
+      "(jul-dez)",
+      "Cartão de crédito: R$ 23.293,46 em até 12x sem juros (~R$1.941,12/mês)"
+    ],
+    "politica": [
+      "(70%/50%/40%/0%)."
+    ],
+    "faq": [
+      {
+        "pergunta": "Documentos",
+        "resposta": [
+          "passaporte (mín. 6 meses validade, 3 páginas em\nbranco) ou RG válido (10 anos)."
+        ]
+      },
+      {
+        "pergunta": "Vacinas",
+        "resposta": [
+          "febre amarela + certificado internacional."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/ushuaia-dez26-jan27": {
-    "historia": [],
-    "vibe": [],
+    "historia": [
+      "Ushuaia fica no arquipélago da Terra do Fogo, extremo sul da América\ndo Sul, conhecida como \"Fim do Mundo\". Cercada pela cordilheira\nMartial e Estreito de Beagle. Base para cruzeiros à Antártida; passa\npela ilha Yécapasela (\"Ilha do Pinguim\"). Parte da Patagônia\nArgentina, destino de ecoturismo e turismo de aventura."
+    ],
+    "vibe": [
+      "Mescla de passeios turísticos (trem do fim do mundo, Farol Fim do\nMundo, Correio do Fim do Mundo desativado, ponto final Ruta 3,\nPrisão Ushuaia) e trilhas (Cerro Cortez, Glaciar Vinciguerra, Laguna\nEsmeralda) — sem pernoite em barraca."
+    ],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
-    "investimento": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (27/dez)",
+        "descricao": "Brasil x Ushuaia.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (28/dez)",
+        "descricao": "Canal Beagle: catamarã, ilha dos Pinguins, Farol Les\nÉclaireurs, ilha Bridges, Prisão de Ushuaia (15h).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (29/dez)",
+        "descricao": "Cerro Cortez: 6h, 12km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (30/dez)",
+        "descricao": "Laguna Esmeralda: 6h, 12km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (31/dez)",
+        "descricao": "Parque Tierra del Fuego + Trem do Fim do Mundo.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (01/jan)",
+        "descricao": "Glaciar Vinciguerra: 5-6h, 11km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (02/jan)",
+        "descricao": "Ushuaia x Brasil (retorno).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "6 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte aeroporto/hospedagem",
+      "hospedagem compartilhada (27/dez a",
+      "01/jan)",
+      "navegação catamarã Beagle",
+      "taxa Prisão Ushuaia",
+      "transportes",
+      "Cerro Cortez, Laguna Esmeralda",
+      "passaporte completo Tierra del Fuego",
+      "transporte Glaciar Vinciguerra",
+      "SpotX",
+      "3 camisetas (2 UV + 1",
+      "algodão)",
+      "boné",
+      "brindes",
+      "guia NA Trekking",
+      "seguro internacional",
+      "(27/dez/2026-02/jan/2027)."
+    ],
+    "nao_incluso": [
+      "Alimentação",
+      "vestuário",
+      "despesas de abandono/resgate",
+      "passagens",
+      "aéreas Brasil-Ushuaia",
+      "alterações de hospedagem/datas",
+      "itens fora do",
+      "\"incluso\"."
+    ],
+    "investimento": [
+      "Pagamento em dólar via Wise:",
+      "- À vista: US$ 2.124,57",
+      "- Parcelado (1+5): US$ 2.368,26 total, parcelas de US$ 394,71",
+      "Pagamento em real via Pix:",
+      "- À vista: R$ 11.520,97",
+      "- Parcelado (1+5): R$ 12.431,35 total, parcelas de ~R$ 2.000",
+      "Cartão de crédito: R$ 13.010,68 em até 12x (~R$1.084,22/mês)"
+    ],
     "politica": [],
-    "faq": []
+    "faq": [
+      {
+        "pergunta": "Informação",
+        "resposta": [
+          "anos) e vacina de febre amarela — idêntico aos demais roteiros\nargentinos/chilenos."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/patagoniachilenaespecial": {
-    "historia": [],
+    "historia": [
+      "Mescla de passeio turístico e hiking, sem pernoite em barraca."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
-    "investimento": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (02/jan)",
+        "descricao": "Brasil x Punta Arenas.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (03/jan)",
+        "descricao": "Forte Bulnes (Estreito de Magalhães, 1843).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (04/jan)",
+        "descricao": "Punta Arenas → Puerto Natales (~4h, ~250km).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (05/jan)",
+        "descricao": "Base das Torres (Torres del Paine): 18km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (06/jan)",
+        "descricao": "Dia livre em Puerto Natales.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (07/jan)",
+        "descricao": "Retorno ao Brasil.",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte aeroporto/hospedagem",
+      "hospedagem compartilhada (02-06",
+      "jan)",
+      "transporte Estreito de Magalhães",
+      "transporte Punta Arenas↔",
+      "Puerto Natales",
+      "transporte ida/volta Torres del Paine",
+      "taxas de",
+      "acesso",
+      "SpotX",
+      "3 camisetas (2 UV + 1 algodão)",
+      "boné",
+      "brindes",
+      "guia",
+      "NA Trekking",
+      "seguro internacional (02-07/jan/2027)."
+    ],
+    "nao_incluso": [
+      "aéreas, alterações de hospedagem/datas, itens fora do \"incluso\"."
+    ],
+    "investimento": [
+      "Pagamento em dólar via Wise:",
+      "- À vista: US$ 1.797,77",
+      "- Parcelado (1+5): US$ 1.992,43 total, parcelas de US$ 332,07",
+      "Pagamento em real via Pix:",
+      "- À vista: R$ 9.973,17",
+      "- Parcelado (1+5): R$ 10.727,35 total, parcelas de R$ 1.787,89",
+      "Cartão de crédito: R$ 11.207,28 em até 12x (~R$ 933,94/mês)"
+    ],
     "politica": [],
-    "faq": []
+    "faq": [
+      {
+        "pergunta": "Informação",
+        "resposta": [
+          "aos demais roteiros argentinos/chilenos."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/calafate-chalten-especial": {
-    "historia": [],
+    "historia": [
+      "Mescla de passeios turísticos e hikings entre montanhas, lagunas e\nglaciares, sem pernoite em barraca."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
-    "investimento": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (07/jan)",
+        "descricao": "Brasil x El Calafate.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (08/jan)",
+        "descricao": "Glaciar Perito Moreno: navegação (1-1h30),\npassarelas e mirantes.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (09/jan)",
+        "descricao": "El Calafate → El Chaltén; caminhada 3h ao Mirante\ndo Paredão (vista Cerro Fitz Roy e Cerro Torre).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (10/jan)",
+        "descricao": "Mirante Cerro Torre: ~8h, 21km, 351m de ganho.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (11/jan)",
+        "descricao": "Loma del Pliegue Tumbado: ~8h, 17km, 898m de ganho.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (12/jan)",
+        "descricao": "Laguna de Los Três (dia mais duro): Laguna Capri,\nLaguna de Los Três, Laguna Madre e Hija, ~29km, 868m de ganho,\nmelhor vista do Cerro Fitz Roy.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (13/jan)",
+        "descricao": "Retorno El Calafate-Brasil (aéreo após 13h).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte aeroporto/hospedagem",
+      "hospedagem compartilhada (07-12",
+      "jan)",
+      "transporte ida/volta Parque Nacional Los Glaciares",
+      "entrada e",
+      "navegação no lago",
+      "transporte El Calafate↔El Chaltén",
+      "taxas de",
+      "acesso",
+      "transporte El Chaltén/aeroporto",
+      "SpotX",
+      "3 camisetas (2 UV +",
+      "1 algodão)",
+      "boné",
+      "brindes",
+      "guia NA Trekking",
+      "seguro internacional",
+      "(07-13/jan/2027)."
+    ],
+    "nao_incluso": [
+      "aéreas, alterações de hospedagem/datas, itens fora do \"incluso\"."
+    ],
+    "investimento": [
+      "Pagamento em dólar via Wise:",
+      "- À vista: US$ 2.331,35",
+      "- Parcelado (1+5): US$ 2.606,06 total, parcelas de US$ 434,34",
+      "Pagamento em real via Pix:",
+      "- À vista: R$ 12.669,20",
+      "- Parcelado (1+5): R$ 13.695,45 total, parcelas de R$ 2.282,57",
+      "Cartão de crédito: R$ 14.348,51 em até 12x (~R$ 1.195,70/mês)"
+    ],
     "politica": [],
     "faq": []
   },
   "https://natrekking.com.br/vulcões-do-atacama-jan-27": {
-    "historia": [],
-    "vibe": [],
+    "historia": [
+      "No Deserto do Atacama, os vulcões Lascar (um dos mais ativos da\nregião, fumarola constante), Colorado (encostas avermelhadas) e\nAcamarachi dominam o horizonte."
+    ],
+    "vibe": [
+      "Hiking diário, retornando à hospedagem todo dia. Precisa aclimatar\nem altitude para atingir o objetivo principal: cume do Acamarachi\n(6.048m). Durante o processo: Lagunas altiplanas, Geyser Del Tatio,\nVulcão Lascar, Vulcão Colorado."
+    ],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (08/jan)",
+        "descricao": "Brasil x Chile: chegada, citytour às 14h (voos de\nmanhã recomendados), jantar de recepção e briefing às 20h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (09/jan)",
+        "descricao": "Lagunas Altiplanas: saída 06h, aclimatação a 4.600m;\nLaguna Mininque, Laguna Miscanti, Trópico de Capricórnio, Laguna\nTuyaito. Retorno ~16h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (10/jan)",
+        "descricao": "Geyser Del Tatio: saída 04h, 3km de caminhada,\nretorno ~11h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (11/jan)",
+        "descricao": "Vulcão Lascar (5.600m): saída 04h, retorno ~11h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (12/jan)",
+        "descricao": "Descanso e organização para o Vulcão Colorado.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (13/jan)",
+        "descricao": "Vulcão Colorado (5.748m, fronteira Chile-Bolívia):\nsaída 03h30, retorno previsto 19h — dia mais duro até então.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (14/jan)",
+        "descricao": "Descanso.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dias 8-9 (15-16/jan)",
+        "descricao": "Vulcão Acamarachi: saída de São Pedro do\nAtacama 21h (dia 15), chegada à base ~01h; subida técnica (pedras\nsoltas) de 4.900m até 6.048m (cume), 8-10h de subida; descida 4-5h,\nretorno previsto 16h (dia 16).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 10 (17/jan)",
+        "descricao": "Descanso, compras em São Pedro de Atacama, jantar\nde despedida.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 11 (18/jan)",
+        "descricao": "Chile x Brasil (retorno).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "Padrão + aviso adicional: o Vulcão Lascar está em atividade — em",
+      "caso de atividade fora do normal que impeça a ascensão, a expedição",
+      "pode ser ajustada para outra montanha/roteiro por segurança.",
+      "Cancelamento se risco de segurança ou não atingir 6 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte aeroporto/hospedagem",
+      "hospedagem compartilhada (dias",
+      "8-17/jan)",
+      "café da manhã (dias 9,10,11,13)",
+      "almoço (dia 9)",
+      "lanche de",
+      "trilha (dias 9,10,11,13,16)",
+      "jantar (dias 8,9,10,11,13,15,17)",
+      "transportes de ida/volta",
+      "taxas de acesso",
+      "SpotX",
+      "3 camisetas (2 UV +",
+      "1 algodão)",
+      "brindes",
+      "guia NA Trekking",
+      "seguro internacional com",
+      "extensão para aventura (08-18/jan/2027)."
+    ],
+    "nao_incluso": [
+      "Roupas",
+      "despesas de abandono/resgate/evacuação",
+      "passagens aéreas",
+      "Brasil-Chile",
+      "alterações de hospedagem/datas",
+      "alimentação nos dias",
+      "12,14,18",
+      "café da manhã dias 8,15,17",
+      "almoço dias 8,10,11,15,17",
+      "jantar dia 16",
+      "itens fora do \"incluso\"."
+    ],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/torresdelpaineo2027": {
-    "historia": [],
+    "historia": [
+      "Formato autossuficiente (leva-se tudo, exceto barraca e colchonete)\npara os 8 dias do Circuito O. Estrutura em todas as áreas de camping\ncom banho quente (exceto 1 local), água potável, carregamento de\ncelular/powerbank, alguns com WIFI pago e mercadinho. Em 4 das 7\nnoites do circuito há restaurantes disponíveis. Roteiro programado\npara março pois o Circuito O costuma fechar entre final de março e\nmeio de abril (risco de congelamento do Passo John Gardner)."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (12/mar)",
+        "descricao": "Brasil x Chile (chegada em Puerto Natales).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (13/mar)",
+        "descricao": "Preparativos: conferência de equipamentos.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (14/mar)",
+        "descricao": "Torres del Paine: saída 07h, ~2h até a portaria\nLaguna Amarga, van até o centro de boas-vindas; 4h/~13km até\nrefúgio Serón.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (15/mar)",
+        "descricao": "Refúgio Dickson: 18km, ~6h de caminhada, entre lagos,\nmontanhas nevadas, florestas e campos.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (16/mar)",
+        "descricao": "Laguna Perros: 12km, 5-6h, subida e travessias de\npontes; visita à laguna Perros.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (17/mar)",
+        "descricao": "Refúgio Grey (dia mais duro do Circuito): 15km,\nsaída 06h para evitar filas no Passo John Gardner (ponto mais alto\ne frio); pode haver neve/gelo (uso de grampon leve recomendado);\nchegada 16h. Refúgio com duchas, wifi, mercadinho e restaurante.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (18/mar)",
+        "descricao": "Camping Paine Grande: dia mais leve, 11km, 3-4h,\nàs margens do lago Pehoé (ponto de início/fim do circuito W via\ncatamarã).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 8 (19/mar)",
+        "descricao": "Camping Francês: 20km total, incluindo ataque ao\nmirador Britânico (5,5km) a partir do Camping Italiano.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 9 (20/mar)",
+        "descricao": "Camping Central: terreno mais plano, praias de\npedra do Lago Nordenskjold.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 10 (21/mar)",
+        "descricao": "Base das Torres: saída 03h, chegada 08h para fotos\nno cartão-postal de Torres del Paine; descida ao Camping Central,\ndepois van até Laguna Amarga e transporte para Puerto Natales.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 11 (22/mar)",
+        "descricao": "Chile x Brasil (retorno).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "não são reembolsáveis, nominais e intransferíveis. Cancelamento se",
+      "risco de segurança ou não atingir 6 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte aeroporto/hospedagem",
+      "3 noites em Puerto Natales",
+      "(compartilhado)",
+      "transportes Puerto Natales↔Laguna Amarga↔Recepção",
+      "do Parque",
+      "taxas de 7 noites em campings",
+      "barraca compartilhada +",
+      "colchonete (individual sob consulta)",
+      "taxa de acesso ao parque",
+      "2",
+      "guias N.A Trekking (conforme quantidade)",
+      "seguro internacional",
+      "(12-22/mar/2027)",
+      "botton",
+      "brindes",
+      "3 camisetas (2 UV + 1 algodão)",
+      "rastreamento SpotX",
+      "assessoria antes/durante/depois",
+      "reuniões",
+      "virtuais."
+    ],
+    "nao_incluso": [
+      "Vestuário",
+      "despesas de abandono/resgate/evacuação",
+      "passagens aéreas",
+      "Brasil-Chile",
+      "alterações de hospedagem/datas",
+      "alimentação",
+      "itens",
+      "fora do \"incluso\"."
+    ],
     "investimento": [],
     "politica": [],
-    "faq": []
+    "faq": [
+      {
+        "pergunta": "Documentos",
+        "resposta": [
+          "RG (menos de 10 anos) ou passaporte (6+ meses)."
+        ]
+      },
+      {
+        "pergunta": "Vacinas",
+        "resposta": [
+          "febre amarela + certificado internacional."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/crucedelosandes2027": {
-    "historia": [],
+    "historia": [
+      "A travessia dos Andes, liderada por San Martín em 1817, foi decisiva\nna independência sul-americana. O Exército dos Andes, formado em\nMendoza, atravessou a cordilheira com 4.000 soldados e 1.400\nauxiliares por 6 rotas diferentes, culminando na conquista de\nSantiago — um dos maiores feitos militares da história. Formato\nexpedição com equipe de apoio (guias, mulas, cozinheiro, auxiliares).\nPonto de encontro: hospedagem em Mendoza (recomenda-se chegar 1-2\ndias antes). Uber/táxi funcionam bem e são seguros em Mendoza."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 20",
+        "descricao": "Brasil x Mendoza: chegada e conferência de equipamentos.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 21",
+        "descricao": "Refúgio Scaravelli: saída 08h30, imigração no refúgio\nPortinari, 4h de subida (8km, 700m de ganho, altitude máx 3.200m).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 22",
+        "descricao": "Aclimatação: caminhada simples nos arredores de\nManantiales.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 23",
+        "descricao": "Acampamento La Olla: 12h de caminhada, passando pelo Portillo\nArgentino (4.400m — altitude máxima da expedição), descendo para\n3.300m. 22km, 1.150m de ganho.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 24",
+        "descricao": "Acampamento Contreras: travessia do Rio Tunuyán Superior a\ncavalo; vista da face sul do Tupungato e geleiras. 8,5km, 200m de\ndesnível, altitude máx 3.250m, 4h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 25",
+        "descricao": "Gauchito Gil: ~6h rumo à fronteira com o Chile, vista do\nNevado de Piuquenes e Marmolejo. 12km, 250m de desnível, altitude\nmáx 3.300m.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 26",
+        "descricao": "Fronteira Argentina x Chile (Passo \"Portillo de Piuquenes\"):\nsaída ao amanhecer, cruzamento ao meio-dia, descida de 4h/1.100m até\nas fontes termais de \"Plomo\", depois transfer para Santiago.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 27",
+        "descricao": "Retorno: café da manhã em Santiago e despedida.",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "6 vagas preenchidas."
+    ],
+    "incluso": [
+      "1 noite em Mendoza + 1 noite em Santiago (compartilhado)",
+      "transporte",
+      "hospedagem-início da travessia e Termas del Plomo-Santiago",
+      "cavalos",
+      "de apoio e tropeiros para travessia de rios",
+      "barracas de alta",
+      "montanha compartilhadas (individual sob consulta com 15 dias de",
+      "antecedência)",
+      "pensão completa (almoço dia 1 ao café da manhã do",
+      "último dia)",
+      "utensílios de cozinha",
+      "guias, assistentes, carregadores",
+      "equipe treinada em primeiros socorros em áreas selvagens",
+      "serviço de",
+      "ambulância a cavalo",
+      "cavalo extra de reserva",
+      "transporte de até 10kg",
+      "em mulas (extra cobrado à parte)",
+      "kit de primeiros socorros",
+      "oxigênio",
+      "médico",
+      "equipamentos comuns",
+      "VHF",
+      "GPS por guia",
+      "SpotX",
+      "assessoria",
+      "completa",
+      "3 camisetas (2 UV + 1 algodão)",
+      "brindes",
+      "seguro internacional",
+      "(20-27/mar/2027)",
+      "devolução de equipamento alugado",
+      "assessoria na",
+      "compra/aluguel de equipamentos."
+    ],
+    "nao_incluso": [
+      "Equipamento pessoal",
+      "aluguel de equipamentos",
+      "despesas de",
+      "abandono/resgate/evacuação",
+      "refeições fora do itinerário",
+      "passagens",
+      "aéreas Brasil-Mendoza e Santiago-Brasil",
+      "transporte",
+      "aeroporto-hospedagem",
+      "itens fora do \"incluso\"."
+    ],
     "investimento": [],
     "politica": [],
-    "faq": []
+    "faq": [
+      {
+        "pergunta": "Equipamento a carregar",
+        "resposta": [
+          "mochila não passa de 6-10kg; equipamento\nde grupo vai nas mulas."
+        ]
+      },
+      {
+        "pergunta": "Documentos",
+        "resposta": [
+          "RG (menos de 10 anos) ou passaporte (6+ meses)."
+        ]
+      },
+      {
+        "pergunta": "Comunicação na montanha",
+        "resposta": [
+          "sem sinal de celular; rádio e comunicador\nsatelital para emergências."
+        ]
+      },
+      {
+        "pergunta": "Informação",
+        "resposta": [
+          "Família consegue acompanhar via link Spot (opcional)."
+        ]
+      },
+      {
+        "pergunta": "Barracas",
+        "resposta": [
+          "divididas por 2 pessoas, previamente combinado."
+        ]
+      },
+      {
+        "pergunta": "Voos",
+        "resposta": [
+          "Brasil→Mendoza (ida) e Santiago→Brasil (volta)."
+        ]
+      },
+      {
+        "pergunta": "Desistência",
+        "resposta": [
+          "segue política de cancelamento se no Brasil; em\nMendoza antes da montanha pode usar serviços mas sem reembolso;\ndurante a expedição, custos individuais por conta própria."
+        ]
+      },
+      {
+        "pergunta": "Dinheiro",
+        "resposta": [
+          "recomenda-se levar US$200 + R$500 trocados em pesos\nargentinos ao chegar em Mendoza."
+        ]
+      },
+      {
+        "pergunta": "Treinamento",
+        "resposta": [
+          "cardio moderado (corrida/bike 2-3x/semana por 2-3\nmeses antes)."
+        ]
+      },
+      {
+        "pergunta": "Clima",
+        "resposta": [
+          "imprevisível mesmo no verão; média ~15°C dia, -5°C a +5°C\nnoite; possibilidade de tempestades de neve."
+        ]
+      },
+      {
+        "pergunta": "Restrições alimentares",
+        "resposta": [
+          "atendidas com aviso prévio."
+        ]
+      },
+      {
+        "pergunta": "Cozinhar",
+        "resposta": [
+          "não necessário, equipe própria prepara tudo."
+        ]
+      },
+      {
+        "pergunta": "Equipamentos",
+        "resposta": [
+          "alugáveis em Mendoza."
+        ]
+      },
+      {
+        "pergunta": "Água",
+        "resposta": [
+          "vários pontos, mas necessário recipiente para 3L e tratamento."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/travpicosdejaragua": {
     "historia": [],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "04:30 Saída de Curitiba | 06:30 Saída de Joinville | 08:00 Chegada\ninício da trilha | 12:00 Previsão fim da trilha | 13:00 Chegada em\nJoinville (aprox) | 15:00 Chegada em Curitiba (aprox)\nIncluso: transporte, seguro | Não incluso: alimentação, equipamentos",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte ida/volta",
+      "taxas de acesso",
+      "2 guias NA Trekking",
+      "seguro",
+      "acidentes pessoais",
+      "botton exclusivo",
+      "rastreamento em tempo real."
+    ],
     "nao_incluso": [],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "nota de retenção adicional presente nas expedições internacionais).",
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/fendacruzdepedra": {
     "historia": [],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "04:30 Saída de Joinville | 08:00 Chegada início da trilha | 11:00\nChegada à Fenda Cruz de Pedra | 16:00 Previsão fim da trilha | 19:00\nChegada em Joinville (aprox)\nIncluso: transporte, seguro | Não incluso: alimentação, equipamentos",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte ida/volta",
+      "taxas de acesso",
+      "1 guia NA Trekking",
+      "1 guia",
+      "local",
+      "seguro acidentes pessoais",
+      "botton exclusivo."
+    ],
     "nao_incluso": [],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/curso-de-trekking-setembro": {
-    "historia": [],
+    "historia": [
+      "Curso para iniciantes em trilhas (ou quem já iniciou e quer mais\nconhecimento).\nMÓDULO 1 — Introdução ao Trekking: pré-trekking, boas práticas, tipos\nde trekking, diferença altura x altitude, como começar sem gastar\nerrado, erros comuns de iniciantes, escolha de trilhas por nível,\nchecklist pré-trilha, planejamento básico, etiqueta em trilha, o que\nesperar de trekking de vários dias.\nMÓDULO 2 — Mochilas e Organização: capacidade de mochilas, duffel bag,\nsacos estanque, organização, distribuição de peso, o que vai dentro/\nfora da mochila, como reduzir peso sem perder segurança, erros comuns.\nMÓDULO 3 — Sistema de Dormir: escolha de saco de dormir, faixa de\ntemperatura, tipos de isolantes, sistema de dormir final, como evitar\nfrio, erros comuns em noites frias.\nMÓDULO 4 — Barracas e Abrigo: tipos, escolha, montagem, escolha de\nlocal de acampamento, proteção contra vento, barraca 3x4 estações,\nerros que destroem barracas.\nMÓDULO 5 — Cozinha e Hidratação: fogareiro, quantidade de água,\ntratamento de água de rio, alimentação leve e eficiente, montagem de\nrefeições, erros de alimentação, café na montanha.\nMÓDULO 6 — Navegação e Aplicativos: melhores apps de trilha e\nprevisão do tempo, mapas offline, importar GPX, seguir rota, como\nnão se perder, erros comuns.\nMÓDULO 7 — Segurança Básica: equipamentos de segurança, itens\nobrigatórios, emergências, como pedir resgate, gestão de risco,\nsinais de perigo, desidratação, proteção solar, calos, picada de\ncobra.\nMÓDULO 8 — Vestuário e Equipamentos: botas, meias, bastão, sistema de\ncamadas, como se vestir no frio, evitar suor excessivo, roupas que\nnão funcionam, anorak x corta-vento, equipamentos úteis."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "Sábado (26/set): 04:00 Saída Curitiba | 06:00 Saída Joinville | 09:00\nChegada Rio dos Cedros, lanche de boas-vindas | 09:30-13:00 Teoria |\n13:00 Almoço | 14:00-18:00 Teoria + prática | 18:00 Trilha curta +\ndeslocamento ao acampamento.\nIncluso: transporte, alimentação, equipamentos, seguro | Não\nincluso: vestuário",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia",
+        "descricao": "Domingo (27/set): 07:00 Café da manhã (preparado pelos participantes)\n| Manhã: trilha curta + atividades práticas | 11:00 Deslocamento |\n12:00 Almoço de encerramento | 13:00 Despedida e retorno.\nIncluso: transporte, alimentação, equipamentos, seguro | Não\nincluso: vestuário",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
     "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "incluso": [
+      "Transporte ida/volta (Curitiba e Joinville)",
+      "alimentação",
+      "equipamentos",
+      "1 camisa NA Trekking",
+      "brindes",
+      "seguro acidentes pessoais",
+      "guia NA",
+      "Trekking",
+      "local reservado."
+    ],
+    "nao_incluso": [
+      "Vestuário",
+      "qualquer item fora do \"incluso\"."
+    ],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/lencois-maranhenses-jul-27": {
-    "historia": [],
+    "historia": [
+      "Travessia de Leste a Oeste do maior campo de dunas da América do Sul,\n~50km em 4 dias entre Atins e Santo Amaro do Maranhão, passando por\nlagoas formadas no período de chuvas."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (11/jul)",
+        "descricao": "Chegada ao Maranhão: recepção em São Luís (15h),\nbriefing (18h) e jantar.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (12/jul)",
+        "descricao": "Barreirinhas: saída 09h (~4h, 250km), tarde livre,\njantar.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (13/jul)",
+        "descricao": "1º dia de trekking: barco às 08h30 no Rio Preguiça\naté Atins (~50km, pequenos lençóis, vassouras, lagoas, farol do\nMandacaru, Caburé), almoço, 4x4 até Bozinho (~20km), caminhada até\nBaixa Grande (12km, 2 paradas em lagoas), pôr do sol, pernoite na\ncasa da Dona Maria.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (14/jul)",
+        "descricao": "2º dia: saída 06h, 2 paradas em lagoas, chegada\nQueimada dos Britos (11h30), descanso em redário, pôr do sol,\npernoite na casa da Joina. 12km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (15/jul)",
+        "descricao": "3º dia: nascer do sol às 02h, saída 03h30, 3-4\nparadas em lagoas, chegada Betânia (11h), banho na Lagoa Rio\nAlegre, pernoite no restaurante/casa de apoio Cantinho da\nFelicidade. 19km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (16/jul)",
+        "descricao": "4º dia: saída 06h, 2 paradas em lagoas, chegada\nSanto Amaro (11h30, 12km), saída 13h, chegada São Luís 17h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (17/jul)",
+        "descricao": "Dia de retorno (livre).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "Sem exigência de bom preparo físico mencionada aqui (nota geral sobre",
+      "horários/ritmo do grupo, sim). Recomendações específicas: levar",
+      "apenas o necessário na mochila; maioria caminha descalço nas dunas",
+      "(bolhas comuns); recomendação de meia longa e crocs; toalha de banho",
+      "tem custo não incluso; água/refrigerante/cerveja vendidos localmente",
+      "(levar dinheiro em espécie)."
+    ],
+    "incluso": [
+      "Guia NA Trekking + guia local",
+      "diária em São Luís (dia 11)",
+      "café da",
+      "manhã (dia 12)",
+      "transporte São Luís-Barreirinhas",
+      "diária em",
+      "Barreirinhas (dia 12)",
+      "café da manhã (dia 13)",
+      "transporte",
+      "lancha/barco Barreirinhas-Atins",
+      "transporte 4x4 Atins-início da",
+      "caminhada",
+      "pernoite em casas de moradores locais (redários)",
+      "jantar",
+      "dia 13",
+      "café/almoço/jantar dias 14-15",
+      "café da manhã dia 16",
+      "transporte lancha/barco em Betânia (se necessário)",
+      "transporte 4x4",
+      "até Santo Amaro",
+      "transporte Santo Amaro-São Luís",
+      "diária em São Luís",
+      "(dia 16)",
+      "café da manhã (dia 17)",
+      "botton",
+      "2 camisas exclusivas",
+      "brindes",
+      "rastreamento em tempo real",
+      "seguro acidentes pessoais."
+    ],
+    "nao_incluso": [
+      "Passagem aérea",
+      "alimentação dia 11",
+      "almoço/jantar dias 12 e 17",
+      "almoço dias 13 e 16",
+      "jantar dia 16",
+      "itens fora do \"incluso\"."
+    ],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/rinoceronte": {
-    "historia": [],
+    "historia": [
+      "Formato autossuficiente: cada participante carrega o que precisa\npara os 2 dias."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
+    "cronograma": [
+      {
+        "titulo": "outubro\", divergente da data do roteiro no topo",
+        "descricao": "provável erro de\natualização do site)",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia",
+        "descricao": "Dia 1: 23:00 Saída de Curitiba (véspera) | 00:30 Saída de Joinville |\n08:00 Chegada início da trilha | 11:00 Chegada ao acampamento |\nTarde livre.\nIncluso: transporte Curitiba/Joinville até início da trilha, seguro\n| Não incluso: alimentação, equipamentos",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia",
+        "descricao": "Dia 2: 05:00 Acordar | 05:30 Nascer do sol | 07:00 Início do retorno\n| 10:00 Fim da trilha | 18:00 Chegada em Joinville (aprox) | 19:30\nChegada em Curitiba (aprox).\nIncluso: transporte final da trilha até Joinville/Curitiba, seguro\n| Não incluso: alimentação, equipamentos",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte ida/volta",
+      "taxas de acesso",
+      "2 guias",
+      "seguro acidentes",
+      "pessoais",
+      "botton exclusivo",
+      "1 camisa NA Trekking",
+      "rastreamento em",
+      "tempo real. (A página repete essa lista com uma variação: \"2 guias",
+      "autorizados nos Campos do Quiriri\" — possível reaproveitamento de",
+      "outro roteiro na estrutura do site.)"
+    ],
     "nao_incluso": [],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/torredaprata": {
     "historia": [],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "04:00 Saída de Joinville | 05:15 Saída de São José dos Pinhais |",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia",
+        "descricao": "07:00 Chegada início da trilha | 12:00 Chegada ao cume da Torre da\nPrata | 17:30 Previsão fim da trilha | 19:00 Chegada em São José dos\nPinhais (aprox) | 20:15 Chegada em Joinville (aprox)\nIncluso: transporte, seguro | Não incluso: alimentação, equipamentos",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte ida/volta",
+      "taxas de acesso",
+      "2 guias NA Trekking",
+      "seguro",
+      "acidentes pessoais",
+      "botton exclusivo",
+      "rastreamento em tempo real."
+    ],
     "nao_incluso": [],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/cantagalo": {
     "historia": [],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "07:00 Saída de Joinville | 08:00 Chegada início da trilha | 12:00\nChegada ao cume do Cantagalo | 17:00 Previsão fim da trilha | 18:00\nChegada em Joinville (aprox)\nIncluso: transporte, seguro | Não incluso: alimentação, equipamentos",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte ida/volta",
+      "taxas de acesso",
+      "2 guias NA Trekking",
+      "seguro",
+      "acidentes pessoais",
+      "botton exclusivo",
+      "1 bandana NA Trekking",
+      "rastreamento em tempo real."
+    ],
     "nao_incluso": [],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/lencoismaranhensesagosto2026": {
     "historia": [],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "Barreirinhas dia 16, 1º-4º dias de trekking dias 17-20, retorno dia\n21), com pernoites em redários nas casas de moradores locais (Dona\nMaria, Joina, Cantinho da Felicidade) e mesmas paradas em lagoas.",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "dunas, meia longa/crocs recomendados, toalha não inclusa, bebidas",
+      "vendidas localmente)."
+    ],
+    "incluso": [
+      "adaptada às datas de agosto/2026 (guia NA Trekking + guia local",
+      "diárias em São Luís dias 15 e 20",
+      "diária em Barreirinhas dia 16",
+      "transportes barco/4x4",
+      "pernoites em redários",
+      "refeições conforme o",
+      "dia da travessia",
+      "botton",
+      "2 camisas",
+      "brindes",
+      "rastreamento",
+      "seguro acidentes pessoais)."
+    ],
+    "nao_incluso": [
+      "Passagem aérea",
+      "transporte aeroporto/hospedagem, hospedagem/",
+      "aeroporto",
+      "alimentação dia 15",
+      "almoço dia 17",
+      "almoço e jantar dias",
+      "16, 20 e 21",
+      "itens fora do \"incluso\".",
+      "(Nota: esta versão especifica que o transporte aeroporto-hospedagem",
+      "NÃO está incluso, diferente da versão de julho/2027 que não faz essa",
+      "ressalva.)"
+    ],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/curso-de-trekking-agosto": {
     "historia": [],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "06h, chegada Rio dos Cedros 09h, teoria manhã/tarde, trilha curta às\n18h; domingo: café da manhã 07h, trilha curta, almoço de\nencerramento 12h, despedida 13h).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
     "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "incluso": [
+      "alimentação, equipamentos, 1 camisa, brindes, seguro, guia, local\nreservado; não incluso: vestuário)."
+    ],
+    "nao_incluso": [
+      "alimentação, equipamentos, 1 camisa, brindes, seguro, guia, local\nreservado; não incluso: vestuário)."
+    ],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Nesta página não há seção de FAQ."
+    ],
     "faq": []
   },
   "https://natrekking.com.br/espraiadoxsoldados": {
-    "historia": [],
+    "historia": [
+      "Formato autossuficiente (participante carrega todos os equipamentos\npessoais durante a caminhada). Trilha que requer bom preparo físico."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (05/set)",
+        "descricao": "Balanço do Infinito: 22:30 (04/09) Saída de Curitiba\n| 00:10 Saída de Joinville (Expoville) | 07:00 Chegada início da\ntrilha | 09:00 Chegada ao Balanço do Infinito | 15:00 Chegada ao\nacampamento | Tarde livre.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (06/set)",
+        "descricao": "Morro Boa Vista: 08:00 Saída do acampamento | 12:00\nChegada ao Morro Boa Vista (ponto mais alto de Santa Catarina) |\n16:00 Chegada ao próximo acampamento | Tarde livre.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (07/set)",
+        "descricao": "Soldados Sebold: 08:00 Saída do acampamento | 13:00\nChegada aos Soldados de Sebold | 15:00 Saída em direção ao\nestacionamento | 17:00 Chegada ao estacionamento | 22:30 Chegada em\nJoinville (aprox) | 23:45 Chegada em Curitiba (aprox).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "grupo, guias na frente/atrás). Sem menção de vagas mínimas nesta",
+      "página."
+    ],
+    "incluso": [
+      "Guia local",
+      "guia NA Trekking",
+      "transporte ida/volta",
+      "taxas de acesso",
+      "seguro acidentes pessoais",
+      "botton exclusivo",
+      "camiseta NA Trekking",
+      "rastreamento em tempo real",
+      "transporte das mochilas da Pedra da",
+      "Águia até o início da trilha."
+    ],
     "nao_incluso": [],
-    "investimento": [],
+    "investimento": [
+      "Esta página não exibe a seção de Política de Cancelamento nem FAQ."
+    ],
     "politica": [],
     "faq": []
   },
   "https://natrekking.com.br/travessiaaracaxcrista": {
-    "historia": [],
+    "historia": [
+      "Formato autossuficiente (participante carrega tudo necessário para o\nperíodo). Trilha que requer bom preparo físico."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
-    "atencao": [],
-    "incluso": [],
+    "cronograma": [
+      {
+        "titulo": "Dia 1 (05/set)",
+        "descricao": "03:30 Saída de Joinville | 05:00 Chegada à base do\nAraçatuba | 08:00 Chegada ao cume do Araçatuba | 14:00 Chegada ao\nponto de acampamento | Tarde livre para descanso.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (06/set)",
+        "descricao": "06:00 Acordar/desmontar acampamento | 07:00 Saída |\n~15:00 Chegada ao próximo ponto de acampamento.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (07/set)",
+        "descricao": "07:00 Acordar/desmontar | 08:00 Saída | 17:00\nChegada ao acampamento/Pedra do Lagarto | Tarde livre.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (08/set)",
+        "descricao": "08:00 Saída do acampamento | 15:00 Chegada à base do\nMonte Crista | 17:00 Chegada em Joinville (aprox).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
+    "atencao": [
+      "8 vagas preenchidas."
+    ],
+    "incluso": [
+      "Transporte ida/volta com saída de Joinville",
+      "taxas de acesso de",
+      "todas as propriedades",
+      "2 guias NA Trekking",
+      "botton exclusivo",
+      "1",
+      "camisa NA Trekking",
+      "seguro individual",
+      "rastreamento em tempo real."
+    ],
     "nao_incluso": [],
     "investimento": [],
-    "politica": [],
+    "politica": [
+      "Mesma base EMBRATUR 161/1985, porém com percentuais diferentes dos",
+      "demais roteiros:",
+      "- Até 30 dias antes: reembolso de 80%",
+      "- 29-21 dias antes: 70%",
+      "- 20-08 dias antes: 50%",
+      "- Menos de 7 dias antes: sem devolução",
+      "- Demais cláusulas (força maior, no-show, desistência, prazo de",
+      "reembolso de 7 dias úteis) iguais aos outros roteiros.",
+      "Nesta página não há seção de FAQ.",
+      "==================================================================",
+      "FIM DO DOCUMENTO",
+      "=================================================================="
+    ],
     "faq": []
   }
 }
