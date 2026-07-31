@@ -312,16 +312,70 @@
     ]
   },
   "https://natrekking.com.br/kilimanjaro-safari-2027": {
-    "historia": [],
+    "historia": [
+      "Roteiro combina a escalada do Kilimanjaro com 2 dias de Safari\n(Parque Nacional Tarangire e Área de Conservação de Ngorongoro) e\nvisita a uma tribo Maasai. A Tanzânia tem quase 4 milhões de animais\nselvagens vagando pela savana. Mesmas informações de quem pode\nparticipar e formato de expedição do roteiro Kilimanjaro 2026."
+    ],
     "vibe": [],
     "specs": [],
-    "cronograma": [],
+    "cronograma": [
+      {
+        "titulo": "Dia",
+        "descricao": "Dias 1-9 (04-12/out): idênticos ao roteiro Kilimanjaro 2026 (chegada,\ndescanso, Rota Lemosho, Shira 1/2, Barranco, Karanga, Barafu, noite\ndo cume/Pico Uhuru/Millennium Camp, Portão Mweka). Ao final do dia 9,\nopção \"sem Safari\" disponível mediante consulta de valores.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 10 (13/out)",
+        "descricao": "Dia de descanso, \"vibe Pole Pole\" da Tanzânia; troca\nde hospedagem (1h40).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 11 (14/out)",
+        "descricao": "Safari Parque Nacional Tarangire: leões, girafas,\nzebras, antílopes, búfalos, grande população de elefantes (jun-out e\ndez-mar), antigos baobás.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 12 (15/out)",
+        "descricao": "Safari Área de Conservação de Ngorongoro: cratera\ncom dezenas de milhares de animais selvagens (elefantes, búfalos,\nantílopes, leões, chitas, zebras, rinocerontes — espécie ameaçada);\nparada no Lago Magadi (hipopótamos, aves); Patrimônio Mundial UNESCO.\nProibido alimentar animais selvagens (lei aplicada por guardas\nflorestais, com multa).",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 13 (16/out)",
+        "descricao": "Retorno ao Brasil: hospedagem → aeroporto (1h).",
+        "icon": "fa-map-marker-alt"
+      }
+    ],
     "atencao": [],
-    "incluso": [],
-    "nao_incluso": [],
+    "incluso": [
+      "Hospedagem c/ café (dias 4,5,12,13,14,15 out)",
+      "mesmos itens do",
+      "Kilimanjaro 2026 (transporte, barracas, pensão completa 7 dias,",
+      "guias, kit primeiros socorros, oxigênio, VHF, GPS, SpotX, camisetas,",
+      "brindes, taxas, cofre, carregadores) + Safari incluso: lanche para",
+      "almoço nos 2 dias de Safari, gorjeta para guia do Safari, visita à",
+      "tribo Maasai. Seguro internacional válido 04-16/out/2026."
+    ],
+    "nao_incluso": [
+      "cronograma, vestuário, abandono/resgate, passagens aéreas, alterações",
+      "de hospedagem/datas, resgate por helicóptero, gorjeta equipe local)."
+    ],
     "investimento": [],
-    "politica": [],
-    "faq": []
+    "politica": [
+      "161/1985; 70%/50%/40%/0% conforme prazo)."
+    ],
+    "faq": [
+      {
+        "pergunta": "É obrigatório o Safari? Não, há opção sem Safari, mas recomendado\no pacote completo (comparação",
+        "resposta": [
+          "ir a Paris sem ver a Torre Eiffel).\nInclui visita à tribo Maasai."
+        ]
+      },
+      {
+        "pergunta": "Informação",
+        "resposta": [
+          "Gorjeta do Safari já está inclusa no pacote (a da montanha, não).\nDemais perguntas (documentos, voos, clima, barracas, água, banheiros,\nequipe, comunicação) idênticas ao roteiro Kilimanjaro 2026."
+        ]
+      }
+    ]
   },
   "https://natrekking.com.br/roraimanov2026": {
     "historia": [
@@ -1281,7 +1335,9 @@
     ]
   },
   "https://natrekking.com.br/travpicosdejaragua": {
-    "historia": [],
+    "historia": [
+      "Travessia do Pico Boa Vista para o Pico do Jaraguá."
+    ],
     "vibe": [],
     "specs": [],
     "cronograma": [
@@ -1312,7 +1368,9 @@
     "faq": []
   },
   "https://natrekking.com.br/fendacruzdepedra": {
-    "historia": [],
+    "historia": [
+      "Conhecer a Fenda Cruz de Pedra."
+    ],
     "vibe": [],
     "specs": [],
     "cronograma": [
@@ -1524,7 +1582,9 @@
     "faq": []
   },
   "https://natrekking.com.br/torredaprata": {
-    "historia": [],
+    "historia": [
+      "Conhecer a Torre da Prata."
+    ],
     "vibe": [],
     "specs": [],
     "cronograma": [
@@ -1559,7 +1619,9 @@
     "faq": []
   },
   "https://natrekking.com.br/cantagalo": {
-    "historia": [],
+    "historia": [
+      "Conhecer a Pedra do Cantagalo."
+    ],
     "vibe": [],
     "specs": [],
     "cronograma": [
@@ -1590,46 +1652,94 @@
     "faq": []
   },
   "https://natrekking.com.br/lencoismaranhensesagosto2026": {
-    "historia": [],
+    "historia": [
+      "Travessia de Leste a Oeste do maior campo de dunas da América do Sul,\n~50km em 4 dias entre Atins e Santo Amaro do Maranhão, passando por\nlagoas formadas no período de chuvas."
+    ],
     "vibe": [],
     "specs": [],
     "cronograma": [
       {
-        "titulo": "Dia",
-        "descricao": "Barreirinhas dia 16, 1º-4º dias de trekking dias 17-20, retorno dia\n21), com pernoites em redários nas casas de moradores locais (Dona\nMaria, Joina, Cantinho da Felicidade) e mesmas paradas em lagoas.",
+        "titulo": "Dia 1 (11/jul)",
+        "descricao": "Chegada ao Maranhão: recepção em São Luís (15h),\nbriefing (18h) e jantar.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 2 (12/jul)",
+        "descricao": "Barreirinhas: saída 09h (~4h, 250km), tarde livre,\njantar.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 3 (13/jul)",
+        "descricao": "1º dia de trekking: barco às 08h30 no Rio Preguiça\naté Atins (~50km, pequenos lençóis, vassouras, lagoas, farol do\nMandacaru, Caburé), almoço, 4x4 até Bozinho (~20km), caminhada até\nBaixa Grande (12km, 2 paradas em lagoas), pôr do sol, pernoite na\ncasa da Dona Maria.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 4 (14/jul)",
+        "descricao": "2º dia: saída 06h, 2 paradas em lagoas, chegada\nQueimada dos Britos (11h30), descanso em redário, pôr do sol,\npernoite na casa da Joina. 12km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 5 (15/jul)",
+        "descricao": "3º dia: nascer do sol às 02h, saída 03h30, 3-4\nparadas em lagoas, chegada Betânia (11h), banho na Lagoa Rio\nAlegre, pernoite no restaurante/casa de apoio Cantinho da\nFelicidade. 19km.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 6 (16/jul)",
+        "descricao": "4º dia: saída 06h, 2 paradas em lagoas, chegada\nSanto Amaro (11h30, 12km), saída 13h, chegada São Luís 17h.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia 7 (17/jul)",
+        "descricao": "Dia de retorno (livre).",
         "icon": "fa-map-marker-alt"
       }
     ],
     "atencao": [
-      "dunas, meia longa/crocs recomendados, toalha não inclusa, bebidas",
-      "vendidas localmente)."
+      "Sem exigência de bom preparo físico mencionada aqui (nota geral sobre",
+      "horários/ritmo do grupo, sim). Recomendações específicas: levar",
+      "apenas o necessário na mochila; maioria caminha descalço nas dunas",
+      "(bolhas comuns); recomendação de meia longa e crocs; toalha de banho",
+      "tem custo não incluso; água/refrigerante/cerveja vendidos localmente",
+      "(levar dinheiro em espécie)."
     ],
     "incluso": [
-      "adaptada às datas de agosto/2026 (guia NA Trekking + guia local",
-      "diárias em São Luís dias 15 e 20",
-      "diária em Barreirinhas dia 16",
-      "transportes barco/4x4",
-      "pernoites em redários",
-      "refeições conforme o",
-      "dia da travessia",
+      "Guia NA Trekking + guia local",
+      "diária em São Luís (dia 11)",
+      "café da",
+      "manhã (dia 12)",
+      "transporte São Luís-Barreirinhas",
+      "diária em",
+      "Barreirinhas (dia 12)",
+      "café da manhã (dia 13)",
+      "transporte",
+      "lancha/barco Barreirinhas-Atins",
+      "transporte 4x4 Atins-início da",
+      "caminhada",
+      "pernoite em casas de moradores locais (redários)",
+      "jantar",
+      "dia 13",
+      "café/almoço/jantar dias 14-15",
+      "café da manhã dia 16",
+      "transporte lancha/barco em Betânia (se necessário)",
+      "transporte 4x4",
+      "até Santo Amaro",
+      "transporte Santo Amaro-São Luís",
+      "diária em São Luís",
+      "(dia 16)",
+      "café da manhã (dia 17)",
       "botton",
-      "2 camisas",
+      "2 camisas exclusivas",
       "brindes",
-      "rastreamento",
-      "seguro acidentes pessoais)."
+      "rastreamento em tempo real",
+      "seguro acidentes pessoais."
     ],
     "nao_incluso": [
       "Passagem aérea",
-      "transporte aeroporto/hospedagem, hospedagem/",
-      "aeroporto",
-      "alimentação dia 15",
-      "almoço dia 17",
-      "almoço e jantar dias",
-      "16, 20 e 21",
-      "itens fora do \"incluso\".",
-      "(Nota: esta versão especifica que o transporte aeroporto-hospedagem",
-      "NÃO está incluso, diferente da versão de julho/2027 que não faz essa",
-      "ressalva.)"
+      "alimentação dia 11",
+      "almoço/jantar dias 12 e 17",
+      "almoço dias 13 e 16",
+      "jantar dia 16",
+      "itens fora do \"incluso\"."
     ],
     "investimento": [],
     "politica": [
@@ -1638,22 +1748,38 @@
     "faq": []
   },
   "https://natrekking.com.br/curso-de-trekking-agosto": {
-    "historia": [],
+    "historia": [
+      "Curso para iniciantes em trilhas (ou quem já iniciou e quer mais\nconhecimento).\nMÓDULO 1 — Introdução ao Trekking: pré-trekking, boas práticas, tipos\nde trekking, diferença altura x altitude, como começar sem gastar\nerrado, erros comuns de iniciantes, escolha de trilhas por nível,\nchecklist pré-trilha, planejamento básico, etiqueta em trilha, o que\nesperar de trekking de vários dias.\nMÓDULO 2 — Mochilas e Organização: capacidade de mochilas, duffel bag,\nsacos estanque, organização, distribuição de peso, o que vai dentro/\nfora da mochila, como reduzir peso sem perder segurança, erros comuns.\nMÓDULO 3 — Sistema de Dormir: escolha de saco de dormir, faixa de\ntemperatura, tipos de isolantes, sistema de dormir final, como evitar\nfrio, erros comuns em noites frias.\nMÓDULO 4 — Barracas e Abrigo: tipos, escolha, montagem, escolha de\nlocal de acampamento, proteção contra vento, barraca 3x4 estações,\nerros que destroem barracas.\nMÓDULO 5 — Cozinha e Hidratação: fogareiro, quantidade de água,\ntratamento de água de rio, alimentação leve e eficiente, montagem de\nrefeições, erros de alimentação, café na montanha.\nMÓDULO 6 — Navegação e Aplicativos: melhores apps de trilha e\nprevisão do tempo, mapas offline, importar GPX, seguir rota, como\nnão se perder, erros comuns.\nMÓDULO 7 — Segurança Básica: equipamentos de segurança, itens\nobrigatórios, emergências, como pedir resgate, gestão de risco,\nsinais de perigo, desidratação, proteção solar, calos, picada de\ncobra.\nMÓDULO 8 — Vestuário e Equipamentos: botas, meias, bastão, sistema de\ncamadas, como se vestir no frio, evitar suor excessivo, roupas que\nnão funcionam, anorak x corta-vento, equipamentos úteis."
+    ],
     "vibe": [],
     "specs": [],
     "cronograma": [
       {
         "titulo": "Dia",
-        "descricao": "06h, chegada Rio dos Cedros 09h, teoria manhã/tarde, trilha curta às\n18h; domingo: café da manhã 07h, trilha curta, almoço de\nencerramento 12h, despedida 13h).",
+        "descricao": "Sábado (26/set): 04:00 Saída Curitiba | 06:00 Saída Joinville | 09:00\nChegada Rio dos Cedros, lanche de boas-vindas | 09:30-13:00 Teoria |\n13:00 Almoço | 14:00-18:00 Teoria + prática | 18:00 Trilha curta +\ndeslocamento ao acampamento.\nIncluso: transporte, alimentação, equipamentos, seguro | Não\nincluso: vestuário",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "titulo": "Dia",
+        "descricao": "Domingo (27/set): 07:00 Café da manhã (preparado pelos participantes)\n| Manhã: trilha curta + atividades práticas | 11:00 Deslocamento |\n12:00 Almoço de encerramento | 13:00 Despedida e retorno.\nIncluso: transporte, alimentação, equipamentos, seguro | Não\nincluso: vestuário",
         "icon": "fa-map-marker-alt"
       }
     ],
     "atencao": [],
     "incluso": [
-      "alimentação, equipamentos, 1 camisa, brindes, seguro, guia, local\nreservado; não incluso: vestuário)."
+      "Transporte ida/volta (Curitiba e Joinville)",
+      "alimentação",
+      "equipamentos",
+      "1 camisa NA Trekking",
+      "brindes",
+      "seguro acidentes pessoais",
+      "guia NA",
+      "Trekking",
+      "local reservado."
     ],
     "nao_incluso": [
-      "alimentação, equipamentos, 1 camisa, brindes, seguro, guia, local\nreservado; não incluso: vestuário)."
+      "Vestuário",
+      "qualquer item fora do \"incluso\"."
     ],
     "investimento": [],
     "politica": [
